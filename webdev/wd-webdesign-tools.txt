@@ -1,0 +1,10 @@
+
+Color Contrast Visualiser
+http://www.stainlessvision.com/blog/projects/colour-contrast-visualiser
+http://www.stainlessvision.com/blog/files/ColourContrastVisualiser.swf
+
+Pipette - color picker
+http://www.sttmedia.com/pipette
+
+JustColorPicker
+http://annystudio.com/software/colorpicker/

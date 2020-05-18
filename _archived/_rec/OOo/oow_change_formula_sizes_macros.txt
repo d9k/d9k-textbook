@@ -1,0 +1,34 @@
+Sub Formulator
+Dim Doc As Object
+Dim objects As Object
+Dim obj As Object
+Dim embedded As Object
+Dim formula As String
+Dim newFontSize As Integer
+
+newFontSize = InputBox("New formula font size:", "BaseFontHeight", 14)
+
+' Create document object
+Doc = StarDesktop.CurrentComponent
+
+' get objects
+objects = Doc.getEmbeddedObjects()
+
+' loop over all objects
+For i = 0 to objects.count-1
+obj = objects(i)
+embedded = obj.getEmbeddedObject()
+
+If embedded.supportsService("com.sun.star.formula.FormulaProperties") Then
+embedded.BaseFontHeight = newFontSize
+' some tricks to force OO.o redraw formulas
+formula = embedded.Formula
+embedded.Formula = ""
+embedded.Formula = formula
+End If
+
+Next i
+
+doc.reformat()
+
+End Sub

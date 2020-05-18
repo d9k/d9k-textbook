@@ -1,0 +1,13 @@
+jQuery dialog()
+===============
+
+change title
+------------
+$(whatever).dialog('option', 'title', 'New Title');
+http://stackoverflow.com/questions/2181520/howto-update-title-in-jquery-ui-dialog
+
+action on [x] button
+--------------------
+$('#dialogID').dialog(
+	...
+).bind('dialogclose', function(e, ui) { ... });	

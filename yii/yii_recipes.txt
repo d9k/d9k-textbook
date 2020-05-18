@@ -1,0 +1,5 @@
+Форматирование даты/времени
+---------------------------
+Yii::app()->dateFormatter->formatDateTime($model->invoiceDate ));
+
+http://www.yiiframework.com/forum/index.php/topic/10261-format-of-datetime-format-using-textfield/

@@ -1,0 +1,19 @@
+========================
+ Тестирование и отладка
+      в Joomla
+========================
+
+
+Testing Code Snippets 
+---------------------
+
+Sometimes to test a patch you will need to test PHP code snippets. One very simple way to do this is as follows:
+
+    Create a new folder called "com_test" under the components folder.
+    Create a new file called "test.php" under this folder.
+    Put your PHP code snippet in this file.
+    To run the file, just enter the URL <your domain>/index.php?option=com_test. For example, http://localhost/joomla_development/index.php?option=com_test. 
+
+This will run the code snippet inside the Joomla! framework. This way, when you are done, you can just remove the com_test folder and no other files have been changed. (Sam, thanks for this tip!) 
+
+http://docs.joomla.org/Testing_Checklists#Testing_Code_Snippets

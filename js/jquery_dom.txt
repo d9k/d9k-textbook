@@ -1,0 +1,7 @@
+checkbox
+--------
+$('.myCheckbox').prop('checked', true);
+
+elements found
+--------------
+if ($('#id').length)

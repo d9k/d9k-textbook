@@ -1,0 +1,4 @@
+главный путь: usr\local\mysql-5.1
+утилиты: usr\local\mysql-5.1\bin
+конфиг: usr\local\mysql-5.1\my.cnf
+соединение по-умолчанию: root@127.0.0.1:3306

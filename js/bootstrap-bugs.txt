@@ -1,0 +1,13 @@
+bootstrap 3, dismiss by esc doesn't work
+----------------------------------------
+
+set tabindex to -1:
+
+	<div class="modalBooking modal" tabindex="-1">
+
+
+скрывать меню при клике по пустому месту документа
+--------------------------------------------------
+$(document).on('click',function(){
+$('.navbar-collapse.in').collapse('hide');
+})

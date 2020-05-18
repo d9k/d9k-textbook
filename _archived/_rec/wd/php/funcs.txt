@@ -1,0 +1,7 @@
+бенчмарк:
+
+$timeBeforeTest = microtime(true);
+
+//....
+
+echo microtime(true) - $timeBeforeTest;

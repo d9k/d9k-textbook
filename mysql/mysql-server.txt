@@ -1,0 +1,58 @@
+Настройка сервера MySQL
+=======================
+
+Multiple instances
+------------------
+http://dba.stackexchange.com/questions/6370/running-multiple-instances-on-the-same-host/6375#6375
+
+Кодировка
+---------
+
+`/etc/mysql/my.cnf`:
+
+	[mysqld]
+	collation-server = utf8_unicode_ci
+	init-connect='SET NAMES utf8'
+	character-set-server = utf8
+
+test query:
+
+	show variables like 'char%';
+	show variables like 'collation%';
+
+[S.O.: change-mysql-default-character-set-to-utf-8-in-my-cnf](http://stackoverflow.com/a/10866836/1760643)
+
+
+fix ошибки mysql 5.6
+--------------------
+
+Если
+
+       mysql_install_db...
+       Could not find my-default.cnf
+
+:
+
+       locate my-default.cnf
+       cp /usr/share/doc/mysql-server-5.6/examples/my-default.cnf /usr/share/mysql
+
+Отключить автозагрузку
+----------------------
+
+echo manual | sudo tee /etc/init/mysql.override
+
+Перенос базы данных в другую папку
+----------------------------------
+
+	mysql_install_db --user=mysql --datadir="/path/to/new/datadir"
+
+в `/etc/mysql/my.cnf`:
+
+	[mysqld]
+	datadir  = /path/to/new/datadir
+
+см. пароль в '/etc/mysql/debian.cnf':
+
+	password = debian_user_password
+
+echo "CREATE USER 'debian-sys-maint'@'localhost' IDENTIFIED BY 'debian_user_password'; GRANT ALL PRIVILEGES on *.* TO 'debian-sys-maint'@'localhost'; FLUSH PRIVILEGES;" | mysql -uroot -p

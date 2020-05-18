@@ -1,0 +1,14 @@
+Файловый менеджер с возможностью распаковки архивов на PHP
+----------------------------------------------------------
+Одним файлом:
+phpfm.sourceforge.net
+
+более навороченный:
+pfn.sourceforge.net
+
+http://cker.name/webadmin/
+http://elfinder.org/
+
+( http://habrahabr.ru/qa/4153/ )
+
+http://code.google.com/p/relay/

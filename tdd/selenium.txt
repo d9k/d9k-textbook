@@ -1,0 +1,15 @@
+
+Документация, гайды
+-------------------
+http://selenium.googlecode.com/svn/trunk/docs/api/py/selenium/selenium.selenium.html
+http://www.yiiframework.com/doc/guide/1.1/ru/test.functional
+http://dizballanze.com/PHP/funktsionalnoe-testirovanie-yii-prilozhenii-s-selenium/
+
+
+Проверка JS
+-----------
+http://www.silverwareconsulting.com/index.cfm/2010/6/7/Checking-for-JavaScript-Errors-with-Selenium
+
+Тесты в одном окне
+------------------
+http://stackoverflow.com/questions/12833847/opening-selenium-webdriver-tests-in-the-same-window

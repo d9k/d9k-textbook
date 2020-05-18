@@ -1,0 +1,2 @@
+Q: How to enable continuous scrolling in full screen mode
+A: Once in full screen, enable and disable “Automatically Scroll” option i.e. “Shift+Control+H” buttons twice.

@@ -1,0 +1,12 @@
+Кэш php
+=======
+
+opcache
+-------
+
+	https://github.com/aarondfrancis/heroku-buildpack-php-nginx-yii/blob/master/conf/php/php.ini
+	http://stackoverflow.com/questions/17224798/how-to-use-php-opcache
+		OPCache GUI!
+		APCu, yac
+		[] FAIL restart'а 
+			http://stackoverflow.com/questions/8677493/php-fpm-doesnt-write-to-error-log

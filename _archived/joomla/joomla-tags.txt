@@ -1,0 +1,46 @@
+====================
+Тэги шаблонов Joomla
+====================
+
+jdoc:include
+------------
+Вывод компонента
+~~~~~~~~~~~~~~~~
+<jdoc:include type="component" />
+
+Заголовок
+~~~~~~~~~
+<jdoc:include type="head" />
+
+Сообщение
+~~~~~~~~~
+<jdoc:include type="message" />
+
+Определённый модуль
+~~~~~~~~~~~~~~~~~~~
+<jdoc:include type="module" name="breadcrumbs" title="Breadcrumbs" />
+<jdoc:include type="module" name="mainmenu" title="Main Menu" />
+
+Позиция модуля
+~~~~~~~~~~~~~~
+<jdoc:include type="modules" name="debug" />
+<jdoc:include type="modules" name="icon" />
+<jdoc:include type="modules" name="left" style="rounded" />
+<jdoc:include type="modules" name="left" style="xhtml" />
+<jdoc:include type="modules" name="right" style="xhtml" />
+<jdoc:include type="modules" name="status"  />
+<jdoc:include type="modules" name="syndicate" />
+<jdoc:include type="modules" name="title" />
+<jdoc:include type="modules" name="toolbar" />
+<jdoc:include type="modules" name="top" />
+<jdoc:include type="modules" name="top" style="xhtml" />
+<jdoc:include type="modules" name="user1" style="xhtml" />
+<jdoc:include type="modules" name="user2" style="xhtml" />
+<jdoc:include type="modules" name="user3" />
+<jdoc:include type="modules" name="user4" />
+
+Атрибут style
+~~~~~~~~~~~~~
+Атрибут style в модулях ссылается на chrome-стили для соответствующего оформления вывода модуля
+
+`<http://docs.joomla.org/Jdoc_statements>`_

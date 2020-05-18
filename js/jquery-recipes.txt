@@ -1,0 +1,16 @@
+debug function from jquery onload
+---------------------------------
+
+$(function() {
+  lol = function() {
+     alert("lol");
+  };
+});
+$(function() {
+  lol();
+});
+http://stackoverflow.com/questions/2379529/how-to-call-a-function-within-document-ready-from-outside-it
+
+disable dialog button
+---------------------
+http://stackoverflow.com/questions/577548/how-can-i-disable-a-button-in-a-jquery-dialog-from-a-function

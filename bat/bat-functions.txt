@@ -1,0 +1,56 @@
+Функция с параметрами
+---------------------
+
+@call project_settings.bat
+@echo off
+attrib -r configuration.php
+iconv -f utf-8 -t windows-1251 configuration.php>temp.php
+
+:BeginFunctionsDeclaration
+goto :EndFunctionsDeclaration
+
+:ReplaceString
+:: %~1 - string fieldName
+:: %~2 - string value
+	@echo %~1 = '%~2';
+	sed 's/.*%~1 = .*/	public %~1 = \'%~2\';/' temp.php>replaced.php
+	move /Y replaced.php temp.php
+goto :Exit
+
+:EndFunctionsDeclaration
+
+call :ReplaceString "$sitename" "%site_name%"
+call :ReplaceString "$fromname" "%site_name%"
+call :ReplaceString "$db" "%db_name%"
+call :ReplaceString "$password" "%db_password%"
+call :ReplaceString "$user" "%db_user%"
+call :ReplaceString "$dbprefix" "%db_prefix%"
+call :ReplaceString "$mailfrom" "%public_mail%"
+
+iconv -f windows-1251 -t utf-8 temp.php > configuration.php
+attrib +r configuration.php
+@echo on
+:Exit
+
+Вызов функции с возвратом параметра
+-----------------------------------
+@echo off
+
+goto :begin
+::== functions declaration ==
+
+:DeleteTrailingSlash ::params: string %1
+	set result=%1
+	if %result:~-1%==\ set result=%result:~0,-1%
+goto :eof
+
+::== end functions declaration ==
+
+:begin
+
+call :DeleteTrailingSlash kosh
+echo %result%
+
+call :DeleteTrailingSlash latter\
+echo %result%
+

@@ -1,0 +1,4 @@
+http_build_query(array); Ч Generate URL-encoded query string
+parse_str() - inverse operation
+
+stripslashes Ч ”дал¤ет экранирование символов, произведенное функцией addslashes() 

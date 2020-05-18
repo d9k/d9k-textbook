@@ -1,0 +1,19 @@
+Id статьи
+---------
+
+function _getArticleId(){
+	$articleId = JRequest::getVar('id');
+	$colonPos = strpos($articleId, ':');
+	if ($colonPos > 0) {
+		$articleId = substr($articleId, 0, $colonPos);
+	}
+	return $articleId;
+}
+
+Id категории
+------------
+echo JRequest::getInt('catid');
+
+Блог категорий
+~~~~~~~~~~~~~~
+echo $this->category->id;

@@ -1,0 +1,140 @@
+===========================
+  Список расширений Joomla
+===========================
+Список полезных расширений Joomla со ссылками на спраку
+
+Полезное
+--------
+
+Modules AnyWhere
+	мануал - http://old.nonumber.nl/index.php?option=com_content&view=article&id=166#syntax
+
+Редакторы
+---------
+	JCE
+	JCK
+		http://extensions.joomla.org/extensions/edition/editors/90
+
+Каталоги, CCK
+-------------
+SobiPro (4.67:69)
+http://extensions.joomla.org/extensions/directory-a-documentation/directory/16649
+
+SEBLOD
+http://extensions.joomla.org/extensions/authoring-a-content/content-construction/9128
+
+ShellManager
+http://extensions.joomla.org/extensions/authoring-a-content/content-construction/16505
+
+JoomD
+http://extensions.joomla.org/extensions/directory-a-documentation/directory/8579
+
+Галереи
+-------
+
+vsig - Very Simplr Image Gallery
+
+http://extensions.joomla.org/extensions/photos-a-images/galleries/content-photo-gallery/6301
+http://www.bretteleben.de/lang-en/joomla/very-simple-image-gallery.html
+
+sigplus
+	в каталоге - http://extensions.joomla.org/extensions/photos-a-images/galleries/content-photo-gallery/11426
+	демо - http://hunyadi.info.hu/levente/en/sigplus/demo
+	скачать - http://joomlacode.org/gf/project/sigplus/frs/
+	мануал - http://hunyadi.info.hu/levente/en/sigplus/documentation
+
+phoca gallery (plg)
+http://www.phoca.cz/demo/phocagallery-plugin
+http://www.phoca.cz/demo/switch-swap-image
+
+Слайдшоу
+--------
+Showplus (mod)
+http://extensions.joomla.org/extensions/photos-a-images/slideshow/image-mootools-slideshow/15727
+
+Slideshow CK (mod)
+http://extensions.joomla.org/extensions/photos-a-images/slideshow/image-jquery-slideshow/20362
+удобный модуль с интерфейсом выбора слайдов и подписей к ним
+
+Code7 Responsive Slider
+http://extensions.joomla.org/extensions/photos-a-images/slideshow/image-jquery-slideshow/21300
+оч красивый минималистичный слайдер
+
+Счётчики
+--------
+Яндекс-метрика
+http://dostrog.ru/doyandexmetrika/
+
+Электронная коммерция
+---------------------
+SimpleCaddy - shopping cart
+http://extensions.joomla.org/extensions/e-commerce/shopping-cart/4148
+
+Защита
+------
+Securitycheck 
+http://extensions.joomla.org/extensions/access-a-security/site-security/site-protection/19451
+
+Admin Tools Professional
+http://extensions.joomla.org/extensions/access-a-security/site-security/site-protection/16363
+
+.htaccess files
+https://akeeba.assembla.com/code/master-htaccess/git/node/logs
+
+Контактная форма с капчей
+-------------------------
+alfcontact
+http://extensions.joomla.org/extensions/contacts-and-feedback/contact-forms/3818
+Rapid Contact
+http://extensions.joomla.org/extensions/contacts-and-feedback/contact-forms/8219
+aiContactSafe
+http://extensions.joomla.org/extensions/contacts-and-feedback/contact-forms/7901
+
+Плагины контента
+----------------
+imgen - resize на лету
+	http://www.spiralscripts.co.uk/Documentation/imgen-image-generator-documentation.html
+
+Медиа
+-----
+PHP Image Editor Lite Joomla
+http://extensions.joomla.org/extensions/photos-a-images/images/image-management/6989
+
+Администрирование
+-----------------
+Reset Hits module
+http://extensions.joomla.org/extensions/site-management/analytics/content-statistics/16922
+
+Jooid
+http://extensions.joomla.org/extensions/mobile/mobile-production/11128
+
+Статьи:Тэги
+-----------
+TorTags
+http://extensions.joomla.org/extensions/search-a-indexing/tags-a-clouds/18853
+
+Aixeena Taxonomy System 
+http://extensions.joomla.org/extensions/search-a-indexing/tags-a-clouds/20002
+
+Статьи:комментарии
+------------------
+Disqus
+http://extensions.joomla.org/extensions/social-web/social-comments/5259
+
+Cackle
+http://ru.cackle.me/welcome
+http://extensions.joomla.org/extensions/social-web/social-comments/19437
+
+hypercomments
+http://hypercomments.com/ru
+
+FAQ
+---
+SmFAQ
+http://joomla-code.ru/exstensions/j25-extensions/smfaq-j16
+поддержка: http://joomlaforum.ru/index.php/topic,199950.0.html
+
+Разработка
+----------
+Plugin Override
+http://extensions.joomla.org/extensions/style-a-design/templating/15611

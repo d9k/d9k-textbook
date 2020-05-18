@@ -1,0 +1,15 @@
+В about:config в параметре keyword.URL изменить на http://www.google.ru/#hl=ru&q=
+
+Сам он ничего не проверяет.
+Будет проверять антивирус,
+если как он, пишут в форуме мозиллы, понимает передаваемые
+FF команды.
+Включить (отключить) такое поведение  проверки управляется установкой параметра
+в about:config browser.download.manager.scanWhenDone
+в true (false).
+
+Completely disabling plugin compatibility check
+
+extensions.checkCompatibility.<version> = false
+
+extensions.checkUpdateSecurity  = false

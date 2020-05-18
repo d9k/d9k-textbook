@@ -1,0 +1,4 @@
+Монтирование sql-ramdisc'а
+--------------------------
+http://blog.ionelmc.ro/2013/05/30/mysql-too-slow-in-tests-ramdisk-it/
+	http://blog.ionelmc.ro/2013/05/30/mysql-too-slow-in-tests-ramdisk-it/

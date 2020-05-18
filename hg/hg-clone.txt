@@ -1,0 +1,9 @@
+===========================
+  Команда clone mercurial
+===========================
+
+Клонирование начиная с определённой ревизии
+-------------------------------------------
+hg clone -r 7
+
+http://stackoverflow.com/questions/4148234/how-can-you-clone-a-mercurial-repository-as-of-a-specific-changeset

@@ -1,0 +1,12 @@
+значки:
+
+стандартные: C:\windows\system32\shell32.dll  
+
+mshtml.dll, wininet.dll, hticons.dll, inetcplc.dll, shdocvw.dll, shdoclc.dll - значки Internet Explorer и программ телефонии
+cryptui.dll, certmgr.dll - значки цифровых подписей
+syncui.dll - значки "Портфеля"
+user32.dll - значки сообщений, выдаваемых программами Windows
+compstui.dll, comres.dll, dsuiext.dll - большое количество разных значков
+pifmgr.dll, moreicons.dll, progman.exe - значки Windows 3.x
+main.cpl, printui.dll - значки "Панели управления"
+stobject.dll - значки регулятора громкости и разряда батарей 

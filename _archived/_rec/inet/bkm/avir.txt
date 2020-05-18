@@ -1,0 +1,2 @@
+ftp://ftp.drweb.com/pub/drweb/cureit/
+http://www.virustotal.com/ru/

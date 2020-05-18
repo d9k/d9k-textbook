@@ -1,0 +1,6 @@
+
+Подключение cvs
+---------------
+Using External Version Control Systems with Unity
+
+http://docs.unity3d.com/Documentation/Manual/ExternalVersionControlSystemSupport.html

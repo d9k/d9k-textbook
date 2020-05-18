@@ -1,0 +1,2 @@
+Q: How to load new documents in a single instance of SciTE
+A: check.if.already.open=1 in the SciTEGlobal.properties file

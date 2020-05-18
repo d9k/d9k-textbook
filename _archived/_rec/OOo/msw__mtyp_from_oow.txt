@@ -1,0 +1,27 @@
+Sub OOEquationConvertDocument()
+'
+' Convert all equations of the document
+'
+For Each iShape In ActiveDocument.InlineShapes
+If iShape.Type = wdInlineShapeEmbeddedOLEObject Then
+'MsgBox (iShape.OLEFormat.ClassType)
+If iShape.OLEFormat.ClassType = "Microsoft" Then
+iShape.OLEFormat.ConvertTo ClassType:="Equation.DSMT4", DisplayAsIcon:=False
+End If
+End If
+Next iShape
+End Sub
+Sub OOEquationConvertSelection()
+'
+' Convert all equations of the current selection
+' Caution! Doesn't work (why?) if the entire document is selected
+'
+For Each iShape In Selection.InlineShapes
+If iShape.Type = wdInlineShapeEmbeddedOLEObject Then
+'MsgBox (iShape.OLEFormat.ClassType)
+If iShape.OLEFormat.ClassType = "Microsoft" Then
+iShape.OLEFormat.ConvertTo ClassType:="Equation.DSMT4", DisplayAsIcon:=False
+End If
+End If
+Next iShape
+End Sub

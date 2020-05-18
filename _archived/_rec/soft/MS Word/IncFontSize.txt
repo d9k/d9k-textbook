@@ -1,0 +1,68 @@
+Sub IncSelectedFontSize2()
+'
+' IncSelectedFontSize2 Макрос
+' Макрос записан 21.07.2012 d9k
+'
+    Dim fontIncSteps As Integer
+    Dim inputResult As String
+    Const DEF_FONT_INC_STEPS As Integer = 1
+    
+      ' Run the Input Box.
+    inputResult = InputBox("Increase by (steps):", _
+         "Number Entry", DEF_FONT_INC_STEPS, 250, 75)
+
+    ' Check to see if Cancel was pressed.
+    If Not IsNumeric(inputResult) Then
+        MsgBox ("""" + inputResult + """" + " is not a number")
+        Exit Sub
+    End If
+    
+    fontIncSteps = Round(Val(inputResult))
+    
+    For Index = 1 To fontIncSteps
+        Selection.Font.Grow
+    Next
+
+End Sub
+
+
+
+Sub IncSelectedFontSize()
+'
+' IncSelectedFontSize Макрос
+' Макрос записан 21.07.2012 d9k
+'
+    Dim fontIncPoints As Integer
+    Dim inputResult As String
+    Const DEF_FONT_IN_POINTS As Integer = 1
+    
+      ' Run the Input Box.
+    inputResult = InputBox("Increase font with (pt):", _
+         "Number Entry", DEF_FONT_IN_POINTS, 250, 75)
+
+    ' Check to see if Cancel was pressed.
+    If Not IsNumeric(inputResult) Then
+        MsgBox ("""" + inputResult + """" + " is not a number")
+        Exit Sub
+    End If
+    
+    fontIncPoints = Round(Val(inputResult))
+    
+    Dim lastSymbolIndex As Long
+        
+    ' MsgBox ("first symbol: " + Str(Selection.Start) + " last symbol: " + Str(Selection.End))
+    lastSymbolIndex = Selection.End
+    
+    'выделение в начало
+    Selection.End = Selection.Start
+    
+    Do
+        'слово вперёд
+        Selection.MoveRight Unit:=wdWord, Count:=1, Extend:=wdExtend
+        'увеличить шрифт
+        Selection.Font.Size = Selection.Font.Size + fontIncPoints
+        'сбросить выделение
+        Selection.MoveRight Unit:=wdCharacter, Count:=1
+    Loop Until Selection.End >= lastSymbolIndex
+    
+End Sub

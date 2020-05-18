@@ -1,0 +1,6 @@
+serialize
+---------
+http://api.jquery.com/serialize/
+serialize form data (для того, чтобы приписать к ссылке, например)
+
+

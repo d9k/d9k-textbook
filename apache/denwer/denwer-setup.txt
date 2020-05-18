@@ -1,0 +1,42 @@
+xdebug
+------
+
+\WebServers\usr\local\php5\php.ini
+
+[Zend]
+zend_extension = «z:\usr\local\php5\ext\php_xdebug.dll»
+xdebug.remote_enable = 1
+xdebug.remote_handler = dbgp
+xdebug.remote_host = 127.0.0.1
+xdebug.remote_port = 9900
+xdebug.remote_mode=req
+
+http://vgorode-t.ru/denwer-netbeans-xdebug.html
+
+Идем в Tools->Options и указываем путь до php.exe. У меня это Z:\usr\local\php5\php.exe
+
+Там же указываем порт, который прописали в php.ini.  Там же лучше снять галку «Stop in first line», что останавливался только на точках останова.
+
+Все! На этом основная настройка завершена. Все должно работать.
+
+Ставим точки останова, жмем Ctrl+F5 и проверяем.
+
+pear
+----
+качаем и устанавливаем пакет расширения, содержащий PEAR, со страницы http://www.denwer.ru/packages/php5.html.
+
+Установка pear: в папку usr\local\php5\ скопировать go-pear.phar
+php go-pear.phar
+
+phing
+-----
+
+http://blog.steasy.ru/2011/11/10/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0-phing-%D0%B4%D0%BB%D1%8F-php-%D0%BD%D0%B0-windows/
+
+http://www.phing.info/trac/wiki/Users/Download
+
+pear channel-discover pear.phing.info
+pear install phing/phing
+
+
+

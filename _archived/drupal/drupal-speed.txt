@@ -1,0 +1,53 @@
+Drupal Speed
+============
+
+Increase php.ini realpath_cache_size to 24M
+Change my.ini innodb_flush_log_at_trx_commit to 0
+Change the hosts file to resolve ipv6 bug..
+
+drupal environment
+------------------
+(win/mac)
+https://www.acquia.com/downloads
+
+
+hosts на windows
+----------------
+Должны быть строки:
+
+127.0.0.1	localhost
+127.0.0.1	127.0.0.1
+#::1	localhost
+
+php.ini
+-------
+xdebug.remote_autostart=On
+
+
+
+mysql: my.ini
+-------------
+
+innodb_flush_log_at_trx_commit = 0 //(2?)
+
+innodb_buffer_pool_size = 70-80% of memory (def 128M)
+innodb_additional_mem_pool_size = 20M (def 2M)
+
+innodb_log_file_size =256M
+innodb_log_buffer_size = 8M
+innodb_lock_wait_timeout = 300
+innodb_max_dirty_pages_pct = 90
+innodb_thread_concurrency =8
+
++
+
+Increased query_cache_size (def 16M) and query_cache_limit (def 1MB)
+Increased innodb_buffer_pool_size
+
+http://drupal.stackexchange.com/questions/110605/drupal-7-really-slow-on-admin-pages
+
+xdebug+webgrind profile
+http://getmuhammad.blogspot.ru/2011/08/installing-xdebug-and-webgrind-on.html
+
+semaphore in-memory table
+https://groups.drupal.org/node/415883

@@ -1,0 +1,2 @@
+Проверка подключения jQuery
+http://stackoverflow.com/questions/1331982/check-if-jquery-is-included-in-header-joomla

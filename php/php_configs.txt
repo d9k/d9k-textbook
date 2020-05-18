@@ -1,0 +1,33 @@
+Настройки php
+=============
+
+Где файлы
+---------
+php --ini
+
+phpinfo() в консоли
+-------------------
+php -i | grep session.save
+
+apc
+---
+http://docs.moodle.org/24/en/Installing_APC_in_Windows#Download_the_correct_version
+extension = php_apc.dll
+
+ts - thread safe
+nts - not thread safe
+http://stackoverflow.com/questions/1623914/what-is-thread-safe-or-non-thread-safe-in-php
+
+Отдельные настройки для сайта
+-----------------------------
+
+1) `.user.ini` в папке с сайтом
+
+http://php.net/manual/en/configuration.file.per-user.php
+
+2) Секции
+
+`[HOST=]`
+`[PATH=]`
+
+http://php.net/manual/en/ini.sections.php

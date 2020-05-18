@@ -1,0 +1,4 @@
+putty integration
+-----------------
+Settings -> Startup > Tasks
+putty.exe -new_console -load "yoursavedsession"

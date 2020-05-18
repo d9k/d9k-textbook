@@ -1,0 +1,16 @@
+Рецепты NetBens
+===============
+
+## Проблемы с path
+
+	[NETBEANS_INSTALL_PATH]/etc/netbeans.conf can be changed to add things to your PATH or set other environment variables for your Netbeans instances. I set some env variable for my Glassfish launches in there, for example.
+
+	[so:how-do-i-specify-the-path-in-netbeans](http://stackoverflow.com/questions/2551039/how-do-i-specify-the-path-in-netbeans)
+
+## Disable AntiAliasing
+
+`path/to/netbeans/etc/netbeans.conf`:
+
+в `netbeans_default_options` добавить:
+
+    -J-Dswing.aatext=false -J-Dawt.useSystemAAFontSettings=false

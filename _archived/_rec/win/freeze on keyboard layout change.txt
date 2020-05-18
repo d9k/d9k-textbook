@@ -1,0 +1,7 @@
+Зависание при смене раскладки
+
+отключить ctfmon.exe
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IMM]
+
+"LoadIMM"=dword:00000000

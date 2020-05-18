@@ -1,0 +1,14 @@
+alias
+-----
+doskey ls=dir
+doskey d=dir $*
+doskey /macrofile=c:\bin\aliases
+
+Вывод пустой строки
+-------------------
+echo.
+
+Экранирование символов echo
+---------------------------
+^& - &
+http://www.robvanderwoude.com/escapechars.php

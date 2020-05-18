@@ -1,0 +1,15 @@
+Emacs bookmarks
+===============
+
+C-x r l - list
+C-x r m - make bookmark
+C-x r b - jump to bookmark
+
+Bookmarks list
+--------------
+
+r - rename bookmark
+d - mark for deletion
+x - delete marked
+
+http://www.emacswiki.org/BookMarks

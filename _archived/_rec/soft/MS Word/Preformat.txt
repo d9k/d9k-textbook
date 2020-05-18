@@ -1,0 +1,17 @@
+Public Sub MAIN()
+Rem V.A.Marechal <marechal@ecoman.kiev.ua>
+WordBasic.ViewZoom AutoFit:=1
+WordBasic.EditReplace Find:="^p^p", Replace:="^t^p^t^p", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="^p  ", Replace:="^t^p  ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="^p", Replace:=" ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="   ", Replace:=" ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="   ", Replace:=" ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="  ", Replace:=" ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="  ", Replace:=" ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="  ", Replace:=" ", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="^t", Replace:="^p", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:="^p ", Replace:="^p", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditReplace Find:=" ^p", Replace:="^p", Direction:=0, MatchCase:=0, WholeWord:=0, PatternMatch:=0, SoundsLike:=0, ReplaceAll:=1, Format:=0, Wrap:=1, FindAllWordForms:=0
+WordBasic.EditSelectAll
+WordBasic.FormatParagraph LeftIndent:="0 см", RightIndent:="0 см", Before:="0 пт", After:="0 пт", LineSpacingRule:=0, LineSpacing:="", Alignment:=3, WidowControl:=-1, KeepWithNext:=-1, KeepTogether:=-1, PageBreak:=-1, NoLineNum:=-1, DontHyphen:=-1, Tab:="0", FirstIndent:="0,5 см"
+End Sub

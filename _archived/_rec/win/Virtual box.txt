@@ -1,0 +1,19 @@
+sudo mount.vboxsf -n sharedfolder /mnt/sharedfolder
+
+
+====================================
+
+By default, gcc searches the following directories for header files:
+
+/usr/local/include/
+/usr/include/
+
+and the following directories for libraries:
+
+/usr/local/lib/
+/usr/lib/
+
+
+-l -I
+
+====================================

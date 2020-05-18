@@ -1,0 +1,15 @@
+=================================
+     Переменные окружения
+		в bat- файлах
+=================================
+
+(можно узнать, введя set без параметров)	
+%ALLUSERSPROFILE% - C:\Documents And Settings\All Users
+%APPDATA% - C:\Documents And Settings\Администратор\Application Data
+%COMSPEC% - C:\Windows\System32\cmd.exe
+%HOMEDRIVE%, %SYSTEMDRIVE% - C:
+%HOMEPATH%, %USERPROFILE% - C:\Documents And Settings\[user]
+%WINDIR% - C:\Windows
+%PROGRAMFILES% - C:\Program Files
+
+`<http://ru.wikipedia.org/wiki/Переменная_среды>`_

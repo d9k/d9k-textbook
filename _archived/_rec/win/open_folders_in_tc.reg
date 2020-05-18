@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Folder\shell]
+@="Total_Commander"
+[HKEY_CLASSES_ROOT\Folder\shell\Total_Commander]
+@="Total Commander"
+[HKEY_CLASSES_ROOT\Folder\shell\Total_Commander\command]
+@="E:\\pf\\sys\\totalcmd\\TOTALCMD.EXE /T /S /L=%1" 

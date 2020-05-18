@@ -1,0 +1,28 @@
+Что из следующего используется, чтобы переменная была глобально доступна в пределах одной сессии?
+
+       static
+       global
+	(+)session_register()
+       session_global()
+       Ничего из вышеуказанного
+
+С помощь какой функции можно проверить правильность даты по грегорианскому календарю?
+
+   (+)checkdate()
+      idate()
+      gmstrftime()
+      date()
+
+Какая функция PHP конвертирует символы новой строки в теги <br>?
+
+      htmlentities()
+   (+)nl2br()
+      strip_tags()
+      convert()
+
+Если вы хотите передать значение функции по ссылке, правильным путем будет:
+
+      function ModifyReport($Rptfile){}
+      function ModifyReport(&Rptfile){}
+   (+)function ModifyReport(&$Rptfile){}
+      function ModifyReport(ByRef $Rptfile){}

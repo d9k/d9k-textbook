@@ -1,0 +1,3 @@
+bad interpreter - .../python^M
+------------------------------
+$ tr -d '\r' < test.py > newtest.py

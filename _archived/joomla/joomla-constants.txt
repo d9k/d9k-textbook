@@ -1,0 +1,13 @@
+http://docs.joomla.org/Constants
+
+JPATH_ADMINISTRATOR 	The path to the administrator folder.
+JPATH_BASE 	The path to the installed Joomla! site.
+	W:\home\localhost\www\joomla-stroytime
+
+_path_/includes/defines.php
+
+
+JURI::base()
+	http://localhost/joomla-stroytime/
+JURI::base(true)
+	joomla-stroytime/

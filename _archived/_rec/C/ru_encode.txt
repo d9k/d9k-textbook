@@ -1,0 +1,49 @@
+
+//======================================
+
+#include <clocale>
+using namespace std;
+
+setlocale(LC_CTYPE,"Russian");
+
+//=======================================
+
+char* cyr(char* s)
+{
+unsigned char* p=s;
+while (*p)
+{
+if (*p==184)
+*p+=57;
+else
+{
+if (*p==168)
+*p+=72;
+else
+{
+if (*p>=192&&*p<=239)
+*p-=64;
+else
+{
+if (*p>=240&&*p<=255)
+*p-=16;
+}
+}
+}
+p++;
+}
+
+return s;
+}
+
+//=======================================
+
+#include <windows.h>
+void printru(char* s)
+{
+char s1[81];
+CharToOem(s,s1);
+printf(s1);
+}
+
+//=======================================

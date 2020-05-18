@@ -1,0 +1,6 @@
+typo
+----
+$cck->getValue('stroytime_object_map_address');
+
+
+http://www.seblod.com/support/forum/Position-Variations/31197-How-to-get-the-3rd-field-in-a-position--use-fields0.html#31197

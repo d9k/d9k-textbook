@@ -1,0 +1,36 @@
+===================================
+	Горячие клавиши в NetBeans
+===================================
+
+alt+shift+Enter - полный экран
+ctrl+] парный тэг
+Alt-Left/Alt-Right/Ctrl-Q Go backward/forward/to last edit
+ctrl+B - перейти к объявлению
+исправление Ctrl+Tab с MRU (most-resent-used)-поведения на обычный последовательный перебор
+	[] НИКАК БЛЯТЬ!
+		http://stackoverflow.com/questions/6985290/
+		[] поставить AutoHotKey 
+		
+ 
+Ctrl+Shift+1 - выделяет открытый в текущей вкладке файл в "Проектах"
+Ctrl+Shift+2 - выделяет открытый в текущей вкладке файл в "Файлах"
+
+
+Отключение переключения между вкладками по времени использования
+----------------------------------------------------------------
+; (обязательно в самое начало скрипта)
+SetTitleMatchMode 2 ; So that we can partial match window title
+
+#IfWinActive, NetBeans IDE
+{
+	; CTRL+TAB
+	^Tab::
+	; MsgBox, debug: NB
+	SendInput ^{PgDn}
+	return
+
+	; SHIFT+CTRL+TAB
+	+^Tab::
+	SendInput ^{PgUp}
+	return
+}

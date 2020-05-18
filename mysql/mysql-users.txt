@@ -1,0 +1,31 @@
+MySQL: права и пользователи
+===========================
+
+Создание пользователя
+---------------------
+
+	CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mypass';
+
+
+
+	CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+	create database if not exists amarokdb;
+	grant usage on *.* to amarokuser@localhost identified by 'amarokpasswd';
+	grant all privileges on amarokdb.* to amarokuser@localhost ;
+
+	revoke all privileges on amarokdb.* from amarokuser@localhost;
+	grant select, insert, update, delete, create, alter, index, drop, create temporary tables, lock tables, references on amarokdb.* to amarokuser@localhost with grant option;
+
+http://dev.mysql.com/doc/refman/5.1/en/grant.html
+http://www.debuntu.org/how-to-create-a-mysql-database-and-set-privileges-to-a-user/
+
+Смена пароля
+------------
+
+	SET PASSWORD FOR user = PASSWORD('cleartext password');
+
+Права root-пользователя
+-----------------------
+
+	GRANT ALL ON *.* TO 'someadmin'@'localhost' with GRANT OPTION;

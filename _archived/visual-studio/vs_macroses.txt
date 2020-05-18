@@ -1,0 +1,20 @@
+Duplicate line
+--------------
+
+Imports System
+Imports EnvDTE
+Imports EnvDTE80
+Imports System.Diagnostics
+ 
+Public Module DuplicateLastLineModule
+Sub DuplicateLine()
+Dim line As String
+DTE.ActiveDocument.Selection.StartOfLine(0)
+DTE.ActiveDocument.Selection.EndOfLine(True)
+line = DTE.ActiveDocument.Selection.Text
+DTE.ActiveDocument.Selection.EndOfLine()
+DTE.ActiveDocument.Selection.NewLine()
+DTE.ActiveDocument.Selection.StartOfLine(0)
+DTE.ActiveDocument.Selection.Text = line
+End Sub
+End Module

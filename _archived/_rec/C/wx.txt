@@ -1,0 +1,4 @@
+img = bmp->ConvertToImage();
+new wxBitmap(img)
+
+wxMessageBox(wxString::Format("Привет, user!%d",1111));

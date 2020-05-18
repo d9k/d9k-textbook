@@ -1,0 +1,10 @@
+change invitation
+-----------------
+:set prompt "ghci> "
+:set prompt "\ESC[35mghci> \ESC[m"
+
+ config
+ ------
+ ~/.ghci
+ ~/.ghc/ghci.conf
+ %APPDATA%\ghc\ghci.conf (win)

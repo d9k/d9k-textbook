@@ -1,0 +1,49 @@
+
+cfg
+---
+`./.bashrc' -> `/home/Администратор//.bashrc'
+`./.bash_profile' -> `/home/Администратор//.bash_profile'
+`./.inputrc' -> `/home/Администратор//.inputrc'
+`./.profile' -> `/home/Администратор//.profile'
+
+required packages
+-----------------
+subversion, bsdtar
+
+packages
+--------
+http://cygwin.com/packages/
+
+
+drush
+-----
+[DOSN'T FUKKEN WORK!] apt-cyg install bsdtar
+
+$ mkdir -p /usr/local/src
+$ cd /usr/local/src
+$ wget http://ftp.drupal.org/files/projects/drush-7.x-5.9.tar.gz
+$ tar -zxf drush-7.x-5.9.tar.gz
+$ chmod u+x /usr/local/src/drush/drush
+$ chmod u+x /usr/local/src/drush/drush.bat
+$ ln -s /usr/local/src/drush/drush.bat /usr/bin/drush
+
+доставить bsdtar
+
+https://drupal.org/node/1432756
+
+apt-get
+-------
+
+https://code.google.com/p/cyg-apt/
+
+# svn --force export http://apt-cyg.googlecode.com/svn/trunk/ /bin/
+# chmod +x /bin/apt-cyg
+
+https://code.google.com/p/apt-cyg/issues/detail?id=26
+
+# /etc/setup/last-mirror
+(modify first line to look like this) :
+
+http://cygwin.mirrorcatalogs.com/x86
+(or (x64)) :
+http://cygwin.mirrorcatalogs.com/x86_64

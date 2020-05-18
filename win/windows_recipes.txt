@@ -1,0 +1,16 @@
+Рецепты Windows 
+===============
+
+иконка регулировки громкости пропала
+------------------------------------
+Win+R -> gpedit.msc -> enter
+Конфигурация пользователя -> Административные шаблоны -> Панель управления -> Скрыть значок регулятора громкости
+
+Если ничего не помогает: Win+R -> sndvol -> Enter
+Потом, может, само появится.
+
+
+“Take Ownership” Option in Files and Folders Context Menu in Windows
+--------------------------------------------------------------------
+
+[guide](http://www.askvg.com/add-take-ownership-option-in-file-folder-context-menu-in-windows-vista/)

@@ -1,0 +1,21 @@
+=========================
+   База Данных SEBLOD
+=========================
+Основные настройки
+------------------
+Основные настройки хранятся в 
+	lpafi_extensions.params, name = 'com_cck'.
+	
+Выбор места сохранения данных
+-----------------------------
+http://wedal.ru/rasshireniya-joomla/seblod-konstruktor-kontenta-cck-dlya-joomla-chast-6-khranilishcha-dannykh.html
+
+по-умолчанию
+~~~~~~~~~~~~
+Standart [table] [field] 
+будет хранить в cck_store_item_content.field
+
+добавление поля в таблицу ядра
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Standart [table] [field] [v]Alter [type] Add Column to Table
+создаст колонку в таблице [table]

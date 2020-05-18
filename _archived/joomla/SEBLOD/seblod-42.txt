@@ -1,0 +1,25 @@
+===================================
+ SEBLOD: программируемое поле (42)
+===================================
+
+Prepared Content: $value = 'test';
+
+get fields
+
+http://www.seblod.com/component/kunena/Fields--Plugins/32418-Render-content--get-fields-values-into-42-field-or-other-field-differents-solutions.html?Itemid=0
+
+1) $doc = CCK_Document::getInstance('html');
+   $field_value = $doc->fields->name_of_field->value;
+
+2) CCK_ARTICLE::getValue($article_id,'name_of_field');
+
+3) echo CCK_Content::getValue( $item->introtext, 'introtext' ); //encoded in introtext field
+
+$id_value = jrequest::getVar('id');
+$catid_value = jrequest::getVar('catid');
+ 
+Достать значения других полей в prepare content
+-----------------------------------------------
+
+Можно поставить точку отладки в `plugins/cck_field/42/42.php`.
+Достать поле можно так: `$config['storages']['#__cck_store_form_afisha']->datasp`, где `datasp` - имя поля.

@@ -1,0 +1,16 @@
+check variable defined
+----------------------
+	if(typeof myVar != 'undefined')
+
+http://stackoverflow.com/questions/3390396/how-to-check-for-undefined-in-javascript
+
+JSON encode
+-----------
+JSON.stringify()
+
+
+pad array
+---------
+function padNumberArray(n, len) {
+	return (new Array(len + 1).join('0') + n).slice(-len);
+}

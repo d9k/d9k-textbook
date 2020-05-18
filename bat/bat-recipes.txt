@@ -1,0 +1,84 @@
+===================================
+  Рецепты стандартных действий 
+          в bat-файлах
+===================================
+
+Открыть URL
+----------------
+Открыть URL в браузере по-умолчанию
+
+..code::bat
+
+	start /min [url]
+	
+Переконвертировать в другую кодировку
+-------------------------------------
+for %i in (*.txt) do iconv -f cp1251 -t utf-8 %i > utf8/%i
+
+`<http://ru.wikipedia.org/wiki/Iconv>`_
+
+Самый новый файл из директории в переменную
+-------------------------------------------
+for /F "delims=|" %%i in ('dir "%DatabaseBackupPath%\WebServer\*.bak" /B /O:D') do set newest_file=%%i
+/B - вывод только имён файлов
+/O:D - сортировки от старого к новым (Date), на каждом проходе цикла в переменную будет заноситься имя "более нового" файла и, в итоге, имя последнего файла окажется в переменной
+
+http://stackoverflow.com/questions/97371/how-do-i-write-a-windows-batch-script-to-copy-the-newest-file-from-a-directory
+
+Очистка от последнего слэша
+---------------------------
+setLocal EnableDelayedExpansion
+if %datapath:~-1%==\ set datapath=%datapath:~0,-1%
+
+http://stackoverflow.com/questions/2952401/remove-trailing-slash-from-batch-file-input
+
+silent run
+----------
+RUN1ST.BAT > NUL
+
+Передача всех аргументов
+------------------------
+
+"C:\php\php.exe" script.php %*
+
+
+Вывод всех переменных
+---------------------
+print_r(get_defined_constants());
+
+Вывод файла
+-----------
+Вывод на дисплей содержимого файла
+type filename.txt
+
+Пути
+----
+setlocal enableDelayedExpansion
+set file_rel_path=%1
+set file_full_path=%~f1
+set file_name=%~nx1
+set file_folder_relative=!file_rel_path:%file_name%=!
+set file_folder_path=%~dp1
+
+Замена переменной в строке
+--------------------------
+::Replace '12345' with 'Hello '
+   SET _test=12345abcabc
+   SET _result=%_test:12345=Hello %
+   ECHO %_result%          =Hello abcabc
+
+::Delete the character string 'ab' and everything before it
+   SET _test=12345abcabc
+   SET _result=%_test:*ab=% 
+   ECHO %_result%          =cabc
+   
+http://ss64.com/nt/syntax-replace.html
+
+Замена подстроки-переменной на другую подстроку
+-----------------------------------------------
+setlocal DisableDelayedExpansion
+set SEARCHTEXT=bath
+set REPLACETEXT=hello
+set string=bathlolhi
+SET modified=!string:%SEARCHTEXT%=%REPLACETEXT%!
+http://stackoverflow.com/questions/5273937/how-to-replace-substrings-in-windows-batch-file

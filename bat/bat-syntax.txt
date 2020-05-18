@@ -1,0 +1,56 @@
+=============================
+   Синтакс bat-файла
+=============================
+
+Перенос команды в bat-файле:
+----------------------------
+echo %1^
+%2^
+%3
+
+перевод строки должен быть сразу после ^
+
+http://ubuntuforums.org/showthread.php?t=630254
+
+
+Выход из скрипта
+----------------
+
+.. code:: bat
+
+	exit /b
+
+Проверка переменной на пустоту
+------------------------------
+
+.. code:: bat
+
+	if "%v_var%"=="" (
+		echo v_var is empty
+	) else (
+		echo v_var is NOT empty
+	)``
+	
+'<http://www.sql.ru/forum/actualthread.aspx?tid=879487>'_
+
+Безусловный переход
+-------------------
+
+.. code:: bat
+
+	first command
+	Goto :End
+	command_to_skip
+	:End
+	command_before exit
+
+'<http://forum.oszone.net/thread-190695.html>'_
+
+Комментарии
+-----------
+::
+rem
+
+см. также
+---------
+'Урок bat-аники <http://www.rsdn.ru/article/winshell/batanyca.xml>'_

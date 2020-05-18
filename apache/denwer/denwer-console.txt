@@ -1,0 +1,10 @@
+Не подгружаются dll
+-------------------
+
+W:\usr\local\php5\php.ini
+
+полные пути в extension_dir: extension_dir = "w:\usr\local\php5\ext"
+, [xdebug]
+zend_extension= ...
+
+http://forum.dklab.ru/viewtopic.php?t=16855&highlight=unable*+unable+to+load*+load+dynamic*+dynamic+library*+library

@@ -1,0 +1,18 @@
+custom diff
+
+BC (Compare left-vs-right directories)
+Command: %YourPath%\BeyondCmp\BCompare.exe
+Parameters: %X%p %X%t
+
+BC (Compare current file under cursor vs same file in the other panel)
+Command: %YourPath%\BeyondCmp\BCompare.exe
+Parameters: "%X%p%x%n" "%X%t%x%n"
+
+BC (Compare current file in left vs current file in right)
+Command: %YourPath%\BeyondCmp\BCompare.exe
+Parameters: "%X%p%n" "%X%t%m"
+
+@author TheNewbie
+http://superuser.com/questions/238039/can-i-use-an-replace-internal-diff-in-total-commander-with-an-external-diff-prog
+============================================
+

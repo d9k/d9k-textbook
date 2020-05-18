@@ -1,0 +1,8 @@
+Как настроить вывод компонентов в шаблоне?
+------------------------------------------
+Например, скопировать
+PATH_TO_JOOMLA/components/com_content/views/article/tmpl/default.php
+в
+TEMPLATE_NAME/html/com_content/article/default.php
+и изменить
+http://docs.joomla.org/How_to_override_the_output_from_the_Joomla!_core

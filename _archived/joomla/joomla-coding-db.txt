@@ -1,0 +1,12 @@
+Получение записи как объекта
+----------------------------
+
+$db = JFactory::getDbo();
+$query = $db->getQuery(true);
+$query	-> select(array('stt_object_slideshow_folder'
+		, 'stt_object_map_address'))
+		-> from('#__cck_store_item_content')
+		-> where('id = "'.(int)$articleId.'"');
+$db->setQuery($query);
+$resultObject = $db->loadObject();
+$galleryFolder = $resultObject->stt_object_slideshow_folder;

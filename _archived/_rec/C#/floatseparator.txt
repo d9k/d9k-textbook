@@ -1,0 +1,30 @@
+как узнать в программе, точка или запятая используется?
+
+string System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator
+
+имзменить текущий разделитель
+
+Program.cs:
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows.Forms;
+
+using System.Globalization;
+using System.Threading;
+
+[STAThread]
+static void Main()
+{
+
+	CultureInfo newInfo  = (CultureInfo) Thread.CurrentThread.CurrentCulture.Clone();
+	System.Threading.Thread;
+	newInfo.NumberFormat.NumberDecimalSeparator = ".";
+	Thread.CurrentThread.CurrentCulture = newInfo;
+	
+	Application.EnableVisualStyles();
+	Application.SetCompatibleTextRenderingDefault(false);
+	Application.Run(new FormMain());	
+
+}

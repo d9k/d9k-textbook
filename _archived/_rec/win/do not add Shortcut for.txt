@@ -1,0 +1,3 @@
+существуют также способы убрать надпись Ярлык для... и стрелочку на ярлыках. Чтобы это сделать, нужно удалить из реестра (с помощью regedit — Пуск -> Выполнить -> regedit) записи HKEY_LOCAL_MACHINE\SOFTWARE\Classes\lnkfile\IsShortcut и HKEY_LOCAL_MACHINE\SOFTWARE\Classes\piffile\IsShortcut. А чтобы убрать надпись, нужно параметру HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\link присвоить значение 0.
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer пар.-р Link задать 00 00 00 00 - убирание "Ярлык для..." в Windows

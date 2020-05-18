@@ -1,0 +1,3 @@
+EnableMMAP off
+EnableSendfile off
+Win32DisableAcceptEx On 

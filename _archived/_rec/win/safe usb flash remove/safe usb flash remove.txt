@@ -1,0 +1,5 @@
+rundll32.exe shell32.dll,Control_RunDLL hotplug.dll 
+regsvr32 usbui.dll
+regsvr32 stobject.dll
+
+del HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}\LowerFilters (AlcorMP)

@@ -1,0 +1,3 @@
+Без показа консоли
+------------------
+cxfreeze --install-dir dist --base-name=Win32GUI test.py

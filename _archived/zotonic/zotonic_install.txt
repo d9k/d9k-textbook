@@ -1,0 +1,6 @@
+Change access rights
+--------------------
+sudo chmod -R g+rw zotonic/
+sudo useradd -G zotonic [yourname]
+
+reboot

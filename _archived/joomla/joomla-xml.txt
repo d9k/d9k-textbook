@@ -1,0 +1,3 @@
+http://docs.joomla.org/Manifest_files
+http://docs.joomla.org/Standard_form_field_types
+http://docs.joomla.org/Standard_form_field_and_parameter_types

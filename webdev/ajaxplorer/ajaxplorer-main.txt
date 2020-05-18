@@ -1,0 +1,18 @@
+
+open_basedir restriction in effect (/tmp not accessible)
+--------------------------------------------------------
+Добавить
+
+session_save_path(AJXP_INSTALL_PATH."/tmp"); 
+define("AJXP_TMP_DIR", AJXP_INSTALL_PATH."/tmp");
+
+в конец файла conf/bootstrap_context.php
+
+http://serverfault.com/questions/397258/ajaxplorer-open-basedir-restriction-in-effect
+
+
+change_pass
+-----------
+Root/data/plugins/auth.serial/users.ser
+a:1:{s:5:"admin";s:32:"56667e63ce1b1b92ceae65048dd5df00d";}
+http://blog.droidzone.in/2012/09/17/reset-ajaxplorer-admin-password/

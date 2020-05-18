@@ -1,0 +1,2 @@
+почта: [denwer-disc]:\tmp\!sendmail
+sql: [denwer-disc]:\usr\local\mysql5\data

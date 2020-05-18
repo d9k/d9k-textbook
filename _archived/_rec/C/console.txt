@@ -1,0 +1,113 @@
+//==============================================
+//=       T E X T           C O L O R          =
+//==============================================
+
+#include <windows.h>
+
+int SetColor ( char * Color );
+
+int SetColor ( char * Color )
+{
+	HANDLE h;
+  	h = GetStdHandle ( STD_OUTPUT_HANDLE ); 
+  	return SetConsoleTextAttribute ( h, Color );
+}
+
+//or
+
+// change text color in Windoze console mode
+// colors are 0=black 1=blue 2=green and so on to 15=white  
+// colorattribute = foreground + background * 16
+// to get red text on yellow use 4+14*16
+// tested with Pelles C  (vegaseat)  
+
+#include <stdio.h>
+#include <windows.h>   // or other WinApi header
+
+
+int main()
+{
+  HANDLE  hConsole;
+	int k;
+	
+  hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+  for(k = 1; k < 25; k++)
+  {
+    SetConsoleTextAttribute(hConsole, k);
+    printf("%2d  %s\n", k, "I want to be nice today!");
+  }
+
+  getchar();  // cheap wait
+  return 0;
+}
+
+Text color output is not defined in ANSI C/C++. Instead the creators of the language left that to be operating system dependent. In Linux, to change text color you must issue what are known as terminal commands. To do this you just change your output statement to contain a terminal command.
+
+For example, see the below program.
+
+#include <stdio.h>
+
+int main()
+{
+printf("Hello, world!\n");
+}
+
+To print "Hello, world.\!" in red I would change the printf statement to read:
+printf("\033[22;31mHello, world!");
+
+\033[22;31m is the terminal command: it will not be output to the terminal, instead it issues a command that changes all proceeding output to be printed in red
+
+I just figured that out today, so don't look to me as an expert. Through some hacking I discovered that there are 16 available terminal colors. I don't believe there are any more, and the limitation of 16 would make sense. To try different colors, just change the numbers after the left bracket.
+
+\033[22;30m is black
+\033[22;31m is red
+\033[22;32m is green
+
+I would just define macros for each color in your 'c' program if I were you.
+I have never changed the output text color in a C/C++ program until today. I use them in shell scripts though to change the colors of my prompt! I just took what I've done in my ksh script and applied that to C/C++. If you want a definitive reference on the colors and other available terminal commands I would do a search for the Terminal HowTO on google or on your linux box if the docs were installed.
+
+Also, I have done very little with this, but there is a library for formatting window-like screens on the terminal. This library is called curses. Terrible name, I know, but you may find this to be of value as well. Can't help you there either as I've only fooled around with curses in a few short test programs. I've never used it for any real project.
+
+All the colors that I have found are:
+\033[22;30m - black
+\033[22;31m - red
+\033[22;32m - green
+\033[22;33m - brown
+\033[22;34m - blue
+\033[22;35m - magenta
+\033[22;36m - cyan
+\033[22;37m - gray
+\033[01;30m - dark gray
+\033[01;31m - light red
+\033[01;32m - light green
+\033[01;33m - yellow
+\033[01;34m - light blue
+\033[01;35m - light magenta
+\033[01;36m - light cyan
+\033[01;37m - white
+
+Remember, I hacked this out a while back, so check the Terminal HowTo for a better reference.
+
+Don't forget that you can use these to change the color of your shell's command prompt as well. That's real fun. You should see some of the interesting color combinations I've got for shell prompts!
+
+Happy hacking!
+
+
+//==============================================
+//=          FLUSH     USER     INPUT          =
+//==============================================
+
+#define FLUSH_STDIN(x) {if(x[strlen(x)-1]!='\n'){do fgets(Junk,16,stdin);while(Junk[strlen(Junk)-1]!='\n');}else x[strlen(x)-1]='\0';}
+
+char Junk[16]; // buffer for discarding excessive user input, 
+               // used by "FLUSH_STDIN" macro
+
+    char userInput[8]; // change array size to any arbitrary value
+
+    printf("input a string and hit <enter>.  A maximum of %d characters will be recorded.\n",sizeof(userInput)-1);
+
+    fgets(userInput,sizeof(userInput),stdin);
+    FLUSH_STDIN(userInput);    // strip newline, flush extra chars
+
+    printf("the first %d characters are \"%s\", any others have been discarded.\n",strlen(userInput),userInput);

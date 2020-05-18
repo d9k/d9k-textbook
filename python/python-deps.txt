@@ -1,0 +1,39 @@
+Dependancies in Python
+======================
+
+	
+show available package versions
+-------------------------------
+
+	pip install wheel yolk3k
+	yolk -V <package name>
+
+manually install package
+------------------------
+
+extract package, then
+
+	 python setup.py install
+
+pip is broken!
+--------------
+
+Error:
+
+	pkg_resources.DistributionNotFound: The 'pip==1.5.4' distribution was not found and is required by the application
+
+Cure:
+
+	$ python -m pip uninstall -y setuptools
+	$ python -m pip uninstall -y distribute
+	# the next command should FAIL now because the above should be uninstalled
+	$ python -c "import pkg_resources"
+	# reinstall stuff now
+	$ python -m pip install -U --force-reinstall setuptools
+	$ python -m pip install -U --force-reinstall pip
+	# now check things work and are the same
+	$ python -m pip --version
+	$ pip --version
+	$ pip list
+	
+https://github.com/pypa/pip/issues/1800

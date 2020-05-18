@@ -1,0 +1,8 @@
+Теперь когда сам научился, можно и других научить.   
+Сперва нам нужен Resource Hacker, качаем ТУТ .
+Заходим в папку Windows, и копируем себе на рабочее место explorer.exe.
+Открываем его Resource Хакером. Открываем папку "String Table", потом подпапку "37". Меняем там значение "Пуск" (или "Start") на свое.
+Жмём "Compile Script". Тоже самое делаем в подпапке 38.
+File - Save ass.. - Ваше название (Скажем "Hackedexplorer.exe"). Закидываем его в папку Windows.
+Открываем редактор реестра (Пуск - Выполнить - "regedit.exe").
+Открываем раздел HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon. Дважди клацаем по "Shell" , и меняем explorer.exe на свой файл (в нашем случае hackedexplorer.exe). Перезагружаем комп, и всё!

@@ -1,0 +1,4 @@
+Chocolatey
+----------
+http://chocolatey.org/
+в WinXp заменить https на http в ссылке

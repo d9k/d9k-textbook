@@ -1,0 +1,17 @@
+
+mc codepage fix
+---------------
+alias mc="mc -a -d"
+
+line drawing fix
+----------------
+Configuration->Window->Translation
+Handling of line drawing characters: Poor man's line drawing
+
+terminal home/end problem fix
+-----------------------------
+Configuration->Terminal->Keyboard
+	Home and End Keys: Standart
+	The function keys and keypad: Linux
+Connection->Data
+	Terminal details: linux

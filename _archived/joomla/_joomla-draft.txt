@@ -1,0 +1,12 @@
+
+==========================
+Переопределение (override)
+шаблонов и представлений
+==========================
+
+Переделка в отдельный layout
+----------------------------
+			
+	(с. 126 книги про модули)
+	http://docs.joomla.org/Layout_Overrides_in_Joomla_2.5#Alternative_Menu_Items
+	http://subscribe.ru/archive/comp.news.joomladev/201208/13184841.html

@@ -1,0 +1,16 @@
+auto-completion
+---------------
+
+http://www.jetbrains.com/phpstorm/webhelp/auto-completing-code.html 
+
+open file with name
+-------------------
+(standart | NetBeans keymap)
+
+Class: Ctrl+N | ctrl+O
+File: Ctrl+Shift+N | alt+shift+O
+Symbol: Ctrl+Shift+Alt+N | 
+
+select file in project navigation
+---------------------------------
+ctrl+shift+1 1

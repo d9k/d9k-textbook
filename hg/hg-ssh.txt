@@ -1,0 +1,98 @@
+Mercurial ssh
+=============
+
+ssh bitbucket
+-------------
+
+По [туториалу на atlassian.com](https://confluence.atlassian.com/pages/viewpage.action?pageId=270827678)
+
+Проверить, что ssh установлена
+
+	ssh -v
+
+Добавить bitbucket.org в список известных хостов
+
+	ssh bitbucket.org
+
+Ответить `yes`
+
+сгенерить ключ
+
+	ssh-keygen
+
+Проверить, что запущен `ssh-agent`:
+
+	ps -e  | grep [s]sh-agent
+
+;если нет, запустить:
+
+	ssh-agent /bin/bash
+
+Добавить ключ:
+
+	ssh-add ~/.ssh/id_rsa
+	ssh-add -l
+
+Дописать в ~/.hgrc:
+
+	[ui]
+	...
+	ssh = ssh -C
+
+	cat ~/.ssh/id_rsa.pub
+
+Можно перегенерировать публичный ключ:
+
+	ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
+
+Добавить ключ на [bitbucket.org](https://bitbucket.org/)
+
+
+Постоянно спрашивает пароль http-сервера
+----------------------------------------
+
+http://mercurial.selenic.com/wiki/KeyringExtension
+
+`ssh-add` перед запросом ключа.
+Если не помогает (`Could not open a connection to your authentication agent`), просто перезапустить ssh: 
+
+    eval `ssh-agent -s`
+
+см. http://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
+
+Ошибка проверки сертификата
+---------------------------
+
+`_ssl.c:510: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed`
+
+(в `.hg/hgrc:`)
+
+либо 
+
+	[web]
+	cacerts = C:\the\path\to\the\certificate\file.cer
+
+либо
+
+	[hostfingerprints]
+	server.example.org = 38:76:52:7c:87:26:9a:8f:4a:f8:d3:de:08:45:3b:ea:d6:4b:ee:cc
+
+(fingerprints получаются так: 
+
+	openssl s_client -connect <host>:<port> < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
+
+)
+
+http://stackoverflow.com/questions/5164804/get-certificate-fingerprint-of-https-server-from-command-line
+
+либо (отключить проверку)
+
+	[web]
+	cacerts =
+
+либо (одноразово) - запускать с ключом --insecure
+
+	hg pull --insecure
+
+http://stackoverflow.com/questions/6880556/pulling-from-mercurial-certificate-error
+http://stackoverflow.com/questions/5366869/how-to-entirely-disable-ssl-certificate-checks-in-mercurial-tortoisehg

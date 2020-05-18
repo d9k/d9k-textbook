@@ -1,0 +1,83 @@
+
+
+First Sun's Java JDK:
+
+Install fakeroot and java-package to be able to repackage the jdk as a .deb Make sure you have enabled the universe repositories.
+
+sudo apt-get install fakeroot java-package
+Once that is done we create the .deb jdk package.
+
+fakeroot make-jpkg jdk-1_5_xxxx-linux-i586.bin
+Some interaction is required, and there will be the odd permission error etc, but should be fine.
+
+Then we install this new package
+
+sudo dpkg -i sun-j2sdk1.5xxxx+updatexxx_i386.deb
+Make Sun's Java your java...
+
+sudo update-alternatives --config java
+Choose the Sun JDK
+
+
+Then Tomcat:
+
+
+Untar download and copy to /opt
+
+tar xzf apache-tomcat-5.5.15.tar.gz
+sudo mv apache-tomcat-5.5.15 /opt/
+cd /opt
+sudo chown -R root:root apache-tomcat-5.5.15
+sudo chmod -R +r apache-tomcat-5.5.15 
+sudo chmod +x `sudo find apache-tomcat-5.5.15 -type d`
+sudo ln -s apache-tomcat-5.5.15 tomcat
+Edit tomcat users
+
+sudoedit /opt/tomcat/conf/tomcat-users.xml
+And add an admin and your own?
+
+<user name="admin" password="admin" roles="manager,admin" />
+<user name="yourname" password="blah" roles="manager,admin" />
+Then Eclipse:
+
+Extract the eclipse download and move to opt.
+
+tar xzf wtp-all-in-one-sdk-1.0-linux-gtk.tar.gz
+sudo mv eclipse /opt/eclipse cd /opt sudo chown -R root:root eclipse
+sudo chmod -R +r eclipse
+sudo chmod +x `sudo find eclipse -type d`
+Then create an eclipse executable in your path
+
+sudo touch /usr/bin/eclipse
+sudo chmod 755 /usr/bin/eclipse
+sudoedit /usr/bin/eclipse
+With this contents
+
+#!/bin/sh
+#export MOZILLA_FIVE_HOME="/usr/lib/mozilla/"
+export ECLIPSE_HOME="/opt/eclipse"
+
+$ECLIPSE_HOME/eclipse $*
+Then create a gnome menu item
+
+sudoedit /usr/share/applications/eclipse.desktop
+With this contents
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Eclipse
+Comment=Eclipse IDE
+Exec=eclipse
+Icon=/opt/eclipse/icon.xpm
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Development;
+StartupNotify=true
+Configure
+
+You now have a working eclipse. But run this command first to initialise the set up.
+
+/opt/eclipse/eclipse -clean
+Then from here on you can run from the menu item applications/programming/eclipse
+
+http://flurdy.com/docs/eclipse/install.html

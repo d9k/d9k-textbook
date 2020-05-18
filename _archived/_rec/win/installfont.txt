@@ -1,0 +1,36 @@
+Installing Fonts with a script
+    I'm trying to install a font to about 100 computers on two networks at work using a logon script that runs via a GPO in AD.
+
+    My bat file looks like this:
+
+    If exist c:\windows\fonts\metr53w.ttf goto end
+
+    If not exist c:\windows\fonts\metr53w.ttf goto update
+
+
+    :update
+
+    Copy \\whkfsr01\logon$\SGAFont\metr53w.ttf c:\windows\fonts
+
+    regedit /s \\whkfsr01\logon$\SGAFont\importfonts.reg
+
+    start \\whkfsr01\logon$\SGAFont\message.txt
+
+    goto end
+
+
+    :end
+
+    I know that with the importfonts.reg I'm suppose to register the font in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts] but I'm not sure which data values to address with which binary codes.
+
+    Can someone point me in the right direction?? 
+
+
+Try This
+    I have used this settings for my tiff file and I was able to imported into remote boxes.
+
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts]
+    "Calibri (TrueType)"="CALIBRI.TTF"
+    "Calibri Bold Italic (TrueType)"="CALIBRIZ.TTF"
+    "Calibri Italic (TrueType)"="CALIBRII.TTF"
+    "Calibri Bold (TrueType)"="CALIBRIB.TTF" 

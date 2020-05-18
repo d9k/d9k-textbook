@@ -1,0 +1,76 @@
+=============================
+ Структуры данных Javascript
+=============================
+
+Объект - это ассоциативный массив
+---------------------------------
+	var obj = {"my.key": "myValue"};
+
+то же самое что
+
+	var obj = [];
+	obj["my.key"] = "myValue";
+
+Therefore never use the array object for this but just the regular object.
+
+Some functionality:
+	var obj = {}; //Initialized empty object
+
+delete a key-value pair:
+	delete obj[key];
+
+check if key exists:
+	key in obj;
+
+get key value:
+	obj[key];
+
+add a key value pair:
+	obj[key] = value;
+
+http://stackoverflow.com/questions/8067590/associative-array-versus-object-in-javascript
+
+var arr = {"one":{"a":5, "b":10}, "two":{"a":6, "b":11}}
+arr.one.a
+5
+arr.one.b
+10
+arr.two.b
+11
+arr.two.a
+6
+arr['one']
+({a:5, b:10})
+arr['one'].a
+5
+arr.one['a']
+5
+
+// write the index and the value of each element
+for(var key in arr) {
+  console.log('arr['+ key+ '] = '+ arr[key]);
+}
+
+Добавление членов
+-----------------
+
+cars = {
+  "old": {
+      "brand": "Volvo",
+      "maxSpeed": 160
+  },
+ "new" : {
+     "brand": "Honda",
+     "maxSpeed": 220
+  }
+};
+
+var volvo = cars["old"];
+volvo.brand;
+volvo.color = "olive";
+var honda= cars["new"];
+honda.color = "red";
+
+cars["old"].color;
+cars["new"].color;
+

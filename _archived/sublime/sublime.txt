@@ -1,0 +1,43 @@
+Sublime Text
+============
+
+Ручная установка пакетов
+------------------------
+
+linux: ~/.config/sublime-text-2/Packages
+windows: C:\Users\[your username]\AppData\Roaming\Sublime Text 2\Packages
+
+plugins
+-------
+
+* open URL
+
+	https://sublime.wbond.net/packages/Open%20URL
+
+open recent items count
+-----------------------
+[Sublime Packages]\Default\Main.sublime-menu
+
+add similar lines at appropriate place:
+	{ "command": "open_recent_file", "args": {"index": 11 } },
+
+hotkeys
+-------
+ctrl+p - navigate to file
+
+темы оформления
+---------------
+
+Скопировать в
+[Sublime Packages]\Color Scheme - Default
+
+[источник + тема Notepad++](http://www.dconnell.co.uk/blog/index.php/2012/08/02/notepad-color-scheme-for-sublime-text-2/)
+
+demo key
+--------
+http://hostinger.su/threads/181/
+
+Тёмная панель слева
+-------------------
+
+https://gist.github.com/umpirsky/5842174

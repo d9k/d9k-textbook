@@ -1,0 +1,12 @@
+Nuget в Monodevelop
+===================
+
+[туториал на github monodevelop-nuget-addin (визуальный)](https://github.com/mrward/monodevelop-nuget-addin)
+
+[туториал на genericmaker.com](http://www.genericmaker.com/2012/12/journal-starting-out-with-nancy-on-mono.html)
+
+	#Скачать консольную утилиту nuget
+	wget http://nuget.org/nuget.exe
+	mozroots --import --sync
+	#(Копировать консольную утилиту nuget в /opt/mono(/bin?)
+	mono /opt/mono/nuget.exe

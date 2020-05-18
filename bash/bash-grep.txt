@@ -1,0 +1,61 @@
+Регулярные выражения в bash
+===========================
+
+см. также `basn-find.md`
+
+поиск группы
+------------
+
+sed
+~~~
+
+	CREATE TABLE `offercalc_fields` (
+	  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+	  `name` varchar(255) NOT NULL,
+	  `price` double NOT NULL,
+	  `offer_slug` varchar(255) NOT NULL,
+	  PRIMARY KEY (`id`)
+	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+cat sed -nr 's/CREATE TABLE `(.+)`.*/\1/p'
+
+`(.+)` - матчит любые символы в кавычках
+.* - матчит конец строки
+
+вывод: `offercalc_fields`
+
+http://www.mikeplate.com/2012/05/09/extract-regular-expression-group-match-using-grep-or-sed/
+
+bash
+~~~~
+
+x='foo bar bletch'
+if [[ $x =~ foo[[:space:]](bar)[[:space:]]bl(.*) ]]
+then
+    echo The regex matches!
+    echo $BASH_REMATCH
+    echo ${BASH_REMATCH[1]}
+    echo ${BASH_REMATCH[2]}
+fi
+
+поиск текста в файлах в директории рекурсивно
+---------------------------------------------
+
+	grep -r "texthere" .
+
+http://stackoverflow.com/questions/1987926/how-do-i-grep-recursively
+
+рекурсивная замена в файлах
+---------------------------
+
+find . -type f -exec sed -i 's/foo/bar/g' {} +
+
+## grep in error output (stderr)
+
+example:
+
+`nginx -V &> >(grep auth)`
+
+## исключить расширения из поиска
+
+grep -nr --exclude=\*.{js,css} keyword

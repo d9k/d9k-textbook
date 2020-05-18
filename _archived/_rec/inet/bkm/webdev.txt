@@ -1,0 +1,2 @@
+в разных браузерах:
+http://browsershots.org

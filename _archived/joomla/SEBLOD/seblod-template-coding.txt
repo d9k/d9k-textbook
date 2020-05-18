@@ -1,0 +1,94 @@
+Recover all fields mode renderField:
+
+<?php echo $content; ?>
+
+
+Get the name of the variation:
+
+<?php echo $variation; ?>
+
+
+Retrieve Vertical or horizontal:
+
+<?php echo $orientation; ?>
+
+
+Retrieve the ID of content type:
+
+<?php echo $id; ?>
+
+
+Retrieve a label:
+
+<?php echo $cck->getLabel ('myField');>
+
+
+Retrieve a value:
+
+<?php echo $cck->getValue('myField');>
+
+
+Retrieve a label and a value:
+
+<?php echo $cck->renderField('myField');>
+
+
+Retrieve a value with typo plug-in:
+
+<?php echo $cck->getTypo('myField');>
+
+
+Retrieve a value with plug-in html:
+
+<?php echo $cck->getHtml('myField');>
+
+
+Retrieve a value with text:
+
+<?php echo $cck->getText('myField');>
+new: $cck->get('myField')->text;
+
+
+Get the first field (label + value) of the position TopA:
+
+<?php $fields = $cck->getField( 'TopA', '', false );
+$foo = renderField;
+echo $cck->$foo( $fields[0] ); ?>
+
+
+Get the third value with typo plug-in of the position HeaderC:
+
+<?php $fields = $cck->getField( 'HeaderC', '', false );
+$foo = getTypo;
+echo $cck->$foo( $fields[2] ); ?>
+
+
+Retrieve fields of the position in a template:
+
+<?php echo $cck->getField( $position, '', false ); ?>
+
+
+Retrieve fields of the position FooterC in a template:
+
+<?php echo $cck->getField( 'FooterC', '', false); ?>
+
+
+Applies the height specified in seb_one:
+
+<?php $cck->setHeight( $height, $id, 'myclass'); ?>
+<div class="myclass"> </ div>
+
+
+Applies the maximum height of TopA/TopB on TopA, TopB in template seb_one or other:
+
+<div class="cck-deepest"></ div>
+
+
+
+Said the head of the css page with the name of the change and the ID of content type:
+
+<?php $css = '#'.$id.'.'.$variation.' img{float:'.$img_position.';margin-'.$img_margin_type.':'.$img_margin.'px;}'."\n";
+$cck->addStyleDeclaration( $css, '/* Variation: '.$variation.' on '.$id.' */' ."\n" ); ?>
+ 
+ 
+ source: <http://www.seblod.com/support/forum/Position-Variations/31197-How-to-get-the-3rd-field-in-a-position--use-fields0.html#31197>`_

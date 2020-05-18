@@ -1,0 +1,46 @@
+C:\WINDOWS\system32\moricons.dll
+C:\WINDOWS\system32\pifmgr.dll
+C:\WINDOWS\system32\shell32.dll
+
+
+
+
+C:\WINDOWS\system32\acctres.dll
+C:\WINDOWS\system32\appmgr.dll
+C:\WINDOWS\system32\avtapi.dll
+C:\WINDOWS\system32\browseui.dll
+C:\WINDOWS\system32\cdfview.dll
+C:\WINDOWS\system32\capesnpn.dll
+C:\WINDOWS\system32\certmgr.dll
+C:\WINDOWS\system32\clipbrd.exe
+C:\WINDOWS\system32\cmprops.dll
+C:\WINDOWS\system32\cleanmgr.exe
+C:\WINDOWS\system32\comdlg32.dll
+C:\WINDOWS\system32\dfrgres.dll
+C:\WINDOWS\system32\comctl32.dll
+C:\WINDOWS\system32\comres.dll
+C:\WINDOWS\system32\cryptui.dll
+C:\WINDOWS\system32\cscui.dll
+C:\WINDOWS\system32\docprop.dll
+C:\WINDOWS\system32\dmdskres.dll
+C:\WINDOWS\system32\dskquoui.dll
+C:\WINDOWS\system32\els.dll
+C:\WINDOWS\system32\devmgr.dll
+C:\WINDOWS\system32\compstui.dll
+C:\WINDOWS\system32\dsquery.dll
+C:\WINDOWS\system32\hnetcfg.dll
+C:\WINDOWS\system32\fontext.dll
+C:\WINDOWS\SYSTEM32\mydocs.dll Значок папки Мои документы
+C:\WINDOWS\SYSTEM32\syncui.dll Значки папки Портфель
+C:\WINDOWS\system32\sndrec32.exe звук
+C:\WINDOWS\system32\sndvol32.exe звук
+C:\WINDOWS\system32\syssetup.dll разные
+C:\WINDOWS\system32\pifmgr.dll предлогаемые Мастером ярлыков
+C:\WINDOWS\system32\moricons.dll Dos - приложения
+C:\WINDOWS\system32\user32.dll Значки из окон сообщений
+C:\WINDOWS\system32\progman.exe Значки Windows 3.1
+C:\WINDOWS\system32\dmcpl.exe Значки Nvidia
+C:\WINDOWS\system32\setup.exe Setup.exe
+C:\WINDOWS\system32\msiexec.exe Setup.exe
+C:\WINDOWS\system32\lxaxcfg.exe Этикетки
+C:\WINDOWS\system32\lights.exe Порты

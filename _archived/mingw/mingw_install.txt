@@ -1,0 +1,26 @@
+Установка
+---------
+Чтобы было, что запускать, необходимо так же поставить:
+
+binutils
+mingw-runtime (dev and dll)
+w32api
+Required runtime libraries for GCC:
+	mpc (dev and dll)
+	mpfr (dev and dll)
+	gmp (dev and dll)
+	pthreads (dev and dll)
+	iconv (dev and dll)
+	intl
+	gomp
+	ssp
+	quadmath
+gcc-core (bin and dll)
+
+conemu integration
+------------------
+mingw не приспособлен для нормальной повседневной работы с консолью. он для компиляции
+для работы с терминалом рекомендуется использовать cygwin
+...msys\1.0\bin\sh.exe --login -i
+...msys\1.0\bin\bash.exe --login -i -cur_console:n
+http://superuser.com/questions/454380/git-bash-here-in-conemu

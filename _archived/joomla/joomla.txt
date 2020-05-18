@@ -1,0 +1,10 @@
+====================
+  Joomla textbook
+====================
+author: d9k
+mail: d9k@ya.ru
+site: vk.com/d9kd9k
+
+Использованная разметка
+-----------------------
+http://docutils.sourceforge.net/docs/user/rst/quickref.html

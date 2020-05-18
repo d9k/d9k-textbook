@@ -1,0 +1,15 @@
+ template<typename T> class Singleton
+ {
+ 
+   public:
+     static T& Instance()
+     {
+         static T theSingleInstance; // у класса T есть конструктор по умолчанию
+         return theSingleInstance;
+     }
+ };
+ 
+ class OnlyOne : public Singleton<OnlyOne>
+ {
+     //.. интерфейс класса
+ };

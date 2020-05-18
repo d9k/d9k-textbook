@@ -1,0 +1,16 @@
+Компилирование native-приложения
+--------------------------------
+cl /EHsc basic.cpp
+
+/EHsc - exception handling
+
+/Ox - максимальная оптимизация 
+
+Компилирование .NET-приложения
+------------------------------
+cl /clr basicclr.cpp
+
+Generate makefile
+-----------------
+vcbuild /platform:win32 example.vcproj release
+http://stackoverflow.com/questions/2839221/how-do-i-create-a-makefile-from-a-visual-studio-solution-file

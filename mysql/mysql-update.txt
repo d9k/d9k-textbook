@@ -1,0 +1,8 @@
+
+
+Обновление данных
+========================================
+UPDATE some_table
+SET some_column=some_expression [, some_column2=some_expression2 ...] 
+WHERE conditions
+[LIMIT rows]

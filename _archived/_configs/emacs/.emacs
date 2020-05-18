@@ -1,0 +1,7 @@
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+(require 'linum)
+(setq linum-format "%4d \u2502 ")
+(global-linum-mode 1)
+;;(require 'php-mode)

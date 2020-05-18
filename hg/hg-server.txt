@@ -1,0 +1,60 @@
+
+Где hgweb.cgi?
+--------------
+Ubuntu/Debian: mercurial src or /usr/share/doc/mercurial-common/examples/hgweb.fcgi
+
+http://superuser.com/questions/213508/installed-mercurial-usin-ppa-repositroy-where-can-i-get-hgweb-cgi
+
+Простой сервер
+--------------
+sudo -u www-data hg serve --webdir-conf /var/hg/hgweb.config
+
+http://mercurial.selenic.com/wiki/HgWebDirStepByStep см. 9.4
+
+allow push
+~~~~~~~~~~
+/var/hg/repos/<repository-name>/.hg/hgrc :
+
+[web]
+allow_push = frodo, sam
+deny_ssl = false
+
+htpasswd
+--------
+в пакете apache2-utils
+
+Туториал
+--------
+примерно, запускать так
+
+sudo spawn-fcgi -a 127.0.0.1 -p 9005 -u www-data -g www-data -f /var/hg/server/hgweb.cgi -P /var/run/hgsrv.pid
+
+если что пойдёт не так, добавлять флаг -n для отладки python-скрипта
+
+http://geeksharp.com/2010/01/20/mercurial-web-with-fastcgi-nginx/
+
+ssl-туториал
+--------------
+http://burtsev.net/en/2011/08/03/13/
+
+генерация ssl:
+openssl req -nodes -newkey rsa:2048 -keyout domain.key -out domain.csr
+
+sudo openssl genrsa -des3 -out server.key 1024
+sudo openssl req -new -key server.key -out server.csr
+sudo cp server.key server.key.org
+sudo openssl rsa -in server.key.org -out server.key
+sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+http://aboutubuntu.ru/apache-ssl-https-ubuntu.html
+https://www.digitalocean.com/community/articles/how-to-create-a-ssl-certificate-on-nginx-for-ubuntu-12-04/
+
+pem???? - public и private key
+http://stackoverflow.com/questions/5244129/openssl-use-rsa-private-key-to-generate-public-key
+
+tortoise hg
+http://stackoverflow.com/questions/6293167/disabling-https-host-authentication-in-tortoisehg-for-internal-self-signed-certi
+
+413 head full on commit
+-----------------------
+nginx config in sites enabled:
+`client_max_body_size 10M;` on `server {` section

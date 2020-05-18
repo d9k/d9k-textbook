@@ -1,0 +1,15 @@
+==============================
+  Настройка отладки в XAMP
+==============================
+
+xdebug
+------
+firefox
+~~~~~~~
+	https://addons.mozilla.org/ru/firefox/addon/easy-xdebug/
+netbeans
+~~~~~~~~
+	http://netbeans.org/kb/docs/php/debugging_ru.html
+apache
+~~~~~~
+	http://xdebug.org/wizard.php

@@ -1,0 +1,5 @@
+Q: I prefer ctrl-tab / shift-ctrl-tab to page back and forward through tabs immediately
+
+A: If you don't like the graphical preview pane, find it confusing to use, or have any other reason to use the Firefox standard Ctrl-Tab swapping between tabs, you can switch Pale Moon to use standard Ctrl-Tab / Shift-Ctrl-Tab paging:
+
+go to about:config and set browser.ctrlTab.previews to false

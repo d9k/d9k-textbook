@@ -1,0 +1,8 @@
+Отладка JS
+==========
+
+IE
+--
+
+http://www.debugbar.com/
+https://getfirebug.com/firebuglite

@@ -1,0 +1,1 @@
+см. linux-search.md

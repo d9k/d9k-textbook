@@ -1,0 +1,13 @@
+===============================
+             SEBLOD:
+    создание списков и поиска
+===============================
+
+Создание list&search
+--------------------
+http://comeon.oxnull.net/blog/about-site-build/87-odnotipnyj-poisk-v-seblod
+http://wedal.ru/forum/seblod/2584-list-search-type-vyvod-kontenta-i-nastrojka-poiska.html
+
+Ссылка на статью
+----------------
+http://www.seblod.com/support/forum/Search-Types--Lists/28442-How-to-add-link-in-the-list.html

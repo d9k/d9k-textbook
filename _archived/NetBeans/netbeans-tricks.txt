@@ -1,0 +1,4 @@
+Implicit type declaration for autocompletion
+--------------------------------------------
+/* @var $testvar JGrid */
+$testvar->;

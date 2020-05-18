@@ -1,0 +1,32 @@
+Фичи php
+========
+
+Позднее статическое связывание
+------------------------------
+static::who(); //вместо self::
+
+Чтобы переопределение статических методов у потомка работало (?)
+http://php.net/manual/ru/language.oop5.late-static-bindings.php
+
+heredoc
+-------
+
+heredoc (ведёт себя как строка в двойных кавычках):
+
+	<?php
+	class foo {
+	    public $bar = <<<EOT
+	bar
+	    EOT;
+	}
+	?>
+
+nowdoc (строка в одинарных кавычках):
+
+	$str = <<<'EOD'
+	Example of string
+	spanning multiple lines
+	using nowdoc syntax.
+	EOD;
+
+[статья на php.net](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)

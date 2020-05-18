@@ -1,0 +1,6 @@
+http://stackoverflow.com/questions/2563044/changing-timezone-in-msys
+
+I ran into the same timezone problem. My best shot was to use : date --date="4 hours ago" , where -4h is my timezone... It worked for me to time-stamp my stuff but I'm not sure it's gonna be of any help for "make"...
+
+Geert Janssens -
+I had the same issue. My timezone is CET (GMT+1). I have fixed this by setting environment variable TZ, like so: export TZ=CET-1CEST Before setting the variable I had: (dos prompt) c:\>time Huidige tijd: 17:08:32,40 

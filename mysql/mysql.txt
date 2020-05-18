@@ -1,0 +1,78 @@
+Запустить команду и выйти
+-------------------------
+
+mysql -uroot -p -e"SELECT * FROM test_db.test_table"
+
+Пароль рут-пользователя
+-----------------------
+
+mysql -uroot
+
+	use mysql;
+	update mysql.user set password=PASSWORD("NEWPASSWORD") where User='root' limit 1;
+	flush privileges;
+	quit
+
+Если забыл пароль, кильнуть все процессы mysql, mysqld, mysqld_safe
+
+	затем `sudo /usr/sbin/mysqld --skip-grant-tables --skip-networking`, в другой консоли `mysql` и команды выше
+
+Убедитесь, что поле `plugin` нужного пользователя таблицы `user` пусто (может содержать `unix_socket`). see https://dev.mysql.com/doc/refman/5.6/en/authentication-plugins.html
+
+/home/localhost/www/Tools/phpmyadmin/config.inc.php
+
+	$cfg['Servers'][$i]['auth_type'] = 'cookie';
+	$cfg['Servers'][$i]['user'] = 'root';      // MySQL user
+	$cfg['Servers'][$i]['password'] = '';      // MySQL password (only needed
+	$cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+
+Настройки лога
+--------------
+
+/etc/[mysql/]my.cnf
+
+[mysqld]
+log_bin=/var/log/mysql/mysql-bin.log
+log=/var/log/mysql/mysql.log
+log-error=/var/log/mysql/error.log
+#seconds:
+log-slow-queries=3
+#level:
+log-warnings=2
+
+
+The syntax '--log-slow-queries' is deprecated and will be removed in a future release. Please use '--slow-query-log'/'--slow-query-log-file'
+The syntax '--log' is deprecated and will be removed in a future release. Please use '--general-log'/'--general-log-file' instead.
+
+http://serverfault.com/questions/71071/how-to-enable-mysql-logging
+
+strict mode
+-----------
+
+[mysqld]
+sql_mode = 'TRADITIONAL'
+
+[mysqld_safe]
+sql_mode = 'TRADITIONAL'
+
+
+http://habrahabr.ru/post/166411/
+
+## Выполнение sql-скрипта после рестарта сервера
+
+(понадобилось, когда sql_mode из настроек не работал)
+
+`my.cnf`:
+
+```
+[mysqld]
+# . . . . .
+init_file = "/etc/mysql/init_file.sql"
+```
+
+`init_file.sql`
+
+```
+SET global sql_mode = 'TRADITIONAL';
+```

@@ -1,0 +1,14 @@
+Установка ёбаной джумлы
+=======================
+	sudo chmod -R g+w language 
+	sudo chmod -R g+w administrator/language  
+
+libraries/joomla/filesystem/folder.php
+
+	function create($path = '', $mode = 4770)
+
+http://forum.joomla.org/viewtopic.php?f=706&t=842486
+
+посмотреть права доступа к папкам
+[SITE]/administrator/index.php?option=com_admin&view=sysinfo
+

@@ -1,0 +1,25 @@
+There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.
+
+    — C.A.R. Hoare, The 1980 ACM Turing Award Lecture
+
+Mathematicians stand on each others' shoulders and computer scientists stand on each others' toes.
+
+    — Richard Hamming
+
+One of my most productive days was throwing away 1000 lines of code.
+
+    — Ken Thompson
+
+When in doubt, use brute force.
+
+    — Ken Thompson
+
+‘Multilevel standards are like onions. They’re smelly and make you cry a lot.’
+
+    -- Ron Natalie
+
+=======
+Sources
+=======
+
+http://quotes.cat-v.org/programming/

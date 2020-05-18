@@ -1,0 +1,11 @@
+==================
+Консоль javascript
+==================
+
+console.{log,info,warn,error}();
+console.time(label); console.timeEnd(label);
+console.assert(a === b, "A doesn't equal B");
+console.dir(object); console.dirxml(xmlNode);
+
+http://habrahabr.ru/post/114483/
+http://vremenno.net/js/console-in-firebug/
