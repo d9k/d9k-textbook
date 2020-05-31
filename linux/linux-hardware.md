@@ -157,3 +157,16 @@ $1 `post|pre`, $2 `suspend`
 ### Лог загрузки
 
 `dmesg`
+
+### Тише вентиляторы
+
+https://askubuntu.com/a/46135
+
+### Пути к вентиляторам меняются после перезагрузки
+
+https://bbs.archlinux.org/viewtopic.php?id=160537
+https://wiki.archlinux.org/index.php/Fan_speed_control#Device_Paths_have_Changed_in_/etc/fancontrol
+
+### Нагрузить процессор
+
+`yes > /dev/null`
