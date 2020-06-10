@@ -34,14 +34,14 @@ https://github.com/webpack/webpack-dev-server/issues/1370#issuecomment-423867493
 
 (tested with iOS 13)
 
-1) сгенерировать сертификаты
+1) Сгенерировать сертификаты
 
 ```
 mkcert --install
 mkcert 192.168.86.42 localhost 127.0.0.1 0.0.0.0
 ```
 
-2) любым способом отправить `~/.local/share/mkcert/rootCA.pem` и `192.168.86.42+3.pem` на телефон, установить (открыть, установить, зайти в настройки, уведомления сверху, подтвердить установку)
+2) Любым способом отправить `~/.local/share/mkcert/rootCA.pem` и `192.168.86.42+3.pem` на телефон, установить (открыть, установить, зайти в настройки, уведомления сверху, подтвердить установку)
 
 3) `General -> About -> Certificate Trust Settings` -> `Enable full trust for root certificate`
 
