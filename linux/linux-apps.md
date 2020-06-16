@@ -43,3 +43,7 @@ https://pkgs.org
 ## Просмотр файлов
 
 * PDF - Zathura
+
+## Базы данных
+
+DBeaver
