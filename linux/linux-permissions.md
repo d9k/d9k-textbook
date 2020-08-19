@@ -137,3 +137,6 @@ Example with `meld`:
 
 https://askubuntu.com/a/641616/156571
 
+## Login as www-data
+
+sudo su -s /bin/bash www-data
