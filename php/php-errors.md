@@ -24,3 +24,9 @@ error_reporting(E_ALL);
 ```
 
 если не сработает, дополнительно заверни в try catch
+
+## Ошибка сервера 500, не логирует
+
+Если лень настраивать конфиги:
+
+`php -d display_errors -f file_with_bugs.php`

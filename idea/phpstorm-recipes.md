@@ -14,4 +14,8 @@ https://github.com/zheludkovm/LinuxJavaFixes
 ## License
 
 + `~/.java/.userPrefs`
-+ `$HOME/.config/JetBrains/`
++ `~/.config/JetBrains/`
+
+## Additional files
+
++ `~/.local/share/JetBrains`

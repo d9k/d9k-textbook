@@ -25,3 +25,7 @@ https://confluence.atlassian.com/display/BITBUCKET/Bitbucket+101
 ## Изменение символа комментария для git commit
 
 `git config core.commentchar ";"`
+
+## config push.default
+
+https://stackoverflow.com/a/23918418/1760643

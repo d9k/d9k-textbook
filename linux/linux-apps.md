@@ -16,6 +16,11 @@ https://pkgs.org
 	http://www.debian-administration.org/articles/228
 	http://www.linuxspace.org/archives/4212
 
+
+## Разработка
+
+* postman - тестирование api-запросов
+
 ## Файловая система
 
 * поиск файлов - catfish
@@ -47,3 +52,7 @@ https://pkgs.org
 ## Базы данных
 
 DBeaver
+
+## Мультимедия
+
+* Музыкальный плеер - exaile - https://github.com/jeteokeeffe/exaile-flathub
