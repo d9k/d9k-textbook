@@ -1,8 +1,7 @@
 Настройки phpstorm
 ==================
 
-linux fonts drawing fix
------------------------
+## linux fonts drawing fix
 
 sudo apt-get install fonts-inconsolata
 sudo apt-get install ttf-inconsolata
@@ -17,8 +16,7 @@ Following the PhpStorm issue, here is what I added to phpstorm64.vmoptions (that
 
 http://stackoverflow.com/questions/6151426/phpstorm-editor-fonts-on-linux-systems
 
-Отключение автосохранения
--------------------------
+## Отключение автосохранения
 
 	Appearance & Behavior -> System settings ->
 		[v] confirm application exit
@@ -35,3 +33,9 @@ http://stackoverflow.com/questions/6151426/phpstorm-editor-fonts-on-linux-system
 `idea.cycle.buffer.size=1024`
 
 https://intellij-support.jetbrains.com/hc/en-us/community/posts/206164609-Configure-Number-of-Lines-In-Debug-Output
+
+
+
+## XDebug: "Debugger extension is not detected" error
+
+`Interpreter: <Default project interpreter>` fixed bug for me
