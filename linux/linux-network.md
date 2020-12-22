@@ -145,3 +145,10 @@ $ sudo dhclient eth0
 ## Get router ips
 
 `netstat -nr | awk '$1 == "0.0.0.0"{print$2}'`
+
+## Потребление трафика приложений
+
+```
+sudo apt-get install nethogs
+sudo nethogs wlan0
+```

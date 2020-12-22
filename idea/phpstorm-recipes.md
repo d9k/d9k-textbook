@@ -19,3 +19,7 @@ https://github.com/zheludkovm/LinuxJavaFixes
 ## Additional files
 
 + `~/.local/share/JetBrains`
+
+## Stylelint fix
+
+https://stackoverflow.com/a/54322976/1760643
