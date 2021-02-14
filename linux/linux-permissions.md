@@ -29,6 +29,11 @@
 
     sudo usermod -s /bin/bash USERNAME
 
+## Узнать, каким группам принаджежит пользователь
+
+`groups USERNAME`
+
+
 ## Добавить пользователя в группу
 
     #existing user
@@ -46,10 +51,6 @@ http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
 	su - $USER
 
 http://superuser.com/questions/272061/reload-a-linux-users-group-assignments-without-logging-out
-
-## Узнать, каким группам принаджежит пользователь
-
-`groups USERNAME`
 
 ## Изменить владельца папки
 

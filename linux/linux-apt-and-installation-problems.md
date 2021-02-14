@@ -175,3 +175,7 @@ status:
 # Поиск версии библиотеки
 
 `sudo ldconfig -v | grep libmtp`
+
+# Истекшие ключи репозиториев
+
+`sudo apt-key list | grep -B 1 -A 1 expired`
