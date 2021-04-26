@@ -8,7 +8,10 @@ https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git
 
 `hg log | grep user: | sort | uniq | sed 's/user: *//' > ../authors`
 
-`hg-fast-export.sh -r hg_repo -A ./authors`
+```
+git init
+hg-fast-export.sh -r hg_repo -A ./authors`
+```
 
 `git commit --amend --author="me <me@example.com>" --no-edit`
 
