@@ -72,3 +72,9 @@ find . | grep -v ".gitignore" | sudo xargs rm -r
 #   -A, --acls                  preserve ACLs (implies -p)
 #   -X, --xattrs                preserve extended attributes
 ```
+
+## Скопировать с созданием директорий относительного пути
+
+`cp --parents relative/path/to/file /target`
+
+в `target` создадутся папки `relative/path/to`
