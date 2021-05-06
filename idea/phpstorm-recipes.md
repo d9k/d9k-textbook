@@ -18,6 +18,8 @@ https://github.com/zheludkovm/LinuxJavaFixes
 
 ## Additional files
 
+`~/.config/JetBrains`
++ `~/.cache/JetBrains`
 + `~/.local/share/JetBrains`
 
 ## Stylelint fix
