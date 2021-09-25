@@ -15,6 +15,17 @@ https://github.com/microsoft/dts-gen
 
 https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html
 
+## Классический интерфейс (расширяемый)
+
+```
+interface Options {
+  darkMode?: boolean;
+  [otherOptions: string]: unknown;
+}
+```
+
+https://stackoverflow.com/a/64040868
+
 ## Андрей СТаровойт - Эволюция TypeScript
 
 Структурная типизация: тип определяется структурой, определение не играет роли. Если возможные свойства двух классов совпадают, то они assignable. Во Flow номинативная (номинальная?) типизация - проверяется имя типа.

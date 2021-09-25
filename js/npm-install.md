@@ -1,17 +1,14 @@
-установка npm - nodejs packet manager
-=====================================
+# установка npm - nodejs packet manager
 
-Автодополнение не работает
---------------------------
+## Автодополнение не работает
+
 http://askubuntu.com/questions/392200/npm-completion-broken
 
-Обновить
---------
+## Обновить
 
 	sudo npm install -g npm
 
-Обновить node.js
-----------------
+## Обновить node.js
 
 	sudo npm install -g n
 

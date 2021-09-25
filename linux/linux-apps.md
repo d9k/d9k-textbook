@@ -40,6 +40,7 @@ https://pkgs.org
 ## Интернет
 
 * Бесплатный VPN - betternet
+* Download manager - uget
 
 ## Администрирование
 

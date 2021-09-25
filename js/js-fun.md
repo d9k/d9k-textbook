@@ -23,3 +23,8 @@ console.log( _concat2(1,3)); // '123'
 _concat3 = _.bind(concat, thisAsNull, skipArg, skipArg, 3);
 console.log(_concat3(1,2)) // '123'
 ```
+
+## map и filter одновременно
+
+`reduce`
+`flatMap` - может требовать `polyfill`

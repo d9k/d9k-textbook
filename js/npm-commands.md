@@ -33,3 +33,12 @@ console.log(satisfy('span[innerHTML="item 2"]')[0].outerHTML)
 ```
 
 открыть DevTools [F12]
+
+## npm install from github
+
+`npm install --save visionmedia/express#branch`
+`npm install --save https://github.com/Amitesh/gulp-rev-all/tarball/master`
+`git+https://github.com/visionmedia/express.git`
+`git+ssh://git@github.com/visionmedia/express.git`
+
+https://stackoverflow.com/questions/17509669/how-to-install-an-npm-package-from-github-directly
