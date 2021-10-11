@@ -34,3 +34,21 @@ zsh: corrupt history file
 Команды, начинающиеся с пробела
 
 `setopt histignorespace`
+
+## Copy command
+
+```
+C() {} # you'll want this so that you don't get a command unrecognized error
+
+preexec() {
+  tmp="";
+  if [ "${1:0:1}" = "C" ] && [ "${1:1:1}" = " " ] && [ "${1:2:1}" != " " ]; then
+    for (( i=2; i<${#1}; i++ )); do
+      tmp="${tmp}${1:$i:1}";
+    done
+    echo "$tmp" | xclip -selection clipboard;
+  fi
+}
+```
+
+https://stackoverflow.com/a/42265077/1760643

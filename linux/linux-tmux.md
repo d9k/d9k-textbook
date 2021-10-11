@@ -3,7 +3,7 @@
 Ctrl+b % — разделить текущую панель на две, по вертикали
 Ctrl+b " — разделить текущую панель на две, по горизонтали (это кавычка, которая около Enter, а не Shift+2);
 Ctrl+b & — закрыть окошко (а можно просто набрать exit в терминале)
-Ctrl+b x — закрыть панель 
+Ctrl+b x — закрыть панель
 Ctrl+b →←↑↓ — переходить между панелями
 Ctrl+b Ctrl+→←↑↓ — изменять относительный размер панелей
 Ctrl+d exit
@@ -71,3 +71,10 @@ unix.stackexchange.com/questions/24274/attach-to-different-windows-in-session
 
 bind-key C-a next-window
 bind-key C-q previous-window
+
+## Перемещение панели в другое окно
+
+`<prefix> !`
+`:join-pane -t <win_num>`
+
+https://bezhermoso.github.io/til/move-a-tmux-pane-from-one-window-to-another/

@@ -63,7 +63,7 @@ http://askubuntu.com/a/2568/156571
 
 ### Low level battery warning
 
-`sudo apt-get install libnotify-bin acpi
+`sudo apt-get install libnotify-bin acpi`
 
 
 ```
@@ -76,11 +76,11 @@ fi
 
 http://unix.stackexchange.com/a/60936/48167
 
-### Здоровье жёсткого диска
+## Здоровье жёсткого диска
 
 http://superuser.com/questions/171195/how-to-check-the-health-of-a-hard-drive
 
-### Косольный интерфейс
+### Коснольный интерфейс
 
     sudo apt-get install smartmontools
     sudo smartctl -a /dev/sda | less
@@ -92,12 +92,12 @@ http://superuser.com/questions/171195/how-to-check-the-health-of-a-hard-drive
     sudo apt-get install gnome-disk-utility
     gnome-disks
 
-###fix block size error
+### fix block size error
 
 sudo blockdev --getbsz /dev/sdd
 sudo dd if=/dev/zero of=/dev/sdd bs=2048 count=32
 
-###Сканер
+### Сканер
 
 sudo apt-get install cups
 Simple Scan
@@ -112,33 +112,34 @@ Simple Scan
 
 понадобилось перезагрузиться
 
-### Ограничение скорости соединения для приложения (net throttle)
-
-    sudo apt-get install
-    trickle -s -d 1000 my-app
-
 ### Проверка состояния SSD-диска (статус S.M.A.R.T.)
 
 https://askubuntu.com/questions/528072/how-can-i-check-the-smart-status-of-a-ssd-or-hdd-on-current-versions-of-ubuntu-1
-
-### Информация о вставленных модулях оперативной памяти
-
-`sudo lshw -C memory`
-
-https://askubuntu.com/questions/391173/how-to-find-the-frequency-and-type-of-my-current-ram
-
-### SSD Health
 
 ```
 sudo apt install gsmartcontrol
 pkexec gsmartcontrol
 ```
 
-### Sysinfo dump
+
+## Ограничение скорости соединения для приложения (net throttle)
+
+    sudo apt-get install
+    trickle -s -d 1000 my-app
+
+
+## Информация о вставленных модулях оперативной памяти
+
+`sudo lshw -C memory`
+
+https://askubuntu.com/questions/391173/how-to-find-the-frequency-and-type-of-my-current-ram
+
+
+## Sysinfo dump
 
 `inxi -Fxz`
 
-### Запуск скрипта при загрузке/пробуждении
+## Запуск скрипта при загрузке/пробуждении
 
 1) В папке `/etc/pm/`
 
@@ -154,11 +155,11 @@ resume - wake up from sleep mode
 $1 `post|pre`, $2 `suspend`
 
 
-### Лог загрузки
+## Лог загрузки
 
 `dmesg`
 
-### Тише вентиляторы
+## Тише вентиляторы
 
 https://askubuntu.com/a/46135
 
@@ -167,6 +168,20 @@ https://askubuntu.com/a/46135
 https://bbs.archlinux.org/viewtopic.php?id=160537
 https://wiki.archlinux.org/index.php/Fan_speed_control#Device_Paths_have_Changed_in_/etc/fancontrol
 
-### Нагрузить процессор
+## Нагрузить процессор
 
 `yes > /dev/null`
+
+## Скролл средней кнопкой мыши
+
+1) Узнать `MOUSE_ID` из `xinput list`
+
+2) Узнать названия свойств из `xinput --list-props $MOUSE_ID`
+
+3) Задать нужные свойства
+
+```
+xinput set-prop $MOUSE_ID "libinput Scroll Method Enabled" 0, 0, 1
+xinput set-prop $MOUSE_ID "libinput Button Scrolling Button" 2      # This is middle mouse. Already 2 by default
+
+```
