@@ -33,20 +33,6 @@ in bash:
 
 [Unix SE: alias-a-command-to-run-in-the-background](http://unix.stackexchange.com/questions/21307/alias-a-command-to-run-in-the-background)
 
-## Переименовать часть имени файла
-
-`vidir` и править как обычный файл, или:
-
-нерекурсивно
-
-	rename 's/ACDC/AC-DC/' *.mp3
-
-рекурсивно
-
-	shopt -s globstar
-	# сначала показать список без переименования
-	rename -n 's/special/regular/' **
-
 ## Запустить приложение со всеми переданыыми параметрами
 
 executable-name "$@"
