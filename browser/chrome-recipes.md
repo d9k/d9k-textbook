@@ -9,3 +9,7 @@
 TODO как??
 
 `prefers-color-scheme dark`
+
+## copy unselectable text
+
+ctrl+shift+c
