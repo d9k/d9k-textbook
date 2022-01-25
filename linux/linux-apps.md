@@ -29,7 +29,7 @@ https://pkgs.org
 
 ## Интерфейс
 
-* easystroke - жесты мыши
+* easystroke - жесты мыши (mouse gestures)
 * copyq - буфер обмена, multiple clipboard manager
 
 ## Интерфейс cli
@@ -54,6 +54,11 @@ https://pkgs.org
 
 DBeaver
 
+## Markdown
+
+marktext
+
 ## Мультимедия
 
 * Музыкальный плеер - exaile - https://github.com/jeteokeeffe/exaile-flathub
+* Редактор MP3-тэгов - easytag - https://askubuntu.com/a/664708/156571

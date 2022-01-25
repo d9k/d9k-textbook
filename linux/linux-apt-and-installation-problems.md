@@ -179,3 +179,9 @@ status:
 # Истекшие ключи репозиториев
 
 `sudo apt-key list | grep -B 1 -A 1 expired`
+
+# gpg: keyserver receive failed: Server indicated a failure
+
+запустить вручную, убрать протокол и порт у `keyserver`:
+
+`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 08C36551`
