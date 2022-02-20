@@ -6,7 +6,7 @@ https://www.exoscale.com/syslog/explaining-mysql-queries/#:~:text=The%20EXPLAIN%
 
 ## `EXPLAIN` query: wrong numbers
 
-Execute ANALYZE TABLE table_name; - it will update statistics that EXPLAIN uses, and you'll get correct numbers
+Execute `ANALYZE TABLE table_name`; - it will update statistics that EXPLAIN uses, and you'll get correct numbers
 
 https://stackoverflow.com/questions/1037471/why-the-rows-returns-by-explain-is-not-equal-to-count
 
