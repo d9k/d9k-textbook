@@ -52,3 +52,19 @@ preexec() {
 ```
 
 https://stackoverflow.com/a/42265077/1760643
+
+# ZSH hooks
+
+```
+(precmd)
+    v
+draw_prompt
+    v
+wait_for_input && input_command
+    v
+(preeexec)
+    v
+command_execution
+    v
+(precmd)...
+```
