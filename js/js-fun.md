@@ -28,3 +28,13 @@ console.log(_concat3(1,2)) // '123'
 
 `reduce`
 `flatMap` - может требовать `polyfill`
+
+## IIFE - Immediately Invoked Function Expression
+
+https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+
+```
+(function () {
+  /* ... */
+})();
+```
