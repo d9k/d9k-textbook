@@ -1,6 +1,6 @@
 # Команды npm
 
-##Базовые
+## Базовые
 
 Any package can be installed by using
 `npm install`
@@ -14,6 +14,8 @@ Display the package list globally installed
 
 `npm outdated` покажет список.
 `npm install --save-dev <package_name>` или `npm install --save <package_name>` (в зависимость от секции в package.json, куда установлен пакет)
+
+## Strict use
 
 ## Доступные версии пакета
 
