@@ -1,8 +1,6 @@
-Логи в Linux
-============
+# Логи в Linux
 
-syslog пуст
------------
+## syslog пуст
 
 `/var/log/syslog`
 
@@ -12,13 +10,14 @@ syslog пуст
 
 http://ubuntuforums.org/showthread.php?t=2116006
 
-тестовая запись в syslog
-------------------------
+## тестовая запись в syslog
 
-Отладка logrotate
------------------
-
+## Отладка logrotate
 
 `cat /var/lib/logrotate/status`
 
 https://access.redhat.com/solutions/32831
+
+## log of service
+
+`journalctl -xefu service-name`
