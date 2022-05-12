@@ -34,3 +34,17 @@ type CurrencySymbol = keyof typeof currencySymbols;
 ## Mapped type
 
 https://stackoverflow.com/a/49563070
+
+## Partial inference
+
+https://stackoverflow.com/a/63678777/1760643
+
+Type inference works based on an all or nothing principle. In the first case
+
+https://stackoverflow.com/a/68714226/1760643
+
+I believe currying is the solution.
+
+```
+const x = <I>(v: I) => <O>((v: I) => O) => O
+```
