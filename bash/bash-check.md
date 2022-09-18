@@ -1,33 +1,35 @@
-Bash: проверка переменных на пустоту, равенство и т. д.
-=======================================================
+# Bash: проверка переменных на пустоту, равенство и т. д.
 
 [Introduction to if](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html)
 
-Проверка строки на пустоту
---------------------------
+## Проверка строки на пустоту
 
-	if [ -z "$VAR" ]; then
-	    echo "VAR is empty"
-	fi
+```
+if [ -z "$VAR" ]; then
+    echo "VAR is empty"
+fi
 
-	if test -z "$VAR"; then
-		echo "VAR is empty"
-	fi
+if test -z "$VAR"; then
+  echo "VAR is empty"
+fi
 
-	if [ -n "$VAR" ]; then
-	    echo "VAR is not empty"
-	fi
+if [ -n "$VAR" ]; then
+    echo "VAR is not empty"
+fi
+```
 
-Проверка строк на равенство
----------------------------
+## Проверка строк на равенство
 
 Обратить внимание на пробелы!
 
-	# в случае неравенства == заменить на !=
-	if [[ "$db_pass" == "$db_pass_repeat" ]]; then
-    	echo "password doesn't match"
-    	exit
-	fi
+в случае неравенства `==` заменить на `!=`
+
+```
+if [[ "$db_pass" == "$db_pass_repeat" ]]; then
+    echo "password doesn't match"
+    exit
+fi
+```
 
 Проверка чисел на равенство/неравенство
 ---------------------------------------
