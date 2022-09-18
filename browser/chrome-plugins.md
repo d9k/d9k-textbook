@@ -41,7 +41,6 @@
 * Notion Web Clipper
 * Save as eBook
 
-
 ## Media
 
 * Mixcloud (with) Tracklist (t.ly/hWcY)
@@ -50,3 +49,8 @@
 * VKloader
 * Web Scrobbler
 * YouTube Popout Player
+
+## Automation
+
+* External Application Launcher
+

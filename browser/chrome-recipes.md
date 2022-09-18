@@ -13,3 +13,9 @@ TODO как??
 ## copy unselectable text
 
 ctrl+shift+c
+
+## slow address bar
+
+chrome://flags/
+
+`omnibox bookmark paths: Disabled`
