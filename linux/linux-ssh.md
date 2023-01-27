@@ -7,7 +7,7 @@
 # dpkg-reconfigure locales
 
 # aptitude install console-setup
-# dpkg-reconfigure keyboard-configuration 
+# dpkg-reconfigure keyboard-configuration
 http://www.debian.org/releases/stable/amd64/apds03.html.ru
 
 В ~/.bashrc, ~/.zshrc:
@@ -116,7 +116,7 @@ http://linuxcommando.blogspot.ru/2008/10/how-to-disable-ssh-host-key-checking.ht
 Could not open a connection to your authentication agent
 --------------------------------------------------------
 
-просто перезапустить ssh: 
+просто перезапустить ssh:
 
     eval `ssh-agent -s`
 
@@ -125,3 +125,16 @@ Could not open a connection to your authentication agent
 
 	$ sudo apt-get install sshpass
 	$ sshpass -p your_password ssh user@host-name
+
+
+## ssh-add for sudo commands
+
+```
+sudo nano /etc/sudoers
+```
+
+Add lines:
+
+```
+Defaults    env_keep+=SSH_AUTH_SOCK
+```
