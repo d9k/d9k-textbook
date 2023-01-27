@@ -185,3 +185,16 @@ status:
 запустить вручную, убрать протокол и порт у `keyserver`:
 
 `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 08C36551`
+
+# Unable to acquire the dpkg lock /var/lib/dpkg/lock
+
+```
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/lib/dpkg/lock-frontend
+
+sudo dpkg --configure -a
+```
+
+https://pingvinus.ru/note/dpkg-lock
