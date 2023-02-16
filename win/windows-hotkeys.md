@@ -2,8 +2,12 @@
 
 ## Переключение языков на Caps Lock
 
-`caps-min.exe`/`capslang.exe`
+- `caps-min.exe`/`capslang.exe`
+  - https://izzylaif.com/ru/caps-min-exe-capslang-exe-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C/
 
-https://izzylaif.com/ru/caps-min-exe-capslang-exe-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C/
+- вариаты
+  - https://github.com/Ryzhehvost/keyla/wiki/ru_Alternatives
 
-https://github.com/Ryzhehvost/keyla/wiki/ru_Alternatives
+## Если переключение языков на `ё`, как вводить символ?
+
+https://superuser.com/questions/479881/how-do-you-type-or-when-grave-key-is-used-to-switch-between-keyboard-lan
