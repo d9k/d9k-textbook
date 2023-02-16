@@ -138,3 +138,7 @@ Add lines:
 ```
 Defaults    env_keep+=SSH_AUTH_SOCK
 ```
+
+## Запросить пароль к логину вместо ключа
+
+`ssh -o PubkeyAuthentication=no -o PreferredAuthentications=password`
