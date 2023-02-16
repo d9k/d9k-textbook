@@ -111,3 +111,8 @@ function MeasureExample() {
   );
 }
 ```
+
+## merge useRef
+
+- https://dev.to/thekashey/merging-refs-41l8
+- https://mayursinhsarvaiya.medium.com/how-to-merge-refs-in-react-component-d5e4623b6924
