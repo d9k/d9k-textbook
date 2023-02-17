@@ -1,5 +1,11 @@
 # Windows: отключение всякого
 
+## Рекомендуемая сборка
+
+(почти всё отключено)
+
+Windows 10 LTSC
+
 ## Улучшение приватности
 
 O&O ShutUp10
@@ -12,6 +18,6 @@ https://github.com/jbara2002/windows-defender-remover
 
 https://github.com/WereDev/Wu10Man
 
-## Рекомендуемая сборка
+## Отключение связывания с телефоном
 
-Windows 10 LTSC
+https://guidepc.ru/windows/kak-otklyuchit-funktsiyu-svyazyvaniya-s-telefonom-v-windows-10/amp/
