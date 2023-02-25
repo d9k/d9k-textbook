@@ -2,6 +2,8 @@
 
 [Introduction to if](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html)
 
+keywords: check, compare, equal, condition
+
 ## Проверка строки на пустоту
 
 ```
@@ -31,34 +33,38 @@ if [[ "$db_pass" == "$db_pass_repeat" ]]; then
 fi
 ```
 
-Проверка чисел на равенство/неравенство
----------------------------------------
-
-	if [ "$a" -eq "$b" ]
-	if [ "$a" -ne "$b" ]
-
-Проверка количества входных аргументов
---------------------------------------
+## Проверка чисел на равенство/неравенство
 
 
-	function echoUsage(){
-	    echo command_name PARAM1 PARAM2
-	}
-	if [[ "$#" -lt 2 ]]; then
-    	echoUsage
-    	exit
-	fi
+```
+if [ "$a" -eq "$b" ]
+if [ "$a" -ne "$b" ]
+```
 
-Проверка на несуществование файла
----------------------------------
+## Проверка количества входных аргументов
 
-	if [ ! -f /tmp/foo.txt ]; then
-	    echo "File not found!"
-	fi
+```
+function echoUsage(){
+    echo command_name PARAM1 PARAM2
+}
+if [[ "$#" -lt 2 ]]; then
+    echoUsage
+    exit
+fi
+```
 
-Проверка начала строки
-----------------------
+## Проверка на несуществование файла
 
-	if [[ $str == First\ few\ words* ]]; then
-      echo "Matches"
-	fi
+```
+if [ ! -f /tmp/foo.txt ]; then
+    echo "File not found!"
+fi
+```
+
+## Проверка начала строки
+
+```
+if [[ $str == First\ few\ words* ]]; then
+    echo "Matches"
+fi
+```
