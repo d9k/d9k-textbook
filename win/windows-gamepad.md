@@ -13,3 +13,7 @@ For example, alt+tab:
 ## Antimicro: gamepad buttons combinations
 
 https://github.com/AntiMicro/antimicro/issues/129
+
+## Antimicro: auto-switch profile based on current process
+
+https://github.com/AntiMicro/antimicro/wiki/Automatically-Loading-Profiles
