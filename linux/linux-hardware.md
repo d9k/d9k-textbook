@@ -1,52 +1,54 @@
-bash: оборудование
-==================
+# Linux: оборудование
 
-Показать жёсткие диски
-----------------------
+## Показать жёсткие диски
+
 (деревом)
 
-	sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
+`sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL`
 
 [вопрос на askubuntu](http://askubuntu.com/questions/182446/how-do-i-view-all-available-hdds-partitions)
 
-CPU-Z alternative
------------------
+## CPU-Z alternative
 
-	sudo add-apt-repository ppa:cpug-devs/ppa
-	sudo apt-get update
-	sudo apt-get install cpu-g
+```
+sudo add-apt-repository ppa:cpug-devs/ppa
+sudo apt-get update
+sudo apt-get install cpu-g
+```
 
-Узнать тип памяти
------------------
+## Узнать тип памяти
 
-	sudo dmidecode --type 17
+`sudo dmidecode --type 17`
 
-Disable wake on usb
--------------------
+## Disable wake on usb
 
 	http://askubuntu.com/questions/152403/how-do-i-make-changes-to-proc-acpi-wakeup-permanent
 
-Переназначение клавиш геймпада
-------------------------------
+## Переназначение клавиш геймпада
 
-	sudo add-apt-repository ppa:ryochan7/antimicro
-	sudo apt-get update
-	sudo apt-get install antimicro
+```
+sudo add-apt-repository ppa:ryochan7/antimicro
+sudo apt-get update
+sudo apt-get install antimicro
+```
 
-Сменить драйвер видеокарты из консоли
--------------------------------------
+## Сменить драйвер видеокарты из консоли
 
-	sudo ubuntu-drivers devices
-	sudo apt-get install nvidia-361
+```
+sudo ubuntu-drivers devices
+sudo apt-get install nvidia-361
+```
 
 ## Reinstall ATI drivers
 
-	sudo apt-get purge "fglrx.*"
-	sudo rm /etc/X11/xorg.conf
-	sudo apt-get update
-	sudo apt-get install --reinstall xserver-xorg-core libgl1-mesa-glx:i386 libgl1-mesa-dri:i386 libgl1-mesa-glx:amd64 libgl1-mesa-dri:amd64
-	sudo dpkg-reconfigure xserver-xorg
-	sudo reboot
+```
+sudo apt-get purge "fglrx.*"
+sudo rm /etc/X11/xorg.conf
+sudo apt-get update
+sudo apt-get install --reinstall xserver-xorg-core libgl1-mesa-glx:i386 libgl1-mesa-dri:i386 libgl1-mesa-glx:amd64 libgl1-mesa-dri:amd64
+sudo dpkg-reconfigure xserver-xorg
+sudo reboot
+```
 
 http://askubuntu.com/a/68312/156571
 
@@ -82,15 +84,19 @@ http://superuser.com/questions/171195/how-to-check-the-health-of-a-hard-drive
 
 ### Коснольный интерфейс
 
-    sudo apt-get install smartmontools
-    sudo smartctl -a /dev/sda | less
+```
+sudo apt-get install smartmontools
+sudo smartctl -a /dev/sda | less
+```
 
 ### Графический интерфейс
 
 + форматирование дисков
 
-    sudo apt-get install gnome-disk-utility
-    gnome-disks
+```
+sudo apt-get install gnome-disk-utility
+gnome-disks
+```
 
 ### fix block size error
 
@@ -124,16 +130,16 @@ pkexec gsmartcontrol
 
 ## Ограничение скорости соединения для приложения (net throttle)
 
-    sudo apt-get install
-    trickle -s -d 1000 my-app
-
+```
+sudo apt-get install
+trickle -s -d 1000 my-app
+```
 
 ## Информация о вставленных модулях оперативной памяти
 
 `sudo lshw -C memory`
 
 https://askubuntu.com/questions/391173/how-to-find-the-frequency-and-type-of-my-current-ram
-
 
 ## Sysinfo dump
 
@@ -185,3 +191,10 @@ xinput set-prop $MOUSE_ID "libinput Scroll Method Enabled" 0, 0, 1
 xinput set-prop $MOUSE_ID "libinput Button Scrolling Button" 2      # This is middle mouse. Already 2 by default
 
 ```
+
+## Подсветка монитора: управление из консоли
+
+`ddccontrol -r 0x10 -W +5 dev:/dev/i2c-4`
+
+Хак для nvidia (нужно в модуль ядра компилить):
+ https://www.ddcutil.com/nvidia/
