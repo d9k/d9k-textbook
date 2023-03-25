@@ -41,6 +41,7 @@ https://pkgs.org
 
 * Бесплатный VPN - betternet
 * Download manager - uget
+* Скачивание видео - yt-dlp
 
 ## Администрирование
 
