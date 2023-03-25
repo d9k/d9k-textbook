@@ -2,6 +2,11 @@
 
 `Ctrl+K Ctrl+S`
 
+## Hotkeys and useful commands
+
+- Go to symbol: `Ctrl+T` (?)
+- Find matching brace `Ctrl+Shift+\`
+
 ## Open link in browser
 
 ```
