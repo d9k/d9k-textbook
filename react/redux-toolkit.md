@@ -1,5 +1,7 @@
 # Redux-toolkit (RTK)
 
+см. также `rtk-query.md`
+
 ## dispatch from extrareducers
 
 ```
