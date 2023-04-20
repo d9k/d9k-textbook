@@ -11,7 +11,7 @@ gksudo gedit&
 
 Аппаратное ускорение flash
 --------------------------
-/etc/adobe/mms.cfg 
+/etc/adobe/mms.cfg
 EnableLinuxHWVideoDecode=1
 OverrideGPUValidation=1
 http://ubuntugenius.wordpress.com/tag/enablelinuxhwvideodecode-1/
@@ -40,18 +40,9 @@ Alt+F2 -> gnome-session-properties
 xfce4-autostart-editor
 ~/.config/autostart
 
-Размер xfce4-terminal по-умолчанию
-----------------------------------
-/home/d9k/.config/Terminal/terminalrc
-MiscDefaultGeometry=100x50+220+70
-(100x50 symbols
-shift 220;70 pixels)
-
 Очистить строку ввода команды в консоли
 ---------------------------------------
 ctrl+U
-
-
 
 Быстрый функциональный alt-f2
 -----------------------------
