@@ -1,5 +1,5 @@
-Горячие клавиши tmux
---------------------
+# Горячие клавиши tmux
+
 Ctrl+b % — разделить текущую панель на две, по вертикали
 Ctrl+b " — разделить текущую панель на две, по горизонтали (это кавычка, которая около Enter, а не Shift+2);
 Ctrl+b & — закрыть окошко (а можно просто набрать exit в терминале)
@@ -10,18 +10,17 @@ Ctrl+d exit
 
 ctrl+b d - отсоединиться (выход)
 
-окна
-----
+## окна
 
 ctrl+b c - новое окно
 ctrl+b (0..9) - переход в окно с нужным №
 
-Команды
--------
+## Команды
+
 `Ctrl+b : resize-pane -D 10` - вниз на 10 строк разделительную черту
 
-копирование
-~~~~~~~~~~~
+## копирование
+
 <!--- //Ctrl+b PgUp -->
 Ctrl+b [ — вход в «режим копирования», после чего:
 Alt+w - копировать (как в emacs)
@@ -30,8 +29,7 @@ q — выход из «режима копирования».
 http://habrahabr.ru/post/126996/
 https://gist.github.com/andreyvit/2921703
 
-разделение по-умолчанию
------------------------
+## разделение по-умолчанию
 
 1)
 
@@ -61,13 +59,11 @@ https://gist.github.com/andreyvit/2921703
 	tmux select-pane -t 0
 	tmux attach-session -d -t 'general'
 
-подключение к сессии
---------------------
+## подключение к сессии
 
 unix.stackexchange.com/questions/24274/attach-to-different-windows-in-session
 
-переключение окон
------------------
+## переключение окон
 
 bind-key C-a next-window
 bind-key C-q previous-window
@@ -78,3 +74,13 @@ bind-key C-q previous-window
 `:join-pane -t <win_num>`
 
 https://bezhermoso.github.io/til/move-a-tmux-pane-from-one-window-to-another/
+
+## Поиск
+
+реверсивный
+
+`Ctrl-B` `Ctrl+R`, затем `n`
+
+обычный
+
+`Ctrl-B` `Ctrl+R`, затем `n`
