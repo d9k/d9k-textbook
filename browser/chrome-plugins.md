@@ -14,7 +14,9 @@
 
 ## Automation
 
+* External Application Launcher
 * MultiPass for HTTP basic authentication
+* Copy as Markdown (@notlmn)
 
 ## Browsing
 
@@ -25,6 +27,10 @@
 * Speed Dial 2 New tab
 * uBlock origin
 * Wikiwand: Wikipedia Modernized
+
+## Capture
+
+* Screen Recorder (scre.io)
 
 ## Tabs management
 
@@ -49,8 +55,3 @@
 * VKloader
 * Web Scrobbler
 * YouTube Popout Player
-
-## Automation
-
-* External Application Launcher
-
