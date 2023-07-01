@@ -17,6 +17,7 @@
 * External Application Launcher
 * MultiPass for HTTP basic authentication
 * Copy as Markdown (@notlmn)
+* Copy as Markdown (@yorkxin)
 
 ## Browsing
 
