@@ -29,3 +29,4 @@ OSTree - разные приложения (ветки) используют о�
 - Минусы
   - Список
     - https://www.reddit.com/r/Ubuntu/comments/tq4v1b/comment/i2ge3dh
+    - Snaps slow the boot process, the more you have installed, the slower it gets
