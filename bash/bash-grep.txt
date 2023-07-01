@@ -59,3 +59,17 @@ example:
 ## исключить расширения из поиска
 
 grep -nr --exclude=\*.{js,css} keyword
+
+## Возвращение части строки после маркера
+
+Дано:
+
+```
+Default vault path:  /path/to/vault
+```
+
+Можно получить `/path/to/vault` так: `grep -Po "path:\s*\K.*"`.
+
+`\K` принудительно передвигает маркер начала найденной последовательности.
+
+[regex - grep: group capturing - ClarkZinzow answer - Stack Overflow](https://stackoverflow.com/a/41194927/1760643)
