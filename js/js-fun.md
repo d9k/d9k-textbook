@@ -1,6 +1,12 @@
 # JS: functional programming
 
+## Карринг
+
+функции с каррингом - высшего порядка
+
 ## What is the difference between Call, Apply and Bind?
+
+[Частичное применение или partial application в JavaScript | Frontend Stuff](https://frontend-stuff.com/blog/partial-application/)
 
 Позволяет объявлять и/или использовать методы отдельно от классов.
 

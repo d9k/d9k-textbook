@@ -8,8 +8,7 @@
 
 ## var, let и const - разница
 
-https://skillbox.ru/media/code/chem_razlichayutsya_var_let_i_const_v_javascript/
-
+[Var, let и const в JavaScript: в чём разница между переменными в JS / Skillbox Media](https://skillbox.ru/media/code/chem_razlichayutsya_var_let_i_const_v_javascript/)
 ```
 var x = 50;
 
