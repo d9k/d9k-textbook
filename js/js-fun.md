@@ -1,5 +1,17 @@
 # JS: functional programming
 
+## What is the difference between Call, Apply and Bind?
+
+Позволяет объявлять и/или использовать методы отдельно от классов.
+
+Функция - объект. Методы объекта-функции.
+
+```
+fn1.call(this_value, ...arguments)
+fn1.apply(this_value, [...arguments]);
+fnWithThisAndArg1 = fn1.bind(this_value, arg1);
+```
+
 ## bind to 2-nd arg
 
 ```
