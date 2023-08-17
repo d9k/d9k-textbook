@@ -26,3 +26,8 @@ Document Object Module - cross-platform and language-independent API that trea
 ## Retina
 
 retina - more than 1 device pixel per web page pixel. `<img srcset="/j-400.jpg 400w, /j-900.jpg 900w">`
+## What’s the difference between “resetting” and “normalizing” CSS? 
+
+Resetting — strip all default browser styling on elements (paddings, font-sizes, outlines). You will have to redeclare styling for common typographic elements.
+
+Normalizing — preserves useful default styles rather than “unstyling” everything. It also corrects bugs for common browser dependencies.
