@@ -7,3 +7,4 @@
 [Space-between: последняя строка по левому краю](https://stackoverflow.com/a/22018710)
 
 [Вмещение img во flex](https://stackoverflow.com/questions/59193285/fitting-image-into-flex-direction-column-explanation-and-fixes#comment104611732_59195263)
+

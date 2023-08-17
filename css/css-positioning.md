@@ -1,5 +1,13 @@
 # CSS: позиционирование
 
+## float и clear
+
+`float` - floated element остаётся частью flow web-страницы в отличие от absolute-элементов. Flow - обтекание текстом и `inline`-элементами.
+
+`float: left | right`
+
+`clear: left | right | both` - отключение обтекания предыдущего float-элемента (размещение под ним)
+
 ## По центру горизонтально
 
 http://www.w3.org/Style/Examples/007/center
