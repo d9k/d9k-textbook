@@ -9,9 +9,9 @@
 
 pseudo classes (begin with `:`)
 
-**Functional**: `is()` (one of list), `not()`, `where()`, `has()`.
+**Functional**: `is()` (one of list), `not()`, `where()` (как is, но легче переопределить, т. к. specificity `0`), `has()` (есть вложенные элементы, соотв условиям). Пр.-р сочетания: `:is(h1, h2, h3):has(+ :is(h2, h3, h4)) `.
 
-**User action**: `hover`, `active` (activated by user), `focus`, `focus-visible` (browser recommends focus to be visible based on device and circumstances), `focus-within`.
+**User action**: `hover`, `active` (activated by user), `focus`, `focus-visible` (browser recommends focus to be visible based on device and circumstances), `focus-within` (have focused descendant element).
 
 **DOM Tree-structural**: `root`, `empty`, `nth-child()`, `nth-last-child()`, `first-child()`, `last-child`, `only-child` (no siblings), `nth-of-type()`, `nth-last-of-type()`, `first-of-type()`, `last-of-type()`, `only-of-type()`.
 
