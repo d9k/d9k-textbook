@@ -40,3 +40,18 @@ showPodcast(); //Ошибки не будет, браузер выведет und
 Попытка изменить значение константы приведёт к ошибке - `TypeError`?
 
 Неизменяемым сохраняется сам `const`-объект, а не его поля:
+
+## Temporal Dead Zone
+
+```
+function somemethod() {
+  // undefined
+  console.log(counter1); 
+  
+  // ReferenceError, temporal dead zone for counter2
+  console.log(counter2); 
+  
+  var counter1 = 1;
+  let counter2 = 2;
+}
+```
