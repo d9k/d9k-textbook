@@ -1,6 +1,6 @@
 # JS stupid questions
 
-Вопросы, которые зачем-то регулярно спрашивают на собеседованиях.
+Вопросы, которые зачем-то регулярно спрашивают на собеседованиях (часть по legacy).
 
 ## Типы данных JavaScript
 
@@ -41,6 +41,10 @@ showPodcast(); //Ошибки не будет, браузер выведет und
 
 Неизменяемым сохраняется сам `const`-объект, а не его поля:
 
+## Hoisting ("всплытие")
+
+Hoisting is a JavaScript mechanism where `vari`, `function` and `class` declarations are moved to the top of their scope before code execution.
+
 ## Temporal Dead Zone
 
 ```
@@ -55,3 +59,7 @@ function somemethod() {
   let counter2 = 2;
 }
 ```
+
+## Scope (Область действия)
+
+Определяет видимость переменных в процессе выполнения программы.
