@@ -1,5 +1,9 @@
 # Программирование: теория
 
+## Литерал
+
+In computer science, a literal is a notation for representing a fixed value in source code. Also functions, objects literals.
+
 ## Что такое инвариант?
 
 https://ru.stackoverflow.com/questions/858650/Что-такое-инвариант-в-ООП
