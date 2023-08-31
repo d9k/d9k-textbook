@@ -64,20 +64,25 @@ function somemethod() {
 
 Определяет видимость переменных в процессе выполнения программы.
 
-## Разница между undefined и null
+## Разница между undefined, null и void.
 
 `null`: переменная-указатель на null-объект (переменная намеренно объявлена пустой). Преобразуется в `0 ` при арифметических операциях.
 `undefined`: переменная объявлена, но не задано значение. Преобразуется в `NaN` при арифметических операциях
+`void`: оператор, выполняющий выражение и всегда возвращающий `undefined`. `<href="JavaScript:Void(0);` предотвращает перезагрузку страницы.
+
+> void 1
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void
 
 ## Что в window
 
-свойства: `console, document, history, localStorage, location (read-only), scheduler, navigator, screen, sessionStorage, speechSynthesis`
+свойства: `console, document, history, localStorage, location (read-only), performance, scheduler, navigator, screen, sessionStorage, speechSynthesis`
 
 свойства, сввязанные с iframe: `frames, length, name, opener, parent, top`
 
 свойства про видимость элементов интерфейса браузера: `locationbar, menubar, peronalbar, statusbar, toolbar`
 
-методы: `alert(), open() / close(), confirm(), focus() / blur(), {request,canc}AnimationFrame(), {request,cancel}IdleCallback(), {set,clear}Immediate, postMessage(), print(), prompt(), stop()`
+методы: `alert(), open() / close(), confirm(), focus() / blur(), {request,canc}AnimationFrame(), {request,cancel}IdleCallback(), {set,clear}Immediate, postMessage(), print(), prompt(), scrollBy(), scrollTo(), stop()`
 
 события: `afterprint, beforeUnload, focus / blur, copy / cut / paste, devicemotion, deviceorientation, error, hashchange, load, message, online / offline, resize, storage, unhandledrejection`
 
@@ -108,14 +113,6 @@ true
 true
 ```
 
-## Event flow
-
-Before your click actually reaches the target element, it must trigger the click event for each of its parent elements first, starting from the `window` object.
-
-There are two ways of event flow:
-
-- Top to Bottom (Event Capturing) or root to leaf
-- Bottom to Top (Event Bubbling) or leaf to root
 ## Что в window.navigator
 
 свойства: `clipboard, cookieEnabled, geolocation, gpu (WebGPU), hardwareConcurrency, language, languages, mediaCapabilities, mediaDevices, onLine, platform, serviceWorker, userActivation, userAgent, webdriver`
@@ -128,10 +125,35 @@ There are two ways of event flow:
 
 свойства про DOM: `body, children, documentElement (html), embeds, forms, head, images, links, pictureInPictureElement, readyState, referrer, scripts, styleSheets`
 
-методы: ``
+методы: `exitPictureInPicture(), scroll(), scrollBy()` \[TODO\]
 
+методы про DOM: `adoptNode(), append(), createAttributeNS(), createElement(),  createRange(), createTreeWalker(), elementsFromPoint(), setAttribute()
+
+события: `DOMContentLoaded, fullscreenchange, `
+
+метод про DOM XPath: `createExpression(), evaluate() `
 ## Что в window.document.body
 
-(какие-то из этих методов и в document)
+(какие-то из этих методов есть в люобом `HTMLElement`)
 
-методы про DOM: `adoptNode(), append(), createAttributeNS()`
+свойства: `text` \[TODO\]
+
+методы: `{request,exit}Fullscreen()
+
+методы про DOM: как и в `window.document`, `setHTML()`
+
+`window.load`
+
+## Разница native, host and user objects
+
+native - предоставлено самим javascript
+host - средой исполнения
+user - определены пользователем в коде JavaScript
+
+## Разница HTML attributes и DOM properties
+
+https://stackoverflow.com/a/53924373/1760643
+
+## Разница событий `load` и `DOMContentLoaded`
+
+Ответ в [js-events.md](./js-events.md).
