@@ -3,7 +3,7 @@
 Strict mode throws errors:
 * accidentally creating a global variable
 * assignment to a non-writable / getter-only / non-existent property
-* ass. to non-existing variable / object
+* assignment to non-existing variable / object
 * 0-prefixed octal literals (need `0o` prefix)
 * setting properties on primitive values
 * duplicate property names

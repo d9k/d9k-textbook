@@ -18,6 +18,7 @@ const eventSource = new EventSource(url);
 eventSource.onmessage = (event) => {
 	const parsedData = JSON.parse(event.data);
 };
+/** onopen, onerror handlers... */
 ```
 
 SSE is faster than websockets.
