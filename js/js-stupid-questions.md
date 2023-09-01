@@ -70,7 +70,18 @@ function somemethod() {
 `undefined`: переменная объявлена, но не задано значение. Преобразуется в `NaN` при арифметических операциях
 `void`: оператор, выполняющий выражение и всегда возвращающий `undefined`. `<href="JavaScript:Void(0);` предотвращает перезагрузку страницы.
 
-> void 1
+```
+> console.log(void(1+1))
+undefined
+> null * 5
+0
+> 5 / null
+Infinity
+> undefined * 5
+NaN
+> 5 / undefined
+NaN
+```
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void
 
@@ -157,3 +168,7 @@ https://stackoverflow.com/a/53924373/1760643
 ## Разница событий `load` и `DOMContentLoaded`
 
 Ответ в [js-events.md](./js-events.md).
+
+## BOM
+
+__The Browser Object Model__ allows JavaScript to operate with browser. It consists of the objects `navigator`, `history`, `screen`, `location`, `XMLHttpRequest` etc which are the children of the window. The BOM is not standardized and can change based on different browsers.
