@@ -20,3 +20,15 @@ Brendan Eich tried to put Scheme "in the browser", but his Netscape superiors in
 
 https://ru.wikipedia.org/wiki/Событийно-ориентированное_программирование
 
+## ECMAScript
+
+ECMA - European Computer Manufacturers Association.
+
+Is a standard for scripting languages, used in JavaScript, JScript, and ActionScript.
+
+ES 3 - 1999 - regular expressions, try/catch...
+ES 4 - abandoned
+ES 5 - ECMAScript 2009 - added strict mode, clarifies many ambiguities, standart lib for JSON, object reflection
+ES 6 - ECMAScript 2015 - class, import, const, spread, arrow fns, promises, templates literals, binary data
+
+- https://en.wikipedia.org/wiki/ECMAScript_version_history
