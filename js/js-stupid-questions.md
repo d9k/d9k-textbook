@@ -1,5 +1,7 @@
 # JS stupid questions
 
+- See corresponding jupyter notebook [^1]
+
 Вопросы, которые зачем-то регулярно спрашивают на собеседованиях (часть по legacy).
 
 ## Типы данных JavaScript
@@ -9,28 +11,28 @@
 ## var, let и const - разница
 
 [Var, let и const в JavaScript: в чём разница между переменными в JS / Skillbox Media](https://skillbox.ru/media/code/chem_razlichayutsya_var_let_i_const_v_javascript/)
-```
+```js
 var x = 50;
 
-function func() { 
-  var x = 10; 
+function func() {
+  var x = 10;
   //Будет выведено 10
   console.log(x);
 
   //Будет выведено 50
-  console.log(window.x); 
+  console.log(window.x);
 }
 ```
 
-```
-function showPodcast() { 
-	//Вызовем переменную перед её объявлением 
-	best_podcast = 'people and code'; 
+```js
+function showPodcast() {
+	//Вызовем переменную перед её объявлением
+	best_podcast = 'people and code';
 	if (false) {
-		var best_podcast; 
-	} 
-	console.log(best_podcast); 
-} 
+		var best_podcast;
+	}
+	console.log(best_podcast);
+}
 
 showPodcast(); //Ошибки не будет, браузер выведет undefined
 ```
@@ -47,14 +49,14 @@ Hoisting is a JavaScript mechanism where `vari`, `function` and `class` declarat
 
 ## Temporal Dead Zone
 
-```
+```js
 function somemethod() {
   // undefined
-  console.log(counter1); 
-  
+  console.log(counter1);
+
   // ReferenceError, temporal dead zone for counter2
-  console.log(counter2); 
-  
+  console.log(counter2);
+
   var counter1 = 1;
   let counter2 = 2;
 }
@@ -70,7 +72,7 @@ function somemethod() {
 `undefined`: переменная объявлена, но не задано значение. Преобразуется в `NaN` при арифметических операциях
 `void`: оператор, выполняющий выражение и всегда возвращающий `undefined`. `<href="JavaScript:Void(0);` предотвращает перезагрузку страницы.
 
-```
+```js
 > console.log(void(1+1))
 undefined
 > null * 5
@@ -172,3 +174,25 @@ https://stackoverflow.com/a/53924373/1760643
 ## BOM
 
 __The Browser Object Model__ allows JavaScript to operate with browser. It consists of the objects `navigator`, `history`, `screen`, `location`, `XMLHttpRequest` etc which are the children of the window. The BOM is not standardized and can change based on different browsers.
+
+## How to redirect
+
+```js
+window.location.href = "newPage.html";
+```
+
+## How do you assign default values to variables
+
+```js
+var a = b ?? c;
+```
+
+- `b` can't be `''` , `0`, `false`
+
+```js
+var a = b ?? c;
+```
+
+## Links
+
+[^1]: [js stupid questions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-stupid-questions.ipynb)
