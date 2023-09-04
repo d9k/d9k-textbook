@@ -47,22 +47,22 @@ See jupiter notebook [^j] for example.
 
 ## What are regular expression patterns
 
-I. **Brackets:**
+- I. **Brackets:**
     - `[abc]`: any of the characters (a/b/c)
     - `[0-9]`: symbol range
     - `(cat|dog)`: any of the alternatives separated with `|`
-II. **Metacharacters:**
+- II. **Metacharacters:**
     - `\d`: digit
     - `\s`: whitespace character
     - `\b`: beginning or ending of a word (**b**oundary)
     - [Regex Character classes - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes)
-III. **Quantifiers:**
+- III. **Quantifiers:**
     - `a+`: c >= 1
     - `a*`: c >= 0
     - `a?`: 0 <= c <= 1
     - `c{a,}`: n <= c
     - [Regex Quantifiers - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Quantifiers)
-IV. ** Assertions **
+- IV. ** Assertions **
 	- `^`
 	- `$`
 	- [Regex Assertions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions)
