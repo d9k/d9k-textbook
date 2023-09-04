@@ -1,5 +1,7 @@
 # JS: Class
 
+See also [js objects](./js-objects.md), [js prototype](./js-prototype.md).
+
 ## Prototypes and classes
 
 In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
