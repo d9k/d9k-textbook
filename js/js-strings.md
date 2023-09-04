@@ -49,22 +49,44 @@ See jupiter notebook [^j] for example.
 
 - I. **Brackets:**
     - `[abc]`: any of the characters (a/b/c)
+    - `[^abc]`: all characters except these
     - `[0-9]`: symbol range
     - `(cat|dog)`: any of the alternatives separated with `|`
+    - `x(?=y)` - Lookahead assertion: Matches "x" only if "x" is followed by "y".
+    - `x(?!y)` - Negative lookahead assertion.
+    - `(?<=y)x` - Lookbehind assertion.
+    - `(?<!y)x` - Negative lookbehind assertion.
+    - `\k<Name>` -  Named capture group. Example: `/(?<title>\w+), yes \k<title>/` matches `"Sir, yes Sir"`
+    - [Regex Groups and backreferences - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences)
+    - [Regex Assertions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions#other_assertions)
+
+```
+var text = '[He] ha[s] to go read this novel [Alice in Wonderland].';
+
+console.log(text.match(/\[.*?\]/g));
+console.log(text.match(/\[.*\]/g));
+```
+
 - II. **Metacharacters:**
+	- `.`: - any character except the newline `\n`.
     - `\d`: digit
     - `\s`: whitespace character
     - `\b`: beginning or ending of a word (**b**oundary)
+    - `\`: escape character: Example: `\\`, `\.`
     - [Regex Character classes - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes)
 - III. **Quantifiers:**
     - `a+`: c >= 1
     - `a*`: c >= 0
+    - `a?+`
     - `a?`: 0 <= c <= 1
-    - `c{a,}`: n <= c
+    - `a{n,}`: c >= n
+    - `a{n,m}`: n <= c <= m
     - [Regex Quantifiers - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Quantifiers)
-- IV. ** Assertions **
-	- `^`
-	- `$`
+- IV. **Assertions**
+	- `^` - начало строки
+	- `$` - конец строки
+	- `\b` - начало или конец слова (word **b**oundary)
+	- `\B` - ожидается продолжение слова (НЕ начало или конец слова)
 	- [Regex Assertions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions)
 - https://cheatdumper.blogspot.com/2019/10/regex-javascript-cheat-sheet.html
 
