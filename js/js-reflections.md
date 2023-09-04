@@ -19,6 +19,8 @@ Use `Object.getOwnPropertyNames(obj);` and `Object.getPrototypeOf(obj)`.
 
 See function implementation in jupiter notebook[^1].
 
+- [Is it possible to get the non-enumerable inherited property names of an object? - Stack Overflow](https://stackoverflow.com/questions/8024149/is-it-possible-to-get-the-non-enumerable-inherited-property-names-of-an-object)
+
 ## Links
 
 [^1]: [js reflection jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-reflections.ipynb)
