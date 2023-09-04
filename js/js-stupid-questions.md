@@ -1,6 +1,6 @@
 # JS stupid questions
 
-- See corresponding jupyter notebook [^1]
+- See corresponding jupyter notebook [^j]
 
 Вопросы, которые зачем-то регулярно спрашивают на собеседованиях (часть по legacy).
 
@@ -193,6 +193,21 @@ var a = b ?? c;
 var a = b ?? c;
 ```
 
+## Change style
+
+```
+element.style.fontSize = "30px";
+element.className = "custom-title";
+element.classList.add("selected-title");
+element.classList.remove("selected-title");
+```
+
+https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList
+
+## What would be the result of 1+2+'3'
+
+`33`
+
 ## Links
 
-[^1]: [js stupid questions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-stupid-questions.ipynb)
+[^j]: [js stupid questions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-stupid-questions.ipynb)
