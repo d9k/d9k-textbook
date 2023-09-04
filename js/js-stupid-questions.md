@@ -193,20 +193,13 @@ var a = b ?? c;
 var a = b ?? c;
 ```
 
-## Change style
-
-```
-element.style.fontSize = "30px";
-element.className = "custom-title";
-element.classList.add("selected-title");
-element.classList.remove("selected-title");
-```
-
-https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList
-
 ## What would be the result of 1+2+'3'
 
 `33`
+
+# Give an example where do you really need semicolon
+
+https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/
 
 ## Links
 
