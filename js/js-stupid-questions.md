@@ -210,11 +210,10 @@ https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe0
 [https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/](https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/)
 
 ```js
-const a = 1
-const b = 2
+var a = 1, b = 2
 
 // These 2 lines concat to `const c = a + b(a + b).toString()`
 // with an error "b is not a function"
-const c = a + b
+var c = a + b
 (a + b).toString()
 ```
