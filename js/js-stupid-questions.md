@@ -204,3 +204,17 @@ https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe0
 ## Links
 
 [^j]: [js stupid questions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-stupid-questions.ipynb)
+
+## Give an example where do you really need semicolon[](http://localhost:8888/notebooks/js-stupid-questions.ipynb#Give-an-example-where-do-you-really-need-semicolon)
+
+[https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/](https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/)
+
+```js
+const a = 1
+const b = 2
+
+// These 2 lines concat to `const c = a + b(a + b).toString()`
+// with an error "b is not a function"
+const c = a + b
+(a + b).toString()
+```
