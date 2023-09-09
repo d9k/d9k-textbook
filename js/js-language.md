@@ -24,7 +24,7 @@ https://ru.wikipedia.org/wiki/Событийно-ориентированное_
 
 ECMA - European Computer Manufacturers Association.
 
-Is a standard for scripting languages, used in JavaScript, JScript, and ActionScript.
+Is a standard for scripting languages, used in JavaScript, JScript, and ActionScript. It intended to ensure the interoperability of web pages across different web browsers.
 
 ES 3 - 1999 - regular expressions, try/catch...
 ES 4 - abandoned
