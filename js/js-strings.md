@@ -70,7 +70,9 @@ console.log(text.match(/\[.*\]/g));
 - II. **Metacharacters:**
 	- `.`: - any character except the newline `\n`.
     - `\d`: digit
+    - `\D`: not digit (`[^0-9]`)
     - `\s`: whitespace character
+    - `\w`: alphanumeric + underscore `[A-Za-z0-9_]`
     - `\b`: beginning or ending of a word (**b**oundary)
     - `\`: escape character: Example: `\\`, `\.`
     - [Regex Character classes - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes)
