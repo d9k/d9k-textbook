@@ -1,5 +1,7 @@
 # JavaScript: типы данных и манипуляции с ними
 
+- JS data Jupyter Notebook [^j]
+
 ## How do you compare Object and Map?
 
 1. The keys of an Object are Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive.
@@ -8,3 +10,24 @@
 4. Map: iterable
 5. Object есть существующие поля прототипа, если не Object.create(null)
 6. Map быстрее при множестве добавлений/удалений пар значений
+
+## WeakSet: what for?
+
+- When you need to keep an arbitrary collection of things but you don't want to prevent those things from being garbage-collected.
+- But you can't iterate over a list of entries
+- To avoid _any_ object to be visited/setup twice (Circular references, mixins, source files, `<iframe>`'s...)
+- Access control and validation.
+- \[I think it's best to use WeakSet when possible to reduce functions side effects and reduce unexpected bugs\]
+
+- https://esdiscuss.org/topic/actual-weakset-use-cases
+- https://stackoverflow.com/questions/30556078/ecmascript-6-what-is-weakset-for
+
+## WeakMap: what for?
+
+- Let’s say that we have a bunch of buttons on the DOM, and we want to keep track of how many times each button has been pressed by a user.
+	- https://javascript.plainenglish.io/weakmaps-illustrated-8169ce4764bb
+- WeakMap for Private data
+	- https://2ality.com/2016/01/private-data-classes.html#keeping-private-data-in-weakmaps
+## Links
+
+[^j]: [js data jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-data.ipynb)
