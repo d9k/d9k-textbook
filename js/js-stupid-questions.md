@@ -6,6 +6,8 @@
 
 ## Типы данных JavaScript
 
+(Результат оператора `typeof`)
+
 `number`, `bigint`, `boolean`, `undefined`, `null`, `symbol`, `object`.
 
 ## var, let и const - разница
