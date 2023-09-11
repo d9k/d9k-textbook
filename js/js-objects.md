@@ -55,6 +55,14 @@ Binding to DOM element value, caching (web requests), validation, read-only or p
 
 - https://javascript.plainenglish.io/object-freeze-vs-object-seal-vs-object-preventextensions-e78ef3a24201
 
+## `Reflect.preventExtensions()` vs. `Object.preventExtensions()`
+
+`Reflect.preventExtensions()` calls `Object.preventExtensions()` inside but:
+1) throws `TypeError` if target is not an object.
+2) returns `Boolean` indicating whether or not the target was successfully set to prevent extensions.
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/preventExtensions
+
 ## Links
 
-[^1]: [js objects jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-objects.ipynb)
+[^j]: [js objects jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-objects.ipynb)
