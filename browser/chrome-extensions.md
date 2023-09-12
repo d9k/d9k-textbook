@@ -50,6 +50,7 @@
 
 ## Media
 
+* AdvancedSearch for YouTube
 * Mixcloud (with) Tracklist (t.ly/hWcY)
 * Open-as-Popup
 * VK Blue - EQ & Scrobbler for VK.com
