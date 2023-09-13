@@ -68,6 +68,13 @@ function somemethod() {
 
 Определяет видимость переменных в процессе выполнения программы.
 
+Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+ES6 introduced two important new JavaScript keywords: `let` and `const`.
+These two keywords provide Block Scope in JavaScript.
+Variables declared inside a { } block cannot be accessed from outside the block
+
+- https://www.w3schools.com/js/js_scope.asp
+
 ## Разница между undefined, null и void.
 
 `null`: переменная-указатель на null-объект (переменная намеренно объявлена пустой). Преобразуется в `0 ` при арифметических операциях.
