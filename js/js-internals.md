@@ -8,7 +8,7 @@ If the call stack is empty and there are pending events in the event queue, the 
 
 https://github.com/sudheerj/javascript-interview-questions#what-is-an-event-loop
 
-# What is an event queue
+## What is an event queue
 
 The event/callback/macrotask queue stores async callbacks to be later added to the call stack.
 
@@ -19,3 +19,11 @@ Whenever the call stack receives an async function, it is moved into the \[paral
 \[Microtask queue have greater priotity then macrotask queue\].
 
 https://github.com/sudheerj/javascript-interview-questions#what-is-an-event-queue
+## V8
+
+V8 JavaScript engine is an open source high-performance JS engine written in C++ used by the Google Chrome browser and node.js project.
+
+V8 implements ECMAScript and WebAssembly, runs on Win7+,
+macOS 10.12+, and Linux on x64/IA-32/ARM/MIPS processors.
+
+Note: Also can be embedded into any C++ application.
