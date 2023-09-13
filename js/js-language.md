@@ -20,6 +20,10 @@ Brendan Eich tried to put Scheme "in the browser", but his Netscape superiors in
 
 https://ru.wikipedia.org/wiki/Событийно-ориентированное_программирование
 
+См. также [js-internals](./js-internals.md), "event loop", "event queue".
+## Dynamic language
+
+Variables are not directly associated with any particular value type and any variable can be assigned/reassigned with values of all types.
 ## ECMAScript
 
 ECMA - European Computer Manufacturers Association.
