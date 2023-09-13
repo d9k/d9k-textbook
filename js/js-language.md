@@ -36,3 +36,13 @@ ES 5 - ECMAScript 2009 - added strict mode, clarifies many ambiguities, standart
 ES 6 - ECMAScript 2015 - class, import, const, spread, arrow fns, promises, templates literals, binary data
 
 - https://en.wikipedia.org/wiki/ECMAScript_version_history
+## Compare JS with Java
+
+|		       | Java             | JavaScript      |
+|--------------|------------------|-----------------|
+| Type system  | strongly typed   | dynamic typed   |
+| Paradigm     | OOP              | Prototype-based |
+| Scoping      | block-scoped     | Function-scoped <br /> (before `let` & `const`) |
+| Concurrency  | thread-based     | event-based     |
+
+- https://github.com/sudheerj/javascript-interview-questions#what-is-the-difference-between-java-and-javascript
