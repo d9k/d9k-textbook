@@ -72,7 +72,7 @@ function somemethod() {
 
 `null`: переменная-указатель на null-объект (переменная намеренно объявлена пустой). Преобразуется в `0 ` при арифметических операциях.
 `undefined`: переменная объявлена, но не задано значение. Преобразуется в `NaN` при арифметических операциях
-`void`: оператор, выполняющий выражение и всегда возвращающий `undefined`. `<href="JavaScript:Void(0);` предотвращает перезагрузку страницы.
+`void`: оператор, выполняющий выражение и всегда возвращающий `undefined`. `<href="JavaScript:void(0);` предотвращает перезагрузку страницы. (`void(0)` можно считать более коротким синонимом `undefined`)
 
 ```js
 > console.log(void(1+1))
@@ -88,7 +88,7 @@ NaN
 ```
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void
-
+- https://github.com/sudheerj/javascript-interview-questions#what-is-a-void-operator
 ## Что в window
 
 свойства: `console, document, history, localStorage, location (read-only), performance, scheduler, navigator, screen, sessionStorage, speechSynthesis`
