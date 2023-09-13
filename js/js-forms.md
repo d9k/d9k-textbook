@@ -1,6 +1,7 @@
 # JS: forms
 
 ## How do you perform form validation using javascript
+
 ```html
 <form name="myForm" onsubmit="return validateForm()" method="post">
   User name: <input type="text" name="userName" />
