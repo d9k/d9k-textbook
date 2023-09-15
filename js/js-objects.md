@@ -63,6 +63,14 @@ Binding to DOM element value, caching (web requests), validation, read-only or p
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/preventExtensions
 
+## What is the difference between `get` and `defineProperty`
+
+Both have similar results until unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
+
+- https://github.com/sudheerj/javascript-interview-questions#what-is-the-difference-between-get-and-defineproperty
+
 ## Links
 
 [^j]: [js objects jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-objects.ipynb)
+
+
