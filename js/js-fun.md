@@ -11,7 +11,7 @@ const Foo = () => {
    console.log('constructing');
 }
 
-// TypeError: Foo is not a constructor 
+// TypeError: Foo is not a constructor
 const f = new Foo();
 ```
 
@@ -103,7 +103,7 @@ Currying is the process of taking a function with multiple arguments and turning
 
 ```
 const multiArgFunction = (a, b, c) => a + b + c;
-const curryUnaryFunction = (a) => (b) => (c) => a + b + c;  
+const curryUnaryFunction = (a) => (b) => (c) => a + b + c;
 ```
 
 Useful example: log function
@@ -113,9 +113,9 @@ var _ = require('lodash')
 
 var logFn = (systemPart, importance, message) => {
   console.log(
-    `${systemPart}:`, 
-    `[${importance}]`, 
-    `${(new Date()).toISOString()}:`, 
+    `${systemPart}:`,
+    `[${importance}]`,
+    `${(new Date()).toISOString()}:`,
     message
   );
 };
@@ -126,3 +126,31 @@ logDebugAuth('wrong password');
 ```
 
 https://javascript.info/currying-partials
+
+## What is the difference between a parameter and an argument
+
+**Parameter** - variable name of a function definition.
+**Argument** - value given to a function when it is invoked.
+
+```js
+function myFunction(parameter1, parameter2 = 'defaultArgument2') {
+	/* */
+}
+
+myFunction('argument1', 'argument2');
+```
+
+- https://github.com/sudheerj/javascript-interview-questions#what-is-the-difference-between-a-parameter-and-an-argument
+
+## What is thunk
+
+A thunk is just a function which delays the evaluation of the value.
+(Функция, которая представляет собой отложенный вызов другой функции)
+
+Synchronous example:
+
+``` js
+const add = (x, y) => x + y;
+const thunk = () => add(2, 3);
+thunk(); // 5
+```
