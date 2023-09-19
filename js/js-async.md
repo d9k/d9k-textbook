@@ -1,5 +1,6 @@
 # JS async
 
+- Also obligatory see async js jupyter notebook [^j]
 ## async & await
 
 Remember, the await keyword is only valid inside async functions.
@@ -22,3 +23,12 @@ Promises have 3 states:
 1. **Pending:** This is an initial state of the Promise before an operation begins
 2. **Fulfilled:** This state indicates that the specified operation was completed.
 3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+
+## Async function
+
+An ***async function*** is a function declared with the async keyword which enables
+asynchronous, promise-based behavior to be written avoiding promise chains. Async function can contain zero or more await expressions. Errors thrown inside promises and rejected promises can be handled within `try/catch` blocks in async fuction body.
+
+## Links
+
+[^j]: [async js jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-async.ipynb)
