@@ -28,6 +28,15 @@
 	- https://javascript.plainenglish.io/weakmaps-illustrated-8169ce4764bb
 - WeakMap for Private data
 	- https://2ality.com/2016/01/private-data-classes.html#keeping-private-data-in-weakmaps
+
+## Wrapper objects
+
+When we treat a primitive value like it was an object (i.e. by accessing properties and methods), JavaScript creates, under the hood, a wrapper to wrap this value and expose it as an object. The JS engine never reuses a wrapper object, giving them to the garbage collector right after a single use.
+
+You can't directly add and call method to string variable, but you can do this with `String(strValue)` wrapper object.
+
+- https://programmingwithmosh.com/javascript/javascript-wrapper-objects/
+
 ## Links
 
 [^j]: [js data jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-data.ipynb)
