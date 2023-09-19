@@ -1,5 +1,7 @@
 # JS: functional programming
 
+- Also obligatory see js functions jupyter notebook [^j]
+
 ## What are lambda or arrow functions
 
 An arrow function is a shorter syntax for a function expression and does not have its own `this`, `arguments`, `super`, or `new.target`. These functions are best suited for non-method functions, and they cannot be used as constructors.
@@ -154,3 +156,36 @@ const add = (x, y) => x + y;
 const thunk = () => add(2, 3);
 thunk(); // 5
 ```
+## What is proper tail call
+
+
+```js
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+console.log(factorial(5)); //120
+```
+
+```js
+function factorial(n, acc = 1) {
+  if (n === 0) {
+    return acc;
+  }
+  return factorial(n - 1, n * acc);
+}
+console.log(factorial(5)); //120
+```
+
+In the second case accumulator keeps track of total as an argument without using stack memory on recursive calls.
+
+It seems that tail-call optimization [not supported yet](https://www.reddit.com/r/javascript/comments/pwwbky/askjs_why_so_little_support_for_tco_tail_call/) by [v8 developers](https://v8.dev/blog/modern-javascript) but [npm: fext](https://www.npmjs.com/package/fext) can be used meanwhile.
+
+- https://github.com/sudheerj/javascript-interview-questions#what-is-a-proper-tail-call
+
+## Links
+
+
+[^j]: [js functions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-functions.ipynb)
