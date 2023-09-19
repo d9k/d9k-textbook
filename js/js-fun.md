@@ -185,7 +185,28 @@ It seems that tail-call optimization [not supported yet](https://www.reddit.com/
 
 - https://github.com/sudheerj/javascript-interview-questions#what-is-a-proper-tail-call
 
-## Links
+## Function expression vs. function declaration
 
+expression:
+
+```js
+const myFn = function () {};
+```
+
+declaration:
+
+```js
+function myFn() {}
+```
+
+|          | function declaration |  function expression |
+|----------|----------------------|----------------------|
+| name     | required             | can be ommited       |
+| IIFE     | no                   | supported            |
+| hoisting | no                   | yes                  |
+
+- https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function#description
+
+## Links
 
 [^j]: [js functions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-functions.ipynb)
