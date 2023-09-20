@@ -28,12 +28,12 @@ function func() {
 
 ```js
 function showPodcast() {
+	console.log(best_podcast);
 	//Вызовем переменную перед её объявлением
 	best_podcast = 'people and code';
 	if (false) {
 		var best_podcast;
 	}
-	console.log(best_podcast);
 }
 
 showPodcast(); //Ошибки не будет, браузер выведет undefined
@@ -52,15 +52,15 @@ Hoisting is a JavaScript mechanism where `vari`, `function` and `class` declarat
 ## Temporal Dead Zone
 
 ```js
-function somemethod() {
+function someMethod() {
   // undefined
-  console.log(counter1);
+  console.log(counterVar);
 
   // ReferenceError, temporal dead zone for counter2
-  console.log(counter2);
+  console.log(counterLet);
 
-  var counter1 = 1;
-  let counter2 = 2;
+  var counterVar = 1;
+  let counterLet = 2;
 }
 ```
 
