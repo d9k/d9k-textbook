@@ -36,6 +36,12 @@ When we treat a primitive value like it was an object (i.e. by accessing propert
 You can't directly add and call method to string variable, but you can do this with `String(strValue)` wrapper object.
 
 - https://programmingwithmosh.com/javascript/javascript-wrapper-objects/
+## What are the differences between primitives and non-primitives?
+
+|                   | primitives        | non-primitives     |
+| ------------------|------------------ |--------------------|
+| Stored in...      | stack             | heap               |
+| Defined           | by user           | built-in           |
 
 ## Links
 
