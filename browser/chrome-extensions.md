@@ -16,8 +16,6 @@
 
 * External Application Launcher
 * MultiPass for HTTP basic authentication
-* Copy as Markdown (@notlmn)
-* Copy as Markdown (@yorkxin)
 
 ## Browsing
 
@@ -47,6 +45,8 @@
 * Copy Unicode URLs
 * Notion Web Clipper
 * Save as eBook
+* Copy as Markdown (@notlmn)
+* Copy as Markdown (@yorkxin)
 
 ## Media
 
