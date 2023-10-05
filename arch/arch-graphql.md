@@ -7,11 +7,11 @@
 In ***over-fetching***, an endpoint responds with _more data than the client needs_, which can add to bandwidth usage.
 In ***under-fetching***, no endpoint offers sufficient data, so the _client must query multiple endpoints_ to get what it needs.
 
-(From https://tyk.io/blog/building-and-managing-graphql-microservices-with-apollo-and-tyk/)
-
 ## With microservices
 
 ### Apollo
+
+(From https://tyk.io/blog/building-and-managing-graphql-microservices-with-apollo-and-tyk/)
 
 [GraphOS](https://www.apollographql.com/docs/graphos/) .
 

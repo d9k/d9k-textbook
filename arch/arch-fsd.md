@@ -1,5 +1,9 @@
 # Architecture: FSD
 
+https://feature-sliced.design/
+
+This methodology is for front-end projects only. If you're looking for a back-end architecture, consider [Clean Architecture](./arch-clean.md)_.
+
 ## Архитектура Frontend FSD+ - Ulbi TV
 
 https://youtu.be/c3JGBdxfYcU
