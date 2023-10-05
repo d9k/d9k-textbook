@@ -24,3 +24,6 @@
 		- Infrastructure: historically, the industry has modified data access techniques at least every 3 years; Therefore, we can count on needing to modify data access 3 years from now for any healthy, long-lived systems that’s mission-critical to the business. If coupling prevents easily upgrading parts of the system We often don’t keep systems up-to-date.
 ## About
 
+- [The Clean Architecture / Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- All predecessors have the same objective, which is the ***separation of concerns***. They all achieve this separation by dividing the software into layers. Each has at least one layer for business rules, and another for interfaces. Each is ***independent of frameworks***, ***testable*** \[in isolation\], ****parts can be replaced*** in isolation (UI, DB). Your business rules simply don’t know anything at all about the outside world (***independent of any external agency***).
+- The outer circles are mechanisms. The inner circles are policies. Dependency inversion: nothing in an inner circle can know anything at all about something in an outer circle.
