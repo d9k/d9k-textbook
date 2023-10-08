@@ -61,6 +61,7 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 - api - взаимод. с сервисами (axios, rtkQuery; mappers/: подготовка к отправке данных/преобраз. получ. данных)
 - const
 - assets
+- types
 
 вышележащие используют только нижележащие, однонпр. поток данных
 
@@ -91,3 +92,7 @@ Adaptility -  т. к. модули обладают чёткой зоной от
 Интсрументы: pnpm/yarn workspaces, nx, lerna, bit, single-spa, webpack module federation
 
 Недостатки: сложно, долго, желателен отдельный человек, ответственный за монорепу
+
+## More on FSD
+
+- A very simple app of a single page might not need the benefits of FSD and suffer from the overhead. However, FSD promotes a nice way of thinking, so feel free to use it on the tiniest projects if you want.
