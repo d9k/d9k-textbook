@@ -25,5 +25,49 @@
 ## About
 
 - [The Clean Architecture / Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-- All predecessors have the same objective, which is the ***separation of concerns***. They all achieve this separation by dividing the software into layers. Each has at least one layer for business rules, and another for interfaces. Each is ***independent of frameworks***, ***testable*** \[in isolation\], ****parts can be replaced*** in isolation (UI, DB). Your business rules simply don’t know anything at all about the outside world (***independent of any external agency***).
-- The outer circles are mechanisms. The inner circles are policies. Dependency inversion: nothing in an inner circle can know anything at all about something in an outer circle.
+- All predecessors have the same objective, which is the ***separation of concerns***.
+	- They all achieve this separation by dividing the software into ***layers***.
+		- Each has at least one layer for ***business rules***
+		- and another for ***interfaces***
+	- Each is ***independent of frameworks***, ***testable*** \[in isolation\], ***parts can be replaced*** in isolation (UI, DB).
+	- Business rules simply don’t know anything at all about the outside world (***independent of any external agency***).
+- The outer circles are mechanisms. The inner circles are policies. Dependency inversion: nothing in an inner circle can know anything at all about something in an outer circle. Data formats used in an outer circle should not be used by an inner circle,
+
+## Layers
+
+top (internal) layers not affected by bottom (outer).
+
+- ***Entities***: general and high-level business rules, least likely to change. Data structures definitions and algorithms. Entities could be used by many different applications in the enterprise. If you just writing a single application, then these entities are the business objects of the application.
+- ***Use cases***: application specific business rules. These ***use cases*** orchestrate the flow of data to and from the entities, and direct those entities to use their _enterprise wide_ business rules to achieve the goals of the use case.
+- ***Interface Adapters*** - convert data between formats for entities / use cases and *external agency* formats. Presenters, Views, and Controllers
+- ***Frameworks and Drivers*** - adapters glue code that communicates to the next circle inwards.
+
+## Peculiarities
+
+Note the flow of control. It begins in the controller, moves through the use case, and then winds up executing in the presenter.
+
+Typically the data that crosses the boundaries is simple data structures. You can use basic structs or simple Data Transfer objects if you like.
+
+## # Заблуждения Clean Architecture
+
+https://habr.com/ru/companies/mobileup/articles/335382/
+
+- Entity это не POJO / DTO, а  объекты с методами или набором структур и функций.
+- Interactor – объект, который реализует сценарии использования (use case), оперирующая бизнес-объектами (Entities).
+- Use case – это детализация, описание действия, которое может совершить пользователь системы.
+
+```
+Create Order
+
+Data: CustomerId, CustomerContactInfo, ShipmentDestination, ShipmentMechanism, PaymentInformation
+
+Primary Course:
+1. Order clerk issues "Create Order" command with above data.
+2. System validates all data.
+3. System creates order and determines order-id.
+4. System delivers order-id to clerk.
+
+Exception Course: Validation Error
+
+l. System delivers error message to clerk
+```
