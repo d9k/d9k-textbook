@@ -35,6 +35,8 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 
 ## 4. Feature-sliced design
 
+![FSD|300](https://habrastorage.org/r/w1560/getpro/habr/upload_files/723/6f2/e84/7236f2e840bf13323cd74a0b5dec110b.jpeg)
+
 Слой, Слайс, Сегмент
 
 слой, у каждого своя зона ответственности, строго 8:
@@ -42,7 +44,7 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 - app - entry point, инициализир. логика приложения, глобальные стили, декларации с типами, providers/: store, skin, роутинг, styles/
 - processes - процессы приложений, протекающие над несколькими страницами (например, поэтапная форма)
 - pages - перечисление widgets и features, обёрнутое в layout
-- widgets - макс. самост. компоненты (Sidebar, and Header, Navbar, WallPostCard). Содержит! entity, в пустые слоты которых вставлены features
+- widgets - макс. самост. компоненты (Sidebar, and Header, Navbar, WallPostCard). Содержит entity, в пустые слоты которых вставлены features
 - features - модули, несущие бизнес-ценность, реализ. пользовательские сценарии (AuthByPhone, ArticleFeedback, ChangeLanguage). Одна фича - один модуль
 - entities - конкретные бизнес-сущности: User, Article, Product, Contruct, ProductDescription, Productcharacteristics)
 - shared - переисп. модули, без привязки к бизнес-логике (UI-kit или служебный код)
@@ -96,3 +98,19 @@ Adaptility -  т. к. модули обладают чёткой зоной от
 ## More on FSD
 
 - A very simple app of a single page might not need the benefits of FSD and suffer from the overhead. However, FSD promotes a nice way of thinking, so feel free to use it on the tiniest projects if you want.
+- No mapping in Interactor. When we pass data across a boundary, it is always in the form that is most convenient for the inner circle. Поэтому в Interactor данные должны попадать уже в нужном ему виде. Маппинг происходит в слое Interface Adapters, то есть в Presenter и Repository.
+- Один модуль не должен использовать другой модуль, расположенный на том же слое или на слоях выше. Например, фича А не должна импортировать фичу B. В противном случае модули перестают быть изолированными друг от друга и теряют устойчивость к новыми требованиям. Когда мы модифицируем фичу B, мы неявно изменяем и фичу A. В небольшом приложении, возможно, это не так критично. Но чем больше людей работает над проектом и чем объемнее кодовая база, тем сложнее держать в голове все связи между модулями. Данное правило позволяет стандартизировать этот процесс, упрощает рефакторинг и модификацию модулей.
+
+- [Заблуждения Clean Architecture / Хабр](https://habr.com/ru/companies/mobileup/articles/335382/)
+
+## FSD cheatsheet
+
+## Choosing a layer
+
+![choosing a layer|200](https://feature-sliced.design/assets/images/choosing-a-layer-en-5b67f20bb921ba17d78a56c0dc7654a9.jpg)
+
+https://feature-sliced.design/docs/get-started/cheatsheet
+
+## Examples
+
+- https://feature-sliced.design/examples
