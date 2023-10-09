@@ -35,7 +35,7 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 
 ## 4. Feature-sliced design
 
-![FSD|300](https://habrastorage.org/r/w1560/getpro/habr/upload_files/723/6f2/e84/7236f2e840bf13323cd74a0b5dec110b.jpeg)
+![FSD|450](https://raw.githubusercontent.com/d9k/d9k-textbook-assets/main/arch/arch-fsd/layers-3d-visual-representation.png)
 
 Слой, Слайс, Сегмент
 
@@ -44,7 +44,7 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 - app - entry point, инициализир. логика приложения, глобальные стили, декларации с типами, providers/: store, skin, роутинг, styles/
 - processes - процессы приложений, протекающие над несколькими страницами (например, поэтапная форма)
 - pages - перечисление widgets и features, обёрнутое в layout
-- widgets - макс. самост. компоненты (Sidebar, and Header, Navbar, WallPostCard). Содержит entity, в пустые слоты которых вставлены features
+- widgets - макс. самост. компоненты (Sidebar, and Header, Navbar, WallPostCard). Содержитd entity, в пустые слоты которых вставлены features
 - features - модули, несущие бизнес-ценность, реализ. пользовательские сценарии (AuthByPhone, ArticleFeedback, ChangeLanguage). Одна фича - один модуль
 - entities - конкретные бизнес-сущности: User, Article, Product, Contruct, ProductDescription, Productcharacteristics)
 - shared - переисп. модули, без привязки к бизнес-логике (UI-kit или служебный код)
@@ -107,7 +107,7 @@ Adaptility -  т. к. модули обладают чёткой зоной от
 
 ## Choosing a layer
 
-![choosing a layer|200](https://feature-sliced.design/assets/images/choosing-a-layer-en-5b67f20bb921ba17d78a56c0dc7654a9.jpg)
+![choosing a layer|600](https://raw.githubusercontent.com/d9k/d9k-textbook-assets/main/arch/arch-fsd/choosing-a-layer.png)
 
 https://feature-sliced.design/docs/get-started/cheatsheet
 
