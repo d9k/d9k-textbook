@@ -1,6 +1,8 @@
 # Architecture: FSD
 
-https://feature-sliced.design/
+- https://feature-sliced.design/
+- [Layers | Feature-Sliced Design](https://feature-sliced.design/docs/reference/layers#%D1%85%D0%B5%D0%B4%D0%B5%D1%80-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+- [Examples | Feature-Sliced Design](https://feature-sliced.design/docs/guides/examples)
 
 This methodology is for front-end projects only. If you're looking for a back-end architecture, consider [Clean Architecture](./arch-clean.md)_.
 
@@ -64,6 +66,7 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 - const
 - assets
 - types
+- styles
 
 вышележащие используют только нижележащие, однонпр. поток данных
 
@@ -100,6 +103,7 @@ Adaptility -  т. к. модули обладают чёткой зоной от
 - A very simple app of a single page might not need the benefits of FSD and suffer from the overhead. However, FSD promotes a nice way of thinking, so feel free to use it on the tiniest projects if you want.
 - No mapping in Interactor. When we pass data across a boundary, it is always in the form that is most convenient for the inner circle. Поэтому в Interactor данные должны попадать уже в нужном ему виде. Маппинг происходит в слое Interface Adapters, то есть в Presenter и Repository.
 - Один модуль не должен использовать другой модуль, расположенный на том же слое или на слоях выше. Например, фича А не должна импортировать фичу B. В противном случае модули перестают быть изолированными друг от друга и теряют устойчивость к новыми требованиям. Когда мы модифицируем фичу B, мы неявно изменяем и фичу A. В небольшом приложении, возможно, это не так критично. Но чем больше людей работает над проектом и чем объемнее кодовая база, тем сложнее держать в голове все связи между модулями. Данное правило позволяет стандартизировать этот процесс, упрощает рефакторинг и модификацию модулей.
+- Layouts (templates) в Anifox расположены в `widgets/`, а в `realworld-react-fsd` в `pages/`
 
 - [Заблуждения Clean Architecture / Хабр](https://habr.com/ru/companies/mobileup/articles/335382/)
 
