@@ -32,3 +32,10 @@
 	- :tv: [Firebase vs Supabase — I Built The Same App With Both - YT](https://www.youtube.com/watch?v=yGbGxWMv9KA&t=181s)
 		- Supabase: only 1 local function
 		- Supabase: on top of PSQL
+
+## Supabase: own features
+
+- [ ] :beginner: [TypeScript support](https://supabase.com/docs/reference/javascript/typescript-support)
+	-  :building_construction: `supabase gen types typescript --project-id abcdefghijklmnopqrst > database.types.ts`
+- Auth schema
+- generates custom API documentation
