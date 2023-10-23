@@ -35,7 +35,21 @@
 
 ## Supabase: own features
 
-- [ ] :beginner: [TypeScript support](https://supabase.com/docs/reference/javascript/typescript-support)
+- :beginner: [TypeScript support](https://supabase.com/docs/reference/javascript/typescript-support)
 	-  :building_construction: `supabase gen types typescript --project-id abcdefghijklmnopqrst > database.types.ts`
 - Auth schema
 - generates custom API documentation
+
+## Supabase Postgres functions languages
+
+- [js: plv8](https://supabase.com/docs/guides/database/extensions/plv8)
+
+## Supabase + Swagger
+
+- :balloon: https://supabase.github.io/storage-api/
+	- :balloon: https://project.supabase.co/rest/v1/?apikey=anon-key
+- :speech_balloon: [Generate types using Swagger OpenAPI specification fails | issue #281 supabase](https://github.com/supabase/supabase/issues/281)
+	- :building_construction:
+```bash
+npx openapi-typescript https://<my project>.supabase.co/rest/v1/?apikey=<key> --output types/supabase.ts"`
+```
