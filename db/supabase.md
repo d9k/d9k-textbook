@@ -20,8 +20,17 @@
 - generated columns
 - pgsodium - cryptography
 - [GraphQL support](https://supabase.com/blog/graphql-now-available)
-	- :balloon: [supabase-graphql-example /GH](https://github.com/supabase-community/supabase-graphql-example#schema-public)
-		- "HackerNews-like clone built with Supabase"
+	- :balloon: [supabase-graphql-example | GitHub](https://github.com/supabase-community/supabase-graphql-example#schema-public)
+		- _"HackerNews-like clone built with Supabase"_
+- [JSON schema validation](https://supabase.com/blog/pg-jsonschema-a-postgres-extension-for-json-validation)
+## Supabase: own features
+
+- :beginner: [TypeScript support](https://supabase.com/docs/reference/javascript/typescript-support)
+	-  :building_construction: `supabase gen types typescript --project-id abcdefghijklmnopqrst > database.types.ts`
+- Auth schema
+- generates custom API documentation
+- [supabase/realtime](https://github.com/supabase/realtime) - Broadcast, Presence, and Postgres Changes via WebSockets
+
 ## Supabase versus...
 
 - :vs: Pocketbase
@@ -32,13 +41,6 @@
 	- :tv: [Firebase vs Supabase — I Built The Same App With Both - YT](https://www.youtube.com/watch?v=yGbGxWMv9KA&t=181s)
 		- Supabase: only 1 local function
 		- Supabase: on top of PSQL
-
-## Supabase: own features
-
-- :beginner: [TypeScript support](https://supabase.com/docs/reference/javascript/typescript-support)
-	-  :building_construction: `supabase gen types typescript --project-id abcdefghijklmnopqrst > database.types.ts`
-- Auth schema
-- generates custom API documentation
 
 ## Supabase Postgres functions languages
 

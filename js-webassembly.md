@@ -9,11 +9,13 @@
 
 WebAssembly System Interface is a set of APIs which give sandboxed WebAssembly applications access to the underlying operating system via a collection of POSIX-like functions.
 
-"If WASM+WASI existed in 2008, we wouldn't have needed to created Docker. That's how important it is. Webassembly on the server is the future of computing. A standardized system interface was the missing link. Let's hope WASI is up to the task!" /[Solomon Hykes, 2019](https://twitter.com/solomonstre/status/1111004913222324225) developer of [Docker](https://en.wikipedia.org/wiki/Docker_(software))
+>_"If WASM+WASI existed in 2008, we wouldn't have needed to created Docker. That's how important it is. Webassembly on the server is the future of computing. A standardized system interface was the missing link. Let's hope WASI is up to the task!"_
+>/ [Solomon Hykes, 2019](https://twitter.com/solomonstre/status/1111004913222324225) developer of [Docker](https://en.wikipedia.org/wiki/Docker_(software))
 
 — like containers didn't fully replace VMs.
 
-"“So will wasm replace Docker?” No, but imagine a future where Docker runs linux containers, windows containers and wasm containers side by side. Over time wasm might become the most popular container type. Docker will love them all equally, and run it all :)" /[Solomon Hykes, 2019](https://twitter.com/solomonstre/status/1111113329647325185?lang=en)
+> _"“So will wasm replace Docker?” No, but imagine a future where Docker runs linux containers, windows containers and wasm containers side by side. Over time wasm might become the most popular container type. Docker will love them all equally, and run it all :)"_
+> / [Solomon Hykes, 2019](https://twitter.com/solomonstre/status/1111113329647325185?lang=en)
 
 ## WASI APIs
 
