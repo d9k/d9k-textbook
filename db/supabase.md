@@ -23,6 +23,7 @@
 	- :balloon: [supabase-graphql-example | GitHub](https://github.com/supabase-community/supabase-graphql-example#schema-public)
 		- _"HackerNews-like clone built with Supabase"_
 - [JSON schema validation](https://supabase.com/blog/pg-jsonschema-a-postgres-extension-for-json-validation)
+- [policies (rule engine)](https://supabase.com/docs/guides/auth#policies)
 ## Supabase: own features
 
 - :beginner: [TypeScript support](https://supabase.com/docs/reference/javascript/typescript-support)
