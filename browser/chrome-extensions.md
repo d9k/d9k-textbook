@@ -16,6 +16,7 @@
 
 * External Application Launcher
 * MultiPass for HTTP basic authentication
+* Tab Modifier
 
 ## Browsing
 
