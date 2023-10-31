@@ -29,3 +29,14 @@ To fix it clear target local tables before applying data dump.
 For example you can achieve it with [DBeaver x-platform database client](https://stackoverflow.com/a/64819402/1760643).
 
 Select tables to clear, right click, Tools -> Truncate, then on dialog window "Truncate table parameters" -> "Settings" -> check "\[v\] Cascade" -> \[Proceed\] button
+
+## Migrations: develop on remote
+
+Change remote structure, then:
+
+```bash
+npm exec supabase pull
+npm exec supabase migration up
+npm exec supabase migration list
+npm exec supabase migration repair 20231028215841 --status applied
+```
