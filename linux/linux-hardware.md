@@ -63,6 +63,10 @@ echo disable > /proc/acpi/ibm/bluetooth
 
 http://askubuntu.com/a/2568/156571
 
+### Unblock bluetooth
+
+`sudo rfkill unblock bluetooth`
+
 ### Low level battery warning
 
 `sudo apt-get install libnotify-bin acpi`
