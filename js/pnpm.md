@@ -1,9 +1,14 @@
 # PNPM
 
+## Motivation
+
+https://pnpm.io/motivation
+## cache directory
+
+`pnpm store path
+## npx
 
 - npx -> pnpm dlx
-- cache directory: `pnpm store path
-## npx
 
 ```sh
 alias pnx='pnpm dlx'
