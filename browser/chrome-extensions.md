@@ -1,4 +1,8 @@
-# Chrome plugins
+# Chrome extension
+
+- :label: <small>plugins, addons</small>
+
+https://chromewebstore.google.com/
 
 ## Development
 
@@ -58,3 +62,5 @@
 * VKloader
 * Web Scrobbler
 * YouTube Popout Player
+* [Audio Only Youtube](https://chrome.google.com/webstore/detail/audio-only-youtube/pkocpiliahoaohbolmkelakpiphnllog)
+* [ThemeSong for YouTube Music](https://chromewebstore.google.com/detail/themesong-for-youtube-mus/bgfiegdbajagebogifobkhambpljbfmk) - Open in YouTube
