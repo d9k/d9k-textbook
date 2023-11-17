@@ -18,4 +18,15 @@
 
 ## [Esm.sh](https://esm.sh)
 
-- CDN for Deno
+- CDN for Deno ^d9k-cdn-for-deno-2023-11-08
+
+## [Skypack](https://www.skypack.dev/)
+
+- Load optimized npm packages with no install and no build tools.
+- Minified (?min), Deno (?dts)
+
+## [Snyk Advisor](https://snyk.io/advisor)
+
+- code examples for some packages:
+- https://snyk.io/advisor/npm-package/lodash/example
+- https://snyk.io/advisor/code/javascript/popular
