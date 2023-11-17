@@ -1,4 +1,4 @@
-# Chrome extension
+# Chrome extensions
 
 - :label: <small>plugins, addons</small>
 
@@ -43,15 +43,18 @@ https://chromewebstore.google.com/
 * GoFullPage - Full Page Screen Capture
 * OneTab
 * Open tabs next to current
-* Tab Position Options
+* ~~Tab Position Options~~
+	* :fallen_leaf: break tab groups
+- Tab position customizer
 
 ## Document flow
 
+* Copy as Markdown (@notlmn)
+* Copy as Markdown (@yorkxin)
+- [Copy Link Text](https://chrome.google.com/webstore/detail/copy-link-text/loeniidbmeohdlmipbpkfmiogbcncibh)
 * Copy Unicode URLs
 * Notion Web Clipper
 * Save as eBook
-* Copy as Markdown (@notlmn)
-* Copy as Markdown (@yorkxin)
 
 ## Media
 
@@ -64,3 +67,7 @@ https://chromewebstore.google.com/
 * YouTube Popout Player
 * [Audio Only Youtube](https://chrome.google.com/webstore/detail/audio-only-youtube/pkocpiliahoaohbolmkelakpiphnllog)
 * [ThemeSong for YouTube Music](https://chromewebstore.google.com/detail/themesong-for-youtube-mus/bgfiegdbajagebogifobkhambpljbfmk) - Open in YouTube
+
+## Popup sites
+
+- [Multilanguage Translator](https://chromewebstore.google.com/detail/multilanguage-translator/ielooaepfhfcnmihgnabkldnpddnnldl)
