@@ -50,14 +50,16 @@ https://gist.github.com/andreyvit/2921703
 
 2) sh-скрипт:
 
-	#/bin/bash
+```
+#/bin/bash
 
-	tmux new-session -d -s 'general' 'zsh'
-	tmux split-window -v -p 25 'zsh'
-	# tmux split-window -h
-	# tmux new-window 'mutt'
-	tmux select-pane -t 0
-	tmux attach-session -d -t 'general'
+tmux new-session -d -s 'general' 'zsh'
+tmux split-window -v -p 25 'zsh'
+# tmux split-window -h
+# tmux new-window 'mutt'
+tmux select-pane -t 0
+tmux attach-session -d -t 'general'
+```
 
 ## подключение к сессии
 
