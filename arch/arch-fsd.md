@@ -4,16 +4,16 @@
 - [Layers | Feature-Sliced Design](https://feature-sliced.design/docs/reference/layers#%D1%85%D0%B5%D0%B4%D0%B5%D1%80-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
 - [Examples | Feature-Sliced Design](https://feature-sliced.design/docs/guides/examples)
 
-This methodology is for front-end projects only. If you're looking for a back-end architecture, consider [Clean Architecture](./arch-clean.md)_.
+This methodology is for front-end projects only. If you're looking for a back-end architecture, consider [Clean A[[arch-clean]]rchitecture](./arch-clean.md)_.
 
 ## Архитектура Frontend FSD+ - Ulbi TV
 
 https://youtu.be/c3JGBdxfYcU
-## 1. Простая (классическая)
+### 1. Простая (классическая)
 
 компоненты в одну кучу (бизнес и абстрактные)
 
-## 2. Модульная
+### 2. Модульная
 
 перенос принципа инкапсуляции из ООП  - функционал разбит по модулям (store + компоненты)
 
@@ -27,7 +27,7 @@ Pages (макс. тонкая) -> Modules (сложные куски стран�
 
 Недостатки: что если модуль нужно использовать в другом модуле? Где хранить бизнес-сущности?
 
-## 3. Атомная архитетура
+### 3. Атомная архитетура
 
 atoms (kit без бизнес-логики) <- molecules <- organisms (похожи на modules) | templates (с "дырками" для компонентов) <- pages
 
@@ -35,7 +35,7 @@ atoms (kit без бизнес-логики) <- molecules <- organisms (похо
 
 Минус: опять нет чёткой бизнес-ориентированности
 
-## 4. Feature-sliced design
+### 4. Feature-sliced design
 
 ![FSD|450](https://raw.githubusercontent.com/d9k/d9k-textbook-assets/main/arch/arch-fsd/layers-3d-visual-representation.png)
 
