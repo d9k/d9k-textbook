@@ -2,6 +2,7 @@
 
 - [CSS Evolution: From CSS, SASS, BEM, CSS Modules to Styled Components | by Carl0zen | Medium](https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b) ([WayBack mirror](https://web.archive.org/web/20191209120825/https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b))
 - [Thorough Analysis of CSS-in-JS | CSS-Tricks](https://css-tricks.com/a-thorough-analysis-of-css-in-js/)
+
 ## And what about BEM?
 
 - Class names selection became a tedious task
@@ -56,6 +57,18 @@ Useful cases: animations, targeting a regular global class from within a local c
 
 - Requirement to create separate style file
 
+## JSS
+
+- **JSS** is a tool that lets you use **JavaScript** to describe styles in CSS in a declarative and reusable way.
+
+- [React-JSS](https://cssinjs.org/react-jss)
+- [Server-Side rendering](https://cssinjs.org/react-jss#server-side-rendering)
+
+- Alternatives:
+	- [Styled-JSS](https://cssinjs.org/styled-jss) - styled-components like API.
+	- [Glamor-JSS](https://github.com/dan-lee/glamor-jss/) - glamor flavored CSS with JSS under the hood.
+	- [Aphrodite-JSS](https://github.com/cssinjs/aphrodite-jss/) - aphrodite like API.
+
 ## CSS-in-JS / Валерий Сорокобатько, 2017
 
 https://youtu.be/gfU17b8TFYU?si=BAUUeN9FmVjOjyOM
@@ -92,6 +105,10 @@ tuchk4/rockey - заброшенная библиотека от автора д
 - Conflicting multiple CSS-in-JS instances if use frameworks
 	- [You are loading @emotion/react when it is already loaded · Issue #2639 emotion-js/emotion](https://github.com/emotion-js/emotion/issues/2639)
 		- [fix](https://github.com/emotion-js/emotion/issues/2639#issuecomment-1105881066)
+
+- on React 18 server-side rendering problems:
+	- [Stitches developer about static extract](https://github.com/stitchesjs/stitches/discussions/1149#discussioncomment-6223090)
+
 ## Compile time CSS-in-JS drawbacks
 
 - [Why We're Breaking Up with CSS-in-JS - dev.to](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)
@@ -100,3 +117,8 @@ tuchk4/rockey - заброшенная библиотека от автора д
 	- Styles are still inserted when a component mounts for the first time, which forces the browser to recalculate the styles on every DOM node.
 	- Boilerplate components cluttering React DevTools
 	- Dynamic styles becomes CSS variabled in inline style props
+
+## CSS-in-JS comparison
+
+- [andreipfeiffer/css-in-js](https://github.com/andreipfeiffer/css-in-js), 2022
+- [Styling: CSS-in-JS | Next.js](https://nextjs.org/docs/app/building-your-application/styling/css-in-js)
