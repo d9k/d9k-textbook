@@ -25,8 +25,8 @@
 ## View
 
 - Heading level indent
-- Hover External Link
-- Image Toolkit
+- [Hover External Link](https://github.com/jamiebrynes7/obsidian-hover-external-link)
+- [Image Toolkit](https://github.com/sissilab/obsidian-image-toolkit)
 
 ## Web
 
