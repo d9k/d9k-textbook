@@ -8,7 +8,7 @@
 
 **Error Handling**: `getDerivedStateFromError()`, `componentDidCatch()`
 
-Только для компонентов. Для функциональных компонентов используются hooks (`useState`, `useEffect`)
+Только для компонентов. Для функциональных элементов используются hooks (`useState`, `useEffect`)
 
 ![react-lifecycle](https://raw.githubusercontent.com/d9k/d9k-textbook-assets/main/react/react-lifecycle/react-flow.jpg)
 
