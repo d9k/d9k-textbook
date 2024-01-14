@@ -45,3 +45,11 @@ args_parse "$@"
 ## Имя скрипта
 
     SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
+
+## Последний аргумент
+
+```bash
+eval last=\${$#}
+```
+
+https://stackoverflow.com/questions/1853946/getting-the-last-argument-passed-to-a-shell-script
