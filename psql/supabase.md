@@ -13,6 +13,7 @@
 
 - permissions (row-level security) with CREATE POLICY
 	- https://www.postgresql.org/docs/current/sql-createpolicy.html
+	- [Implement Authorization using Row Level Security with Supabase | YT](https://www.youtube.com/watch?v=Ow_Uzedfohk)
 - Triggers
 - Functions
 - [PostgREST](https://postgrest.org)
