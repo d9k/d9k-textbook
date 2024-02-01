@@ -23,14 +23,13 @@
 - [Input.Wrapper](https://mantine.dev/core/input/#inputwrapper-component)
 	- used in all other inputs (`TextInput`, `NativeSelect`, `Textarea`, etc.) under the hood, you do not need to wrap your inputs with it, as it is already included in all of them. Use `Input.Wrapper` only when you want to create custom inputs.
 - [LoadingOverlay](https://mantine.dev/core/loading-overlay)
-- [PillsInput](https://mantine.dev/core/pills-input/#searchable-select-example)
-	for tags input
 - [ScrollArea](https://mantine.dev/core/scroll-area/#scroll-element-into-view)
 - [Stack](https://mantine.dev/core/stack/)
 	- compose elements and components in a vertical flex container (`Group` for horizontal)
 - [Tabs](https://mantine.dev/core/tabs/)
 	- can be used as horizontal menu
 		- [Usage with react-router | Tabs](https://mantine.dev/core/tabs/#usage-with-react-router)
+- [TagsInput](https://mantine.dev/core/tags-input/)
 - [TypographyStylesProvider](https://mantine.dev/core/typography-styles-provider)
 - [VisuallyHidden](https://mantine.dev/core/visually-hidden/)
 	- hide element visually but keep it accessible for screen readers
