@@ -1,5 +1,4 @@
-Рецепты ssh
-===========
+# Рецепты ssh
 
 Русская раскладка
 -----------------
@@ -142,3 +141,7 @@ Defaults    env_keep+=SSH_AUTH_SOCK
 ## Запросить пароль к логину вместо ключа
 
 `ssh -o PubkeyAuthentication=no -o PreferredAuthentications=password`
+
+## Prevent "too many auth failures" error
+
+Usually adding argument `-o PubkeyAuthentication=no` to `ssh` command solves an issue.
