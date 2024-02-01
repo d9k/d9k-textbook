@@ -1,5 +1,7 @@
 # Рецепты git
 
+##
+
 ## ignore local changes
 
 1) В `.git/info/exclude` добавить `vendor/`.
@@ -103,6 +105,16 @@ https://unix.stackexchange.com/questions/280217/how-to-replay-git-repository-his
 
 git pull --allow-unrelated-histories file:///home/user/myrepo2 myrepo2-branch
 
-# List remote branches
+## List remote branches
 
 `git ls-remote`
+
+## Conditional include config
+
+```
+[includeIf "gitdir:~/work/"]
+path = .gitconfig-work
+```
+
+- https://github.blog/2017-05-10-git-2-13-has-been-released/#conditional-configuration
+- https://stackoverflow.com/a/46239540/1760643
