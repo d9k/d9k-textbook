@@ -33,3 +33,7 @@ token = unsignedToken + '.' + encodeBase64Url(signature)
 
 - Минусы
 	- Лаг в применении. Нельзя быстро ограничить пользователя (настраиваемое время жизни токена)
+
+### См. также
+
+- [Про токены, JSON Web Tokens (JWT), аутентификацию и авторизацию. Token-Based Authentication](https://gist.github.com/dmikoss/f40fb297974a5be5fbe88785986d467a)

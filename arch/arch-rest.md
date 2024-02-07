@@ -25,3 +25,19 @@ REST — набор правил проектирования архитекту
 An open protocol that allows the creation and consumption of queryable and interoperable Web service APIs in a standard way. Microsoft initiated OData in 2007
 
 `http://host/service/` - OData service root. Returns ***the service document*** which lists entity sets, functions, and singletons that can be retrieved.
+
+`http://host/service/$metadata` - [static](https://github.com/OData/odata.net/issues/181) XML document describing the types, sets, functions and actions understood by the OData service
+
+OData uses the ***HTTP verbs*** to indicate the operations on the resources: `GET` (select), `POST` (insert new), `PUT` (upsert?, whole), `PATCH` (update, some fields), `DELETE`.
+
+URLs requested from an OData endpoint may include query options as [URL query string](https://en.wikipedia.org/wiki/Query_string). Each query parameter name must be prefixed with `$` sign:
+
+```
+OData/Products?$top=2&$orderby=Name
+OData/Products?$filter=Price lt 10.00 and startswith(Name,'M')
+```
+
+### See also
+
+- [Understand OData in 6 steps | OData getting started](https://www.odata.org/getting-started/understand-odata-in-6-steps/)
+	- Relating resources, Invoking a function...

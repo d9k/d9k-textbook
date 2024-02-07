@@ -29,6 +29,9 @@
 - Сервисный документ:
 	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata?$format=json`
 
+- XML-документ метаданных:
+	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata?$format=json`
+
 - Запрос сущности:
 	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata/Catalog_Организации?$format=json`
 
@@ -52,3 +55,23 @@
 |Регистр бухгалтерии|AccountingRegister|
 |Бизнес-процесс|BusinessProcess|
 |Задача|Task|
+
+
+## Параметры обращения к ресурсам
+
+- [Работа с 1С через протокол OData | infostart](https://infostart.ru/1c/articles/1570140/)
+	- коды ошибок
+- [Настройка odata в 1с | varebux](https://varebux.ru/nastroyka-odata-v-1s/)
+- [REST интерфейс и HTTP запросы в примерах | master1c8](https://master1c8.ru/platforma-1s-predpriyatie-8/rukovodstvo-razrabottchika/glava-17-mehanizm-internet-servisov/4036/)
+
+После формирования имени ресурса нужно определить параметры обращения к ресурсу, например, `?$filter=_Значение_&$format=json&$select=Ref_Key`.
+
+- `$select` — вернуть только эти поля (`Ref_Key,ИНН,НаименованиеПолное`)
+- `$filter` — отбор при получении данных (`Наименование eq 'Главный'`, `Цена ge 10`)
+- `$format` — указывает формат возвращаемых данных (`json`),
+- `$top` — ограничение количества возвращаемых записей
+- `$skip` — убирает из результата запроса указанное количество записей
+- `$count` — возвращает количество записей в выборке запроса
+- `$inlinecount=allpage(=none)` — добавляет в результат запроса информацию о количестве записей
+- `$orderby` — сортировка результата запроса (`<Реквизит1> asc, <Реквизит2> desc`)
+- `alloweOnly` — только разрешенные (используется без знака `$`).
