@@ -26,5 +26,29 @@
 
 ## Пример URL
 
-`http://127.0.0.1:8888/InfoBase1/odata/standard.odata/Catalog_Организации?$format=json`
+- Сервисный документ:
+	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata?$format=json`
 
+- Запрос сущности:
+	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata/Catalog_Организации?$format=json`
+
+## Префикс сущностей в REST URL
+
+`/${СУЩНОСТЬ}_${ИМЯ}`
+
+|**Объект конфигурации**|**Префикс имени в** **URL**|
+|---|---|
+|Справочник|Catalog|
+|Документ|Document|
+|Журнал документов|DocumentJournal|
+|Константа|Constant|
+|План обмена|ExchangePlan|
+|План счетов|ChartOfAccounts|
+|План видов расчета|ChartOfCalculationTypes|
+|План видов характеристик|ChartOfCharacteristicTypes|
+|Регистр сведений|InformationRegister|
+|Регистр накопления|AccumulationRegister|
+|Регистр расчета|CalculationRegister|
+|Регистр бухгалтерии|AccountingRegister|
+|Бизнес-процесс|BusinessProcess|
+|Задача|Task|
