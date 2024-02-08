@@ -30,7 +30,7 @@
 	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata?$format=json`
 
 - XML-документ метаданных:
-	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata?$format=json`
+	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata/$metadata`
 
 - Запрос сущности:
 	- `http://127.0.0.1:8888/InfoBase1/odata/standard.odata/Catalog_Организации?$format=json`
