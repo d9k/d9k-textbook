@@ -30,3 +30,7 @@
 - code examples for some packages:
 - https://snyk.io/advisor/npm-package/lodash/example
 - https://snyk.io/advisor/code/javascript/popular
+
+## npm.jsr.io
+
+https://npm.jsr.io/

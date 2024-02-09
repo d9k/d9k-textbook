@@ -4,8 +4,8 @@
 
 `~/.config/autostart` - автозапуск приложений. `.desktop`-файлы можно запустать так: `gio launch ~/.config/autostart/Yandex.Disk.desktop`
 
-~/.bashrc - пользовательский
-/etc/init.d
+`~/.bashrc` - пользовательский
+`/etc/init.d`
 
 ## Общий (root)
 
