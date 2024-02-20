@@ -1,7 +1,10 @@
-PostrgreSQL Upgrade
-===================
+# PostrgreSQL Upgrade
 
-## Upgrade process
+## New:
+
+- [Upgrade PostgreSQL from 9.6 to 10.0 on Ubuntu 16.10 | SO](https://stackoverflow.com/questions/46687645/upgrade-postgresql-from-9-6-to-10-0-on-ubuntu-16-10)
+
+## Old: Upgrade process
 
 `/etc/postgresql/<version>/main/pg_hba.conf`
 
