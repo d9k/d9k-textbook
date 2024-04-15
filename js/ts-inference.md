@@ -2,7 +2,7 @@
 
 ## from array
 
-```
+```ts
 const locales = [
   {
     locale: 'se',
@@ -21,7 +21,7 @@ https://dev.to/andreasbergqvist/typescript-get-types-from-data-using-typeof-4b9c
 
 ## from keys
 
-```
+```ts
 const currencySymbols = {
   GBP: '£',
   USD: '$',
@@ -45,6 +45,6 @@ https://stackoverflow.com/a/68714226/1760643
 
 I believe currying is the solution.
 
-```
+```ts
 const x = <I>(v: I) => <O>((v: I) => O) => O
 ```
