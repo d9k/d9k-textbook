@@ -30,6 +30,6 @@ curl -vX POST https://server/api/v1/places.json --data "
 
 ## URL encode
 
-`curl http://example.com/post --get --data-urlencode "title=Hello world`
+`curl http://example.com/post --get --data-urlencode "title=Hello world"`
 
 - :speech_balloon: [bash - How to urlencode data for curl command? | SO](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)
