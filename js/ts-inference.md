@@ -48,3 +48,11 @@ I believe currying is the solution.
 ```ts
 const x = <I>(v: I) => <O>((v: I) => O) => O
 ```
+
+## Infer type from string literal field
+
+```ts
+type Result = Extract<Device, { type: 'Laptop' }>;
+```
+
+- :speech_balloon: [typescript3.0 - TypeScript: generically infer union type member based on a string literal property | SO](https://stackoverflow.com/questions/54599951/typescript-generically-infer-union-type-member-based-on-a-string-literal-proper/73932296#73932296)
