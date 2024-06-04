@@ -55,6 +55,11 @@ Yes. You can use Composition API via the [`setup()`](https://vuejs.org/api/comp
 - React Hooks are invoked repeatedly every time a component updates. This creates a number of caveats that can confuse even seasoned React developers. It also leads to performance optimization issues that can severely affect development experience.
 - Hooks are call-order sensitive and cannot be conditional
 - Variables declared in a React component can be captured by a hook closure and become "stale" if the developer fails to pass in the correct dependencies array. This leads to React developers relying on ESLint rules to ensure correct dependencies are passed.
+- Event handlers passed to child components cause unnecessary child updates by default, and require explicit `useCallback` as an optimization which again requires a correct dependencies array.
 
+Vue Composition API:
 
+- Invokes `setup()` or `<script setup>` code only once.
+- Vue's runtime reactivity system automatically collects reactive dependencies.
 
+However React Hooks was a major source of inspiration for Composition API.
