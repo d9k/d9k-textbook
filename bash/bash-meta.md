@@ -6,3 +6,9 @@
 command="cp $1 $2"
 eval "${command}"
 ```
+
+## Ignore alias
+
+```
+\vim
+```
