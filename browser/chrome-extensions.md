@@ -46,7 +46,7 @@ https://chromewebstore.google.com/
 * ~~Tab Position Options~~
 	* :fallen_leaf: break tab groups
 - Tab position customizer
-- Unload Tab
+- Auto Tab Discard
 
 ## Document flow
 
