@@ -1,7 +1,9 @@
 # Vue: передача атрибутов и значений
 
 ## Passing all properties at once
+
   https://alligator.io/vuejs/passing-multiple-properties/
+- [Binding Multiple Properties Using an Object | Props | Vue.js](https://vuejs.org/guide/components/props.html#binding-multiple-properties-using-an-object)
 
 `v-bind="$attrs"`
 `v-bind="$props"`
