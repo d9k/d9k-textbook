@@ -16,7 +16,10 @@
 
 Простой, быстрый (браузер лучше ставить нативно или в Appimage)
 
+- [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) by [TheAssassin](https://github.com/TheAssassin)
+	- _Helper application for Linux distributions serving as a kind of "entry point" for running and integrating AppImages_
 - [apps – AppImages](https://appimage.github.io/apps/)
+- [Appimagehub.com](https://www.appimagehub.com/)
 
 ## Flatpak
 
@@ -35,6 +38,9 @@
 
 - [Run-Flatpak-Windows11](https://github.com/AbelFalcon/Run-Flatpak-Windows11?tab=readme-ov-file) by [AbelFalcon](https://github.com/AbelFalcon)
 	- _ℹ️ Running Flatpak Apps on Windows 10/11 in Seconds_
+
+- CLI?
+	- :speech_balloon: [Is it possible to have a flatpak of a cli application? | /r/flatpak](https://www.reddit.com/r/flatpak/comments/10w1lxq/is_it_possible_to_have_a_flatpak_of_a_cli/)
 
 - [Packages search | Flathub](https://flathub.org/)
 - :zap: `flatpak list`
@@ -59,3 +65,9 @@
 
 - [Packages search | Snapcraft](https://snapcraft.io/store)
 - :zap: `snap list --all`
+
+## CLI apps?
+
+- Snap
+- homebrew
+- Nix
