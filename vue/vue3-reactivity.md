@@ -19,3 +19,15 @@ You'll always use `ref()` for primitives, but `ref()` is good for objects th
 `computed()​` - takes a getter function and returns a readonly reactive ref object for the returned value from the getter.
 
 `toRef()` - can be used to create a ref for a property on a source reactive object. The created ref is synced with its source property: mutating the source property will update the ref, and vice-versa.
+
+- [toRef | Reactivity API: Utilities | Vue.js](https://vuejs.org/api/reactivity-utilities#toref)
+
+- [feat(reactivity): improve support of getter usage in reactivity APIs by yyx990803 · Pull Request #7997 · vuejs/core](https://github.com/vuejs/core/pull/7997)
+	- _Internally, `computed` creates a separate effect to cache the computation. This actually is largely overhead when the getter is simply accessing properties and not performing any expensive computations_
+	- `toRef()` - invoked getter on every `.value` access?
+
+### When `toRefs()` needed?
+
+For props seems better just use `props.${prop_name}` for every field
+
+- [no-setup-props-reactivity-loss ESLint rule](https://eslint.vuejs.org/rules/no-setup-props-reactivity-loss)
