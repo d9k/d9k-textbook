@@ -1,5 +1,8 @@
 # VSCode extensions
 
+- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [Command Runner](https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner)
+- [Go to Next Error](https://marketplace.visualstudio.com/items?itemName=yy0931.go-to-next-error)
 - [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 - [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
