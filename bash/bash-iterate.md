@@ -1,14 +1,16 @@
-Iterate for string
-------------------
+# Iterate
 
-	while read -r line; do
-	    echo "... $line ..."
-	done <<< "$list"
+## Iterate for string
 
-http://superuser.com/questions/284187/bash-iterating-over-lines-in-a-variable
+```
+echo -e "$list" | while read -r line; do
+	echo "... $line ..."
+done <<< "$list"
+```
 
-Iterate for array
------------------
+- [Bash: Iterating over lines in a variable - Super User](https://superuser.com/questions/284187/bash-iterating-over-lines-in-a-variable/284192#284192)
+
+## Iterate for array
 
 	array=("one two three")
 
@@ -19,8 +21,7 @@ Iterate for array
 
 http://www.linuxjournal.com/content/bash-arrays
 
-Iterate array reverse
----------------------
+## Iterate array reverse
 
 	for (( idx=${#MYARRAY[@]}-1 ; idx>=0 ; idx-- )) ; do
 	    echo "${MYARRAY[idx]}"
