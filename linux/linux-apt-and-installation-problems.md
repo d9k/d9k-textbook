@@ -36,6 +36,24 @@ sudo apt-get install software-properties-common
 sudo apt-get install python3-software-properties
 sudo apt-get install python-software-properties
 
+## add-apt-repository errors
+
+If DNS error, fix:
+
+```bash
+sudo apt-key adv --keyserver $( dig +short keyserver.ubuntu.com | head -n1 ) --recv-keys 42670A7FE4D0441C8E4632349E4FDC074A4EF02D
+```
+
+If fail, download key manually from
+
+http://keyserver.ubuntu.com:11371/
+
+and add it as
+
+```
+cat 0123456789key.asc | sudo apt-key add -
+```
+
 ## returned error
 
     sudo apt-get --force-yes install <pkgname>
