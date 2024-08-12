@@ -92,7 +92,7 @@ https://support.asperasoft.com/entries/20150692-Set-up-permanent-SSH-tunnel-via-
 
 ## Linux startup: “waiting for network configuration” disable
 
-Add a # in the /etc/init/failsafe.conf file in front of all lines containing sleep <n>. Doing so would help to boot fast.
+Add a # in the `/etc/init/failsafe.conf` file in front of all lines containing sleep `<n>`. Doing so would help to boot fast.
 
 
 ## VitualBox: configure static ip
