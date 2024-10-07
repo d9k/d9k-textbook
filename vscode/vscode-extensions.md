@@ -6,6 +6,8 @@
 - [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 - [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
+- [Outline Map](https://marketplace.visualstudio.com/items?itemName=Gerrnperl.outline-map)
+- [Go to Next/Previous Member](https://marketplace.visualstudio.com/items?itemName=mishkinf.goto-next-previous-member)
 
 ## How to see extension logs
 
