@@ -6,7 +6,7 @@ keywords: check, compare, equal, condition
 
 ## Проверка строки на пустоту
 
-```
+```bash
 if [ -z "$VAR" ]; then
     echo "VAR is empty"
 fi
@@ -26,7 +26,7 @@ fi
 
 в случае неравенства `==` заменить на `!=`
 
-```
+```bash
 if [[ "$db_pass" == "$db_pass_repeat" ]]; then
     echo "password doesn't match"
     exit
@@ -35,15 +35,14 @@ fi
 
 ## Проверка чисел на равенство/неравенство
 
-
-```
+```bash
 if [ "$a" -eq "$b" ]
 if [ "$a" -ne "$b" ]
 ```
 
 ## Проверка количества входных аргументов
 
-```
+```bash
 function echoUsage(){
     echo command_name PARAM1 PARAM2
 }
@@ -55,7 +54,7 @@ fi
 
 ## Проверка на несуществование файла
 
-```
+```bash
 if [ ! -f /tmp/foo.txt ]; then
     echo "File not found!"
 fi
@@ -63,7 +62,7 @@ fi
 
 ## Проверка начала строки
 
-```
+```bash
 if [[ $str == First\ few\ words* ]]; then
     echo "Matches"
 fi
