@@ -1,6 +1,10 @@
 # Рецепты git
 
-##
+## Stage file partially
+
+```
+git add -i --patch path/to/file
+```
 
 ## ignore local changes
 
