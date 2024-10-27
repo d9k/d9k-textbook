@@ -17,3 +17,17 @@ https://github.com/dbeaver/dbeaver/issues/1884
 
 https://marketplace.eclipse.org/content/darkest-dark-theme-devstyle
 https://dbeaver.com/docs/wiki/Eclipse-extensions/
+
+## Word wrap in SQL editor
+
+Add
+
+```
+wordwrap.enabled=true
+```
+
+to
+
+```
+~/.local/share/DBeaverData/workspace6/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+```
