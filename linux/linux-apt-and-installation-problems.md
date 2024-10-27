@@ -1,5 +1,20 @@
 # Рецепты пакетного менеджера aptitude
 
+## gpg: keyserver receive failed: Server indicated a failure
+
+(При командах `add-apt-repository`)
+
+запустить вручную, убрать протокол и порт у `keyserver`:
+
+`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 08C36551`
+
+If still error:
+
+http://keyserver.ubuntu.com:11371/
+- download `*.asc`
+- `cat ... | sudo apt-key add -`
+
+
 ## Обновить пакеты
 
 sudo apt-get upgrade
@@ -203,12 +218,6 @@ status:
 ## Истекшие ключи репозиториев
 
 `sudo apt-key list | grep -B 1 -A 1 expired`
-
-## gpg: keyserver receive failed: Server indicated a failure
-
-запустить вручную, убрать протокол и порт у `keyserver`:
-
-`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 08C36551`
 
 ## Unable to acquire the dpkg lock /var/lib/dpkg/lock
 
