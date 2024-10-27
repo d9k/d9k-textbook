@@ -1,5 +1,14 @@
 # Файловая система
 
+## Force unmount
+
+```
+umount -l /PATH/OF/BUSY-DEVICE
+umount -f /PATH/OF/BUSY-NFS (NETWORK-FILE-SYSTEM)
+```
+
+- :speech_balloon: [linux - How to unmount a busy device | SO](https://stackoverflow.com/questions/7878707/how-to-unmount-a-busy-device/19969471#19969471)
+
 ## Найти девайсы
 
 ```
