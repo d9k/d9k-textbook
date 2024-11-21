@@ -13,9 +13,10 @@
 
 ## Edit
 
-- Duplicate Lines
 - [Code Editor Shortcuts](https://github.com/timhor/obsidian-editor-shortcuts/blob/master/README.md)
+- Duplicate Lines
 - [Icon Shortcodes](https://github.com/aidenlx/obsidian-icon-shortcodes)
+- [obsidian-sort-and-permute-lines](https://github.com/Vinzent03/obsidian-sort-and-permute-lines)
 - Trim Whitespace
 
 ## Navigate

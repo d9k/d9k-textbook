@@ -3,3 +3,7 @@
 ## Duplicate tab
 
 `yt`
+
+## Show URL
+
+`ge`
