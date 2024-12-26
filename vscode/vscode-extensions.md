@@ -1,13 +1,14 @@
 # VSCode extensions
 
-- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [Command Runner](https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner)
-- [Go to Next Error](https://marketplace.visualstudio.com/items?itemName=yy0931.go-to-next-error)
 - [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
-- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
-- [Outline Map](https://marketplace.visualstudio.com/items?itemName=Gerrnperl.outline-map)
+- [Go to Next Error](https://marketplace.visualstudio.com/items?itemName=yy0931.go-to-next-error)
 - [Go to Next/Previous Member](https://marketplace.visualstudio.com/items?itemName=mishkinf.goto-next-previous-member)
+- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+- [Numbered Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks)
+- [Outline Map](https://marketplace.visualstudio.com/items?itemName=Gerrnperl.outline-map)
+- [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
+- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 ## How to see extension logs
 
