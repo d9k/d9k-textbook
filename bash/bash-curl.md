@@ -1,4 +1,4 @@
-# CURL
+# cURL
 
 ## Pass JSON
 
@@ -33,3 +33,23 @@ curl -vX POST https://server/api/v1/places.json --data "
 `curl http://example.com/post --get --data-urlencode "title=Hello world"`
 
 - :speech_balloon: [bash - How to urlencode data for curl command? | SO](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)
+
+## Pass array in GET arguments
+
+```sh
+curl \
+  --get \
+  "http://example.local/api/users/info" \
+  --data-urlencode "id=125" \
+  --data-urlencode "is=55"
+```
+
+## Pass array in POST arguments
+
+```bash
+curl -X POST http://localhost:3000/api/v1/shops.json -d \
+  "shop[name]=Supermarket \
+  &shop[products][]=fruit \
+  &shop[products][]=eggs \
+  &auth_token=a1b2c3d4"
+```
