@@ -20,12 +20,31 @@
 
 - [Multiple Inheritance in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/multiple-inheritance-in-c/)
 
+### C++ copy constructor
+
+- :speech_balloon: [Foo g = Foo(1); cannot bind non-const lvalue reference of type ‘Foo&’ to an rvalue of type ‘Foo’ : r/cpp\_questions](https://www.reddit.com/r/cpp_questions/comments/120hi15/foo_g_foo1_cannot_bind_nonconst_lvalue_reference/)
+	- The expression `Foo()` creates a temporary object, which is an r-value. L-value references (`Foo&`) cannot bind to rvalues. Because you have defined a constructor `Foo( Foo& )`, which only takes an lvalue reference you dont get a default generated copy constructor or move constructor. Usually you would define a copy constructor as `Foo( const Foo& )`. This can also bind to r-values. Another option is to define define a move constructor `Foo( Foo&& )` that can take r-values directly and potentially make use of move semantics. / IyeOnline
+
+- :speech_balloon: [gcc 9: error: "implicitly-declared '\[...\]::operator=(\[...\])' is deprecated \[-Werror=deprecated-copy\]" · Issue #205 · tsduck/tsduck](https://github.com/tsduck/tsduck/issues/205)
+
+- :beginner: [Copy Constructor in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/copy-constructor-in-cpp/)
+
+- :beginner: [Copy constructors - cppreference.com](https://en.cppreference.com/w/cpp/language/copy_constructor)
+
 ### C++ destructors
+
+- :speech_balloon: [c++ - class has virtual functions and accessible non-virtual destructor | SO](https://stackoverflow.com/questions/5827719/class-has-virtual-functions-and-accessible-non-virtual-destructor)
 
 - :speech_balloon: [c++ - Destructor for char arrays Error | SO](https://stackoverflow.com/questions/24685133/destructor-for-char-arrays-error)
 	- There is no need to check for `NULL` when issuing a `delete`
 
-- https://stackoverflow.com/questions/36020149/how-to-design-class-that-has-char-pointer-as-class-member-variable
+- :speech_balloon: [c++ - how to design class that has char\* pointer as class member variable? | SO](https://stackoverflow.com/questions/36020149/how-to-design-class-that-has-char-pointer-as-class-member-variable)
+
+- :speech_balloon: [Does delete call destructor C++? - Quora](https://www.quora.com/Does-delete-call-destructor-C)
+
+- :speech_balloon: [Does C++ call destructors for global and class static variables? | SO](https://stackoverflow.com/questions/2204608/does-c-call-destructors-for-global-and-class-static-variables)
+
+- :speech_balloon: [raii - Is a C++ destructor guaranteed not to be called until the end of the block? | SO](https://stackoverflow.com/questions/2087600/is-a-c-destructor-guaranteed-not-to-be-called-until-the-end-of-the-block/2088114#2088114)
 
 ### C++ call super constructor
 
