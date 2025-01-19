@@ -20,6 +20,13 @@
 
 - [Multiple Inheritance in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/multiple-inheritance-in-c/)
 
+### C++ class fields initialization
+
+- :speech_balloon: [c++ - expected ‘,’ or ‘...’ before string constant | SO](https://stackoverflow.com/questions/65353809/expected-or-before-string-constant)
+	- You can't have function-like inittialization inline in classes. You _must_ use curly-braces `{}` or "assignment" like syntax with `=`
+- :speech_balloon: [constructor - C++ Why the members are not default initialized? | SO](https://stackoverflow.com/questions/66646883/c-why-the-members-are-not-default-initialized)
+	- C++ has a motto, you only pay for what you ask. When declaring a variable without a value, it's wasteful to actually assign some value. You only get a know value when you do so explicitly.
+
 ### C++ copy constructor
 
 - :speech_balloon: [Foo g = Foo(1); cannot bind non-const lvalue reference of type ‘Foo&’ to an rvalue of type ‘Foo’ : r/cpp\_questions](https://www.reddit.com/r/cpp_questions/comments/120hi15/foo_g_foo1_cannot_bind_nonconst_lvalue_reference/)
