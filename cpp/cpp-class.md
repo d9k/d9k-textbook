@@ -27,7 +27,9 @@
 - :speech_balloon: [constructor - C++ Why the members are not default initialized? | SO](https://stackoverflow.com/questions/66646883/c-why-the-members-are-not-default-initialized)
 	- C++ has a motto, you only pay for what you ask. When declaring a variable without a value, it's wasteful to actually assign some value. You only get a know value when you do so explicitly.
 
-### C++ copy constructor
+### C++ copy/assignment/move constructor
+
+- [operator overloading - cppreference.com](https://en.cppreference.com/w/cpp/language/operators)
 
 - :speech_balloon: [Foo g = Foo(1); cannot bind non-const lvalue reference of type ‘Foo&’ to an rvalue of type ‘Foo’ : r/cpp\_questions](https://www.reddit.com/r/cpp_questions/comments/120hi15/foo_g_foo1_cannot_bind_nonconst_lvalue_reference/)
 	- The expression `Foo()` creates a temporary object, which is an r-value. L-value references (`Foo&`) cannot bind to rvalues. Because you have defined a constructor `Foo( Foo& )`, which only takes an lvalue reference you dont get a default generated copy constructor or move constructor. Usually you would define a copy constructor as `Foo( const Foo& )`. This can also bind to r-values. Another option is to define define a move constructor `Foo( Foo&& )` that can take r-values directly and potentially make use of move semantics. / IyeOnline
