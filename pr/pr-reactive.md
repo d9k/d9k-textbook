@@ -68,3 +68,9 @@ var dictionarySuggest = Rx.Observable.fromEvent(input, 'keyup')
 ### Recipes | Learn RxJS
 
 - :beginner: https://www.learnrxjs.io/learn-rxjs/recipes
+
+### RxJS: see also
+
+- Marble diagrams
+	- :beginner: [RxMarbles: Interactive diagrams of Rx Observables](https://rxmarbles.com/)
+	- :newspaper: [Understanding Marble Diagrams for Reactive Streams | by James Shvarts | Medium](https://medium.com/@jshvarts/read-marble-diagrams-like-a-pro-3d72934d3ef5)
