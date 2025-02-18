@@ -1,5 +1,12 @@
 # Programming: reactivity
 
+## React is MVVM?
+
+- [Model-View-ViewModel — Википедия](https://ru.wikipedia.org/wiki/Model-View-ViewModel)
+
+- ViewModel - обёртка данных из Модели, подлежащиx связыванию + команды, которыми может пользоваться Представление, чтобы влиять на Модель.
+- Contoller не подразумевает связывания данных. А ViewModel подразумевает.
+
 ## Is React reactive?
 
 - :speech_balloon: [reactjs - reactive programming in react | SO](https://stackoverflow.com/questions/71855096/reactive-programming-in-react)
