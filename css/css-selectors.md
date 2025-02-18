@@ -4,6 +4,14 @@
 
 Universal, Element type, ID, Class, Descendant, Child (`>`), General sibling (`~`), Adjacent sibling (`+`), Attribute (`[type=submit]`)
 
+## Match class name starting with a specific string
+
+- :speech_balloon: [css - Match all elements having class name starting with a specific string | SO](https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string)
+
+```
+[class^='myclass-']
+```
+
 ## Селекторы атрибутов
 
 ```
