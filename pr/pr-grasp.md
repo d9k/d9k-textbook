@@ -1,5 +1,7 @@
 # Программирование: принципы GRASP
 
+- :label: Separation of Concerns
+
 General responsibility assignment software patterns — общие шаблоны распределения ответственностей;
 
 Шаблоны GRASP являются скорее не паттернами проектирования (как GangOfFour'ские), а фундаментальными принципами распределения ответственности между классами.
