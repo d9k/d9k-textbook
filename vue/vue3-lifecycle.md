@@ -2,8 +2,8 @@
 
 - :beginner: [Composition API: Lifecycle Hooks | Vue.js](https://vuejs.org/api/composition-api-lifecycle)
 
-- `onBeforeMount()`: right before the component is to be mounted
-- `onMounted()`: after the component has been mounted
+- `onBeforeMount()`: right before the component is to be mounted (the component has finished setting up its reactive state)
+- `onMounted()`: after the component has been mounted (DOM tree has been created and inserted into the parent container).
 - `onBeforeUpdate()`: right before the component is about to update its DOM tree
 - `onUpdated()​`: after the component has updated its DOM tree due to a reactive state change.
 - `onBeforeUnmount()` - right before a component instance is to be unmounted
