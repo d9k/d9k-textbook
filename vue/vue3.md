@@ -63,3 +63,14 @@ Vue Composition API:
 - Vue's runtime reactivity system automatically collects reactive dependencies.
 
 However React Hooks was a major source of inspiration for Composition API.
+
+## :robot_face: Vue3 переусложнённые composables / чат DeepSeek 2025.03.22
+
+- Разделяйте логику на атомарные composables - SRP
+- Инкапсулируйте зависимости
+Передавайте внешние сервисы через параметры, а не импортируйте напрямую. (Не прячьте контекст, например, provide/inject внутри composables).
+- Используйте композицию \[в компоненте\], а не наследование \[не композицию внутри composables\]
+Собирайте функционал из мелких composables в компонентах:
+- Избегайте бизнес-логики в composables
+Выносите её в отдельные слои (например, domain-сервисы):
+- Документирование: четко описывайте, какие побочные эффекты вызывает функция, что принимает и возвращает.
