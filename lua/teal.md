@@ -1,5 +1,8 @@
 # #Teal language
 
+[teal-types](https://github.com/teal-language/teal-types/tree/master/types) by [teal-language](https://github.com/teal-language)
+	- _Teal type definitions of Lua libraries!_
+
 ## wu lang: strongly typed lua
 
 https://github.com/wu-lang/wu
@@ -146,3 +149,36 @@ local v1: Vector = { x = 100, y = 100 }
 -- local p2: Point = v1
 local p2 = v1 as Point
 ```
+
+### `<total>`
+
+https://github.com/teal-language/tl/blob/master/docs/tutorial.md#total-variables
+
+All possible table keys need to be explicitly declared _\[more suitable word final?\]_:
+
+```lua
+local degrees <total>: {Direction:number} = {
+   ["north"] = 0,
+   ["west"] = 90,
+   ["south"] = 180,
+   ["east"] = 270,
+}
+```
+
+ if you later update the `Direction` enum to add new directions such as `"northeast"` and `"southwest"`, the above declaration of `degrees` will issue a compile-time error, because the table above is no longer total!
+
+```lua
+local record Color
+   red: integer
+   green: integer
+   blue: integer
+end
+
+-- error: missing "blue" key
+local teal_color <total>: Color = {
+   red = 0,
+   green = 128,
+}
+```
+
+Will still accept an assignment to nil as a valid declaration. The rationale is that programmer did consider that case, and chose to explicitly set it to `nil`.
