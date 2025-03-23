@@ -48,6 +48,12 @@ General responsibility assignment software patterns — общие шаблон
 
 [Связность (программирование) — Википедия](https://ru.wikipedia.org/wiki/Связность_%28программирование%29)
 
+### Ещё по связности и сцеплению
+
+- :newspaper: [Locality of behavior | dev.to](https://dev.to/ralphcone/new-hot-trend-locality-of-behavior-1g9k)
+	- Cohesion is basically a measure of how code put in the same code unit is related.
+	- Coupling is a measure of “how much other code will I have to change if I change X”.
+
 ## Примеры
 
 - :newspaper: [Шаблоны GRASP: Low Coupling (низкая связанность) и High Cohesion (высокое зацепление) / Хабр](https://habr.com/ru/companies/otus/articles/505852/)
@@ -103,3 +109,29 @@ General responsibility assignment software patterns — общие шаблон
 ООП: Объект A не должен иметь возможность получить непосредственный доступ к объекту C, если у объекта A есть доступ к объекту B и у объекта B есть доступ к объекту C.
 
 Многоярусная архитектура может также рассматриваться как пример реализации закона Деметры в программной системе. В такой архитектуре код каждого яруса может вызвать только код своего или низшего яруса. Вызов через ярус является нарушением многоярусной архитектуры.
+
+## Bonus: Locality of behavior
+
+### Locality of behavior / Rafal Stozek
+
+- https://dev.to/ralphcone/new-hot-trend-locality-of-behavior-1g9k
+
+\[Easiest antipattern to good locality is switch..case instead of polymorphism\]
+
+The primary feature for easy maintenance is locality:
+Locality is that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it.
+
+It’s much easier to understand code which lives together and can be easily and quickly tracked than code where you need to jump around the whole codebase to piece the logic together.
+
+Htmx helps locality
+
+#### Separation of Concerns (SoC)
+
+Separation of Concerns is an old technique where we separate computer system into distinct sections, where each addresses separate concerns.
+
+#### Practical advice on code locality
+
+- when your components / code is pretty simple - it’s usually better to be able to see everything at once
+- but as the code - for a particular component / code unit grows more complex, at some point it is very useful to be able to understand business logic in isolation, without it being tangled with other concerns like templating or styling
+- so start with something simple and when it grows more hard to understand, start separating those concerns in a way that make it easier to understand
+- but when you separate these concerns to separate files - keep them close together so it’s still easy to understand whole thing
