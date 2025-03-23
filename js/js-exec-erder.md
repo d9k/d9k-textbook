@@ -19,3 +19,14 @@ Whenever the call stack receives an async function, it is moved into the \[paral
 \[Microtask queue have greater priotity then macrotask queue\].
 
 https://github.com/sudheerj/javascript-interview-questions#what-is-an-event-queue
+
+Microtasks come solely from our code. They are usually created by promises: an execution of .then/catch/finally handler becomes a microtask.
+
+There’s also a special function queueMicrotask(func) that queues func for execution in the microtask queue.
+
+https://javascript.info/event-loop
+
+### See also
+
+- :speech_balloon: [MacroTask and MicroTask execution order | issue #22257 | node](https://github.com/nodejs/node/issues/22257)
+	- _Node doesn't use the language microtask queue for timers, it has another queue above that which runs the {timer queue, immediate queue, etc} and the microtask queue._

@@ -1,4 +1,4 @@
-# Why choose the JavaScript?
+# JS: about or why choose the JavaScript
 
 - https://www.freecodecamp.org/news/future-of-javascript
 - It blends well with HTML and CSS.
