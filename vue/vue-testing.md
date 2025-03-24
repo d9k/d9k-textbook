@@ -74,7 +74,7 @@ await result.current.increment();
 
 - Для сложных сценариев создавайте тестовый компонент-обертку.
 
-## :robot_face: #mock -тестирование - разговор с DeepSeek 2025.03.22
+## :robot_face: #mock -тестирование Vue-компонентов - разговор с DeepSeek 2025.03.22
 
 - Очищайте моки между тестами через `vi.clearAllMocks()` в `afterEach`.
 
