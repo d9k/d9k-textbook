@@ -12,3 +12,11 @@ eval "${command}"
 ```
 \vim
 ```
+
+## Get value by variable name
+
+```bash
+A=55
+N="A"
+echo ${!N}
+```
