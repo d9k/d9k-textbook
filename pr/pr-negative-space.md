@@ -12,3 +12,6 @@ Negative space programming involves placing constraints and assertions throughou
 
 Testing for min/max values (loop run count too).
 
+# TigerStyle! (Or How To Design Safer Systems in Less Time) by Joran Dirk Greef
+
+- https://www.youtube.com/watch?v=w3WYdYyjek4
