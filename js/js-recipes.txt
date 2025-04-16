@@ -1,16 +1,31 @@
-check variable defined
-----------------------
-	if(typeof myVar != 'undefined')
+# JS recipes
+
+## Странный Javascript, который вы должны использовать #программирование / Миша Ларченко, 2025
+
+- https://www.youtube.com/watch?v=l9MT-Q7-vMA
+
+```js
+arr.at(-1);
+arr.sort(() => Math.random() - 0.5);
+[a, b] = [b, a];
+```
+
+## Check variable defined
+
+```js
+if(typeof myVar != 'undefined')
+```
 
 http://stackoverflow.com/questions/3390396/how-to-check-for-undefined-in-javascript
 
-JSON encode
------------
-JSON.stringify()
+## JSON encode
 
+`JSON.stringify()`
 
-pad array
----------
+## Pad array
+
+```js
 function padNumberArray(n, len) {
 	return (new Array(len + 1).join('0') + n).slice(-len);
 }
+```
