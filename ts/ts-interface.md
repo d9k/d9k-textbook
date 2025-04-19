@@ -33,4 +33,4 @@ interface ITeamMember extends Array<string | number>
 }
 ```
 
-`type` only features: type inference, conditional types, [type guards](https://blog.logrocket.com/how-to-use-type-guards-typescript/), mapped types, utility types
+`type`-only features: type inference, conditional types, [type guards](https://blog.logrocket.com/how-to-use-type-guards-typescript/), mapped types, utility types
