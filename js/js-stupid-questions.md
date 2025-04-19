@@ -203,3 +203,22 @@ authenticate && loginToPortal();
 Short-circuit evaluation, minimal evaluation, or McCarthy evaluation (after John McCarthy creator of Lisp) is the semantics of some Boolean operators in some programming languages in which the **second argument is** executed or **evaluated only if the first argument does not suffice** to determine the value of the expression: when the first argument of the AND function evaluates to false, the overall value must be false; and when the first argument of the OR function evaluates to true, the overall value must be true.
 
 - https://en.wikipedia.org/wiki/Short-circuit_evaluation
+
+## Sort numbers array
+
+- :newspaper: [How not to sort an array in JavaScript | Phil Nash](https://philna.sh/blog/2019/08/26/how-not-to-sort-an-array-in-javascript/)
+```js
+> [11, 1, 6, 20].sort()
+[ 1, 11, 20, 6 ]
+> [11, 1, 6, 20].sort((a, b) => a - b)
+[ 1, 6, 11, 20 ]
+> [11, undefined, 1, null, -5, 6, 20, 0].sort((a, b) => a - b)
+[ -5, null, 0, 1, 6, 11, 20, undefined ]
+```
+
+lodash:
+
+```js
+> _.sortBy([11, undefined, 1, null, -5, 6, 20, 0].sort((a, b) => a - b))
+[ -5, 0, 1, 6, 11, 20, null, undefined ]
+```
