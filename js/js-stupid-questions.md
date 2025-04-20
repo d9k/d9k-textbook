@@ -12,7 +12,16 @@
 
 ## var, let и const - разница
 
-[Var, let и const в JavaScript: в чём разница между переменными в JS / Skillbox Media](https://skillbox.ru/media/code/chem_razlichayutsya_var_let_i_const_v_javascript/)
+`var`, созданная вне функции, действует как глобальная переменная — она доступна из любой части скрипта. (`window.`)
+
+Отсутствие блочной области видимости. Var-переменная, созданная в блоке if‑else или цикле, доступна за пределами своего блока.
+
+`let` имеют блочную область видимости.
+
+`const` - нельзя повторно присваивать.
+
+z[Var, let и const в JavaScript: в чём разница между переменными в JS / Skillbox Media](https://skillbox.ru/media/code/chem_razlichayutsya_var_let_i_const_v_javascript/)
+
 ```js
 var x = 50;
 
