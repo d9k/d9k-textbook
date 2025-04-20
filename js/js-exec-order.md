@@ -1,4 +1,6 @@
-## JS: order
+## JS: exec order
+
+- :label: (and event loop)
 
 ## What is an event loop
 
@@ -30,3 +32,4 @@ https://javascript.info/event-loop
 
 - :speech_balloon: [MacroTask and MicroTask execution order | issue #22257 | node](https://github.com/nodejs/node/issues/22257)
 	- _Node doesn't use the language microtask queue for timers, it has another queue above that which runs the {timer queue, immediate queue, etc} and the microtask queue._
+
