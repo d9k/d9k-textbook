@@ -17,3 +17,26 @@ Cache-Control: max-age=3600, stale-while-revalidate=86400
 
 - `max-age=3600`: The resource is considered fresh for 3600 seconds (1 hour).
 - `stale-while-revalidate=86400:` If the resource is stale (expired), the client is allowed to use it for up to `86400` seconds (`24` hours) while simultaneously revalidating it with the server.
+
+## Optimistic updates
+
+- https://swr.vercel.app/docs/mutation#optimistic-updates
+
+```js
+const { data } = useSWR('/api/user', fetcher)
+
+const { trigger } = useSWRMutation('/api/user', updateUserName)
+
+return (
+<div>
+	<h1>My name is {data.name}.</h1>
+	<button onClick={async () => {
+		const newName = data.name.toUpperCase()
+
+		trigger(newName, {
+		  optimisticData: user => ({ ...user, name: newName }),
+		rollbackOnError: true
+		})
+```
+
+<!-- TODO check example -->
