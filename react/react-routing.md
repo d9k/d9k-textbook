@@ -50,3 +50,6 @@ const HeaderLayout = () => (
   </>
 );
 ```
+
+- :beginner: [Server-Side Rendering | React Router](https://reactrouter.com/6.30.0/guides/ssr)
+
