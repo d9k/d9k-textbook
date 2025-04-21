@@ -1,5 +1,43 @@
+# Programming: OOP patterns: MVC
 
-# MVVM-паттерн
+## MVP
+
+https://ru.wikipedia.org/wiki/Model-View-Presenter
+
+Presenter управляет и Моделью и Представлением. Например извлекает данные из Модели и форматирует их для отображения в Представлении.
+
+```cs
+public class MyPresenter
+{
+    private readonly IView _view;
+    private readonly IModel _model;
+
+    public MyPresenter(IModel model, IView view)
+    {
+        _view = view;
+        _model = model;
+    }
+
+    public void Start()
+    {
+        _model.Numbers.Add(view.ReadA());
+        _model.Numbers.Add(view.ReadB());
+        _view.WriteSum(model.Sum());
+     }
+}
+
+public static void Main()
+{
+    MyModel model = new();
+    MyConsoleView view = new();
+    MyPresenter presenter = new MyPresenter(model, view);
+    presenter.Start();
+}
+```
+
+Можно легко заменить консольный интерфейс `MyConsoleView`, например, на `MyWindowsFormsView`.
+
+## MVVM-паттерн
 
 - в общем, используется больше в C#, Java.
 	- Controler обрабатывает действия на frontend.
@@ -9,7 +47,7 @@
 - [gh: java fx MVVM](https://github.com/sialcasa/jfx-mvvm)
 - [java zk MVVM](https://www.zkoss.org/wiki/Small_Talks/2011/November/Hello_ZK_MVVM#MVP_Implementation)
 
-# mvc и mvp
+## mvc и mvp
 
 в MVP Модель не общается с Представлением даже опосредовано.
 в MVC Модель, на самом деле, является медиатором между Контроллером/Представлением и реальной моделью домена (Domain Model) приложения. В MVP-же, такого медиатора нет и его функции берет на себя Presenter, таким образом Presenter, в отличие от Контроллера, общается непосредственно с моделью приложения. Presenter в отличии от Контроллера, обладает необходимыми знаниями о Представлениях, а так же удаляет лишнюю логику обработки событий от Модели из Представления.
