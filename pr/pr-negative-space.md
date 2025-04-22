@@ -38,6 +38,32 @@ Define your fault models. For ex. memory: use ECC.
 
 Memory allocation failure must be safely handled. You can't just panic if you're database.
 
+Reduce surface area - easier deploy, less ports, resources, simple modules interfaces.
+
+Zero technical debt for Tiger Beetle
+
+Walk & Talk.
+
+Tiger style will slow you down in a way that accelerates all other fases.
+
+NASA's Power of Ten Rules for Safery Critical Code - _\[limit language expression power for good\]_
+
+Lay a tripwires. Jamie putted the bugs in PR to check whether reviewers will find them :)
+
+Assertions for all argument and return values in functions. Self-verifying code.
+
+The ultimate purpose of abstraction is for correctness.
+
+Beginner programmer thinks _"if it compiles it's correct"_.
+
+Programmers think in positive space by default: how to succeed, how to compile.
+
+Hackers think in negative space: how to make fail.
+
+Environment is going to attack you.
+
+Often deadlock is caused by infinite `while`-loop. If you limit your loop with assertions you going to figure it out much quicker.
+
 ## MSDN Magazine: Cutting Edge - Invariants and Inheritance in Code Contracts | Microsoft Learn, 2011
 
 - https://learn.microsoft.com/ru-ru/archive/msdn-magazine/2011/june/msdn-magazine-cutting-edge-invariants-and-inheritance-in-code-contracts
@@ -89,3 +115,24 @@ https://ru.stackoverflow.com/questions/858650/Что-такое-инвариан
 `List<>.Enumerator: list.version = const = version;` есть защитная проверка
 
 `List<>.Enumerator: 0 ≤ index ≤ list._size + 1`
+
+## NASA: The Power of Ten – Rules for Developing Safety Critical Code
+
+https://spinroot.com/gerard/pdf/P10.pdf
+
+### Rule 5: The assertion density of the code should average to a minimum of two assertions per function.
+
+Assertions must always be side-effect
+free and should be defined as Boolean tests. When an assertion fails, an explicit
+recovery action must be taken, e.g., by returning an error condition to the caller of the
+function that executes the failing assertion.
+
+Assertions can be used to verify pre- and postconditions of functions, parameter values, return values of functions, and loopinvariants.
+
+\[Limit data sharing between modules. Each component should manage its own data, reducing dependencies and side effects.\]
+
+\[Prevents Race Conditions: In concurrent systems, localized data reduces synchronization risks.\]
+
+### Rule 6: Data objects must be declared at the smallest possible level of scope.
+
+Rationale: If an object is not in scope, its value cannot be referenced or corrupted. This rule supports a basic principle of data-hiding. Similarly, if an erroneous value of an object has to be diagnosed, the fewer the number of statements where the value could have been assigned; the easier it is to diagnose the problem. The rule discourages the re-use of variables for multiple, incompatible purposes, which can complicate fault diagnosis.
