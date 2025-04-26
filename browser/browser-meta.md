@@ -12,10 +12,101 @@ DOM + CSSOM -> render tree -> reflow (layout)
 
 Layout: calculation of the exact size and position of each object on the page
 
-> whenever the browser encounters a script tag, the DOM construction is paused! The entire DOM construction process is halted until the script finishes executing.
+> Whenever the browser encounters a script tag, the DOM construction is paused! The entire DOM construction process is halted until the script finishes executing.
 
 > So, even though the DOM construction stops until an encountered script tag is encountered, that’s not what happens with the CSSOM.
 
 > With the CSSOM, the JS execution waits. No CSSOM, no JS execution.
 
 https://blog.logrocket.com/how-browser-rendering-works-behind-scenes/
+
+## Что происходит в момент запроса в браузере?
+
+- https://t.me/easy_javascript_ru/1355
+
+Когда пользователь вводит URL в адресную строку браузера и нажимает Enter, происходит ряд шагов для получения и отображения запрашиваемой веб-страницы. Этот процесс включает взаимодействие различных компонентов сети и веб-технологий.
+
+### Ввод URL и начало запроса
+
+Пользователь вводит URL в адресную строку браузера. Браузер проверяет кэш браузера для определения, есть ли сохраненная копия запрашиваемого ресурса. Если ресурс найден в кэше и он актуален, страница загружается из кэша, минуя сетевые запросы.
+
+### DNS-разрешение
+
+Если ресурс не найден в кэше, браузер выполняет запрос к DNS-серверу для преобразования доменного имени (например, www.example.com) в IP-адрес сервера.
+
+### Установление TCP-соединения
+
+После получения IP-адреса браузер устанавливает TCP-соединение с сервером. Этот процесс включает в себя трехэтапное рукопожатие:
+- Браузер отправляет SYN-пакет серверу.
+- Сервер отвечает SYN-ACK пакетом.
+- Браузер отправляет ACK-пакет, подтверждая установление соединения.
+
+### HTTPS и SSL/TLS
+
+Если URL использует HTTPS, происходит дополнительный этап установки защищенного соединения с использованием SSL/TLS:
+Браузер и сервер обмениваются сертификатами и выполняют шифрование данных.
+
+### Отправка HTTP-запроса
+
+Браузер отправляет HTTP-запрос на сервер. Например, для получения главной страницы сайта может быть отправлен следующий запрос:
+
+```
+GET / HTTP/1.1
+Host: www.example.com
+```
+
+### Обработка запроса на сервере
+
+Сервер принимает запрос, обрабатывает его, генерирует ответ и отправляет его обратно клиенту. Сервер может выполнять различные задачи, такие как доступ к базе данных, обработка логики приложения и рендеринг страниц.
+
+### Получение и обработка HTTP-ответа
+
+Браузер получает HTTP-ответ от сервера. Ответ включает в себя статусный код, заголовки и тело (содержимое) ответа. Пример HTTP-ответа:
+
+```html
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1234
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Пример страницы</title>
+</head>
+<body>
+<h1>Добро пожаловать!</h1>
+</body>
+</html>
+```
+
+### Парсинг и рендеринг страницы
+
+Браузер начинает парсинг HTML-документа. Этот процесс включает построение DOM (Document Object Model) — структуры дерева, представляющей элементы страницы.
+В процессе парсинга HTML браузер может обнаруживать ссылки на другие ресурсы, такие как CSS, JavaScript, изображения и шрифты, и отправлять дополнительные HTTP-запросы для их загрузки.
+
+### Выполнение JavaScript
+
+После парсинга HTML и CSS браузер начинает выполнение встроенных и внешних JavaScript-скриптов. JavaScript может изменять DOM и CSSOM (CSS Object Model), что приводит к изменениям в отображении страницы.
+JavaScript также может отправлять асинхронные запросы (AJAX) для динамической загрузки данных и обновления страницы без перезагрузки.
+
+## Метрики по оптимизации страницы
+
+- :beginner: [Lighthouse performance scoring  |  Chrome for Developers](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring)
+
+Lighthouse 8 score
+
+| Audit                    | Weight |
+|--------------------------|--------|
+| First Contentful Paint   | 10%    |
+| Speed Index              | 10%    |
+| Largest Contentful Paint | 25%    |
+| Time to Interactive      | 10%    |
+| Total Blocking Time      | 30%    |
+| Cumulative Layout Shift  | 15%    |
+
+### Speed Index measures
+
+- https://developer.chrome.com/docs/lighthouse/performance/speed-index
+
+Speed Index measures how quickly content is visually displayed during page load. Lighthouse first captures a video of the page loading in the browser and computes the visual progression between frames. Lighthouse then uses the [Speedline](https://github.com/paulirish/speedline) Node.js module to generate the Speed Index score.
+
