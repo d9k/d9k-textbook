@@ -14,7 +14,7 @@ Negative space programming involves placing constraints and assertions throughou
 
 Testing for min/max values (loop run count too).
 
-## TigerStyle! (Or How To Design Safer Systems in Less Time) by Joran Dirk Greef
+## TigerStyle! (Or How To Design Safer Systems in Less Time) by Joran Dirk Greef, 2024
 
 - https://www.youtube.com/watch?v=w3WYdYyjek4
 
@@ -63,6 +63,32 @@ Hackers think in negative space: how to make fail.
 Environment is going to attack you.
 
 Often deadlock is caused by infinite `while`-loop. If you limit your loop with assertions you going to figure it out much quicker.
+
+Tiger Beetle figures out all needed resources ahead of time.
+
+Assert example: `assert(mem.eql(u8, block_cache, block_disk))` - checks if readed block from disk and memory are equal.
+
+Golang discorauge assertions, advices to handle error. But if you can predict a bug, why not fix it? Bugs caught by assertions can't be predicted. It's undefined behavior. There is no proper handling: you're into undefined logic territory. The safest thing to do is shutdown safely.
+
+There is cost to shutting down. But the cost to not doing so is greater. Imagine corrupting thousands of financial transactions every second.
+
+Distributed systems run several processes of the same thing in the cluster. So they expect some processes will crash and can't be restarted. Just restart process as fast as possiible.
+
+Zig is a fantastic language for writing databases.
+
+Zig encourages you to do assertions. If your numeric type overflows doing addition you gonna get nice stack trace. Enabled by default.
+
+Block-disabled assertions for performance critical blocks.
+
+Zig lets you to do assertions at compile-time. You can check program design integrity before it even executes.
+
+Assertions document your invariants. Programmers see what should work and what should't.
+
+Corrupt disk simulation to test replication! This simulator helped to find 30 bugs immediately after beginning of use.
+
+52:00 Replica leader election
+
+With Zig you can compile in WASM.
 
 ## MSDN Magazine: Cutting Edge - Invariants and Inheritance in Code Contracts | Microsoft Learn, 2011
 
