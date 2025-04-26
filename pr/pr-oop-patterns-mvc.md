@@ -2,7 +2,8 @@
 
 ## MVP
 
-https://ru.wikipedia.org/wiki/Model-View-Presenter
+- https://ru.wikipedia.org/wiki/Model-View-Presenter
+- :newspaper: [Что такое MVP / Skillbox Media](https://skillbox.ru/media/code/chto_takoe_mvp_i_kak_eto_ispolzovat/)
 
 Presenter управляет и Моделью и Представлением. Например извлекает данные из Модели и форматирует их для отображения в Представлении.
 

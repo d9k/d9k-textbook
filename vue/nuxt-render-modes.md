@@ -33,3 +33,9 @@ export default defineNuxtConfig({
   }
 })
 ```
+
+- `redirect: '/new_page'` - server-side redirect
+- `ssr: false` - disable server-side rendering
+- `cors: true` - add CORS headers
+- `headers: {}` - add specific HTTP headers
+- `swr: true` - stale-while-revalidate
