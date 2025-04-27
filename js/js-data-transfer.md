@@ -13,7 +13,7 @@ Back: GET-request send headers:
 
 Front:
 
-```
+```js
 const eventSource = new EventSource(url);
 eventSource.onmessage = (event) => {
 	const parsedData = JSON.parse(event.data);

@@ -40,3 +40,7 @@ return (
 ```
 
 <!-- TODO check example -->
+
+## :stethoscope: #DevTools
+
+- [SWR DevTools | Announcing SWR 2.0](https://swr.vercel.app/blog/swr-v2.en-US#swr-devtools)

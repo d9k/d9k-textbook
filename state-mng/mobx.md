@@ -12,7 +12,7 @@ All primitive values in JavaScript are immutable and hence per definition not ob
 
 - :beginner: [Running side effects with reactions ·| MobX docs](https://mobx.js.org/reactions.html#reaction)
 
-## :stethoscope: #DevToolso
+## :stethoscope: #DevTools
 
 - [mobx-devtools-pro](https://github.com/mobx-devtools/mobx-devtools-pro) by [mobx-devtools](https://github.com/mobx-devtools)
 	- _The official Mobx Devtools enhanced version._
