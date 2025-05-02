@@ -6,13 +6,28 @@
 
 programming invariance (`assert`)
 
-- :newspaper: [Exploring the Power of Negative Space Programming — Double Trouble](https://double-trouble.dev/post/negativ-space-programming/)
+## Exploring the Power of Negative Space Programming — Double Trouble
+
+- https://double-trouble.dev/post/negativ-space-programming/
 
 ****Negative space programming is a concept that embraces the art of defining a program by what it should not do, rather than what it should.***
 
 Negative space programming involves placing constraints and assertions throughout your code to explicitly define invalid states and conditions. By doing this, you ensure that the code fails fast and early, preventing unintended behaviors from propagating through the system. This method not only enhances the reliability of the software but also documents the developer’s expectations clearly, offering a dual benefit of validation and communication.
 
 Testing for min/max values (loop run count too).
+
+```zig
+const std = @import("std");
+const assert = std.debug.assert;
+
+fn calculateArea(width: i32, height: i32) i32 {
+    assert(width > 0);
+    assert(height > 0);
+    return width * height;
+}
+```
+
+It is essential to keep assertions in your production code. Assertions allow your program to check its own logic continuously, ensuring that it runs correctly even under the unexpected conditions often encountered in production. By defining and enforcing negative space, you significantly reduce the risk of undetected bugs causing severe issues.
 
 ## TigerStyle! (Or How To Design Safer Systems in Less Time) by Joran Dirk Greef, 2024
 
