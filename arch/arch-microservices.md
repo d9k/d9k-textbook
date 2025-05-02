@@ -17,3 +17,9 @@
 ## Links
 
  - https://tyk.io/blog/building-and-managing-graphql-microservices-with-apollo-and-tyk/
+
+## Выделение микросервиса
+
+- :newspaper: [Паттерн микросервиса Strangler | Блог Serverspace](https://serverspace.ru/about/blog/pattern-mikroservisa-strangler/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com)
+
+В монолите выделяются отдельные сервисы, потом по одному переносятся в микросервисы (отделение кода микросервиса и базы микросервиса). Вызовы заменяются http-запросами.
