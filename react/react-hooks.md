@@ -93,7 +93,7 @@ https://habr.com/ru/post/473070/
 
 ## useEffect + useRef fail, what's instead?
 
-```
+```js
 function MeasureExample() {
   const [height, setHeight] = useState(0);
 
@@ -116,3 +116,12 @@ function MeasureExample() {
 
 - https://dev.to/thekashey/merging-refs-41l8
 - https://mayursinhsarvaiya.medium.com/how-to-merge-refs-in-react-component-d5e4623b6924
+
+## State colocation
+
+- :newspaper: [React Reconciliation: скрытый механизм, управляющий компонентами | Хабр](https://habr.com/ru/companies/timeweb/articles/901212/)
+
+Паттерн, который заключается в том, чтобы располагать состояние как можно ближе к месту его использования.
+
+Например, `useState` перенести в новый вложенный компонент-обёртку, если есть частый сценарий, где только компоненты, использующие этот state и находящиеся рядом, должны перерисовываться.
+
