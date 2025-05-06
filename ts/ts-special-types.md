@@ -74,6 +74,7 @@ any, unknown - верхний уровень иерархи
 composite types (1 | 2, 'a' | 'b', false | string)
 number, string, boolean
 1, 'error', true
+void
 never - нижний уровень иерархии
 ```
 

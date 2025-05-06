@@ -32,6 +32,7 @@ It is essential to keep assertions in your production code. Assertions allow you
 ## TigerStyle! (Or How To Design Safer Systems in Less Time) by Joran Dirk Greef, 2024
 
 - https://www.youtube.com/watch?v=w3WYdYyjek4
+- [TIGER\_STYLE.md | tigerbeetle src](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md)
 
 Time = Design + Coding + Testing + Incidents
 

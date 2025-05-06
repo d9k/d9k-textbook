@@ -10,7 +10,7 @@
 
 On any given context `process.nextTick()` has higher priority over `setImmediate()`.
 
-We recommend developers use setImmediate() in default case because it’s easier to reason about.
+We recommend developers use `setImmediate()` in default case because it’s easier to reason about.
 
 Recursive `process.nextTick()` will block the event loop and create **I/O Starvation**. Recursive calls to `setImmediate()` won't block the event loop, because every recursive call is executed only on the next event loop iteration.
 
