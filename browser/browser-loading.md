@@ -90,3 +90,36 @@ Lighthouse 8 score
 
 Speed Index measures how quickly content is visually displayed during page load. Lighthouse first captures a video of the page loading in the browser and computes the visual progression between frames. Lighthouse then uses the [Speedline](https://github.com/paulirish/speedline) Node.js module to generate the Speed Index score.
 
+# Атрибуты `<script>` async, defer
+
+- :beginner: [Скрипты: async, defer | javascript.ru](https://learn.javascript.ru/script-async-defer)
+
+Когда браузер загружает HTML и доходит до тега `<script src="...">`, он не может продолжать строить DOM. Он должен сначала загрузить и выполнить скрипт.
+- Скрипты не видят DOM-элементы ниже себя, поэтому к ним нельзя добавить обработчики и т.д.
+- Если вверху страницы объёмный скрипт, он «блокирует» страницу. Пользователи не видят содержимое страницы, пока он не загрузится и не запустится:
+
+`<script defer` сообщает браузеру, что он должен продолжать обрабатывать страницу и загружать скрипт в фоновом режиме, а затем запустить этот скрипт, когда DOM дерево будет полностью построено (событие `DOMContentLoaded`).
+
+Скрипты с `defer` загружаются параллельно, но запускаются в порядке объявления в коде страницы.
+
+`defer` используются для скриптов, которым требуется доступ ко всему DOM и/или важен их относительный порядок выполнения.
+
+`<script async`: скрипты не блокируют рендеринг, не ждут друг друга и не дожидаются `DOMContentLoaded`.
+
+Usability: При использовании `defer`-скриптов необходимо отображать индикацию загрузки, блокировать нерабочие кнопки.
+
+`async` хорош для независимых скриптов, например счётчиков и рекламы, относительный порядок выполнения которых не играет роли.`
+
+## Динамически загружаемые скрипты
+
+- :beginner: [Скрипты: async, defer | javascript.ru](https://learn.javascript.ru/script-async-defer)
+
+```js
+let script = document.createElement('script');
+script.src = "/article/script-async-defer/long.js";
+document.body.append(script); // (*)
+```
+Динамически загружаемые скрипты по умолчанию ведут себя как `async`. Чтобы изменить это поведение, нужно поменять свойство `script.async = false;`
+
+
+
