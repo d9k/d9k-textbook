@@ -1,0 +1,18 @@
+# CSS: colors
+
+## oklch
+
+- [Oklab color space - Wikipedia](https://en.wikipedia.org/wiki/Oklab_color_space)
+
+The Oklab model does an OK (adequate) job and is based on the three color-space coordinates L, a, and b.
+
+- :newspaper: [OKLCH в CSS: почему мы ушли от RGB и HSL / Андрей Ситник / Веб-стандарты](https://web-standards.ru/articles/oklch-in-css-why-quit-rgb-hsl/)
+
+HSL растягивает цветовое пространство, поэтому через него нельзя менять цвет. Компонент L в нём является непредсказуемым, зависящим от оттенка. Это приводит к неприятным проблемам с контрастом и доступностью.
+
+В пространстве HSL:
+- Добавление 10% яркости для зелёного или для фиолетового цвета приведут к разным результатам.
+- Если вы поменяете оттенок (например, чтобы из фирменного цвета сделать красный цвет ошибки), то с ним может измениться яркость, и текст на этом фоне станет нечитаемым.
+
+`oklch(L C H)` или `oklch(L C H / a)`.
+
