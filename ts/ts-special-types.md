@@ -61,9 +61,9 @@ ecoologic: If you write a function that only passes down an input to another fun
 
 Dmitri Pavlutin: You can perform `any` operation on `any`, but you have to do a type check or type assertion to operate on `unknown`.
 
-## TypeScript: типы и их устройство - Хекслет
+## TypeScript: иерархия типов и их приведение
 
-- https://ru.hexlet.io/blog/posts/sistema-tipov-v-typescript
+- :newspaper: [TypeScript: типы и их устройство - Хекслет](https://ru.hexlet.io/blog/posts/sistema-tipov-v-typescript)
 
 В отличие от восходящего, нисходящее приведение типов небезопасно и в большинстве языков со строгой типизацией не может выполняться автоматически.
 
