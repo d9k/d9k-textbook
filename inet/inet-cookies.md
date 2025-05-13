@@ -9,6 +9,7 @@ HTTP является протоколом без статических дан�
 ## Атрибуты cookies
 
 - :newspaper: [\[Перевод\] Всё о файлах cookie и их безопасности | Ent_TranslateIB | Ent_TranslateIB | Хабр](https://habr.com/ru/articles/710578/)
+- :newspaper: [SameSite cookies explained | web.dev](https://web.dev/articles/samesite-cookies-explained)
 
 ### SameSite
 

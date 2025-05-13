@@ -36,8 +36,7 @@ CSP `connect-src` directive restricts the URLs which can be loaded using script 
 ## Cookies: HttpOnly / Secure / Same-Site
 
 - :newspaper: [CSRF (межсайтовая подделка запросов): что это за уязвимость](https://blog.skillfactory.ru/glossary/csrf/), 2023
-- :newspaper: [\[Перевод\] Всё о файлах cookie и их безопасности | Хабр](https://habr.com/ru/articles/710578/), 2023
-- :newspaper: [SameSite cookies explained | web.dev](https://web.dev/articles/samesite-cookies-explained)
+- :newspaper: [\[Перевод\] Всё о файлах cookie и их безопасности | Ent_TranslateIB | Хабр](https://habr.com/ru/articles/710578/), 2023
 
 - `SameSite=Lax` или `SameSite=Strict`
 - `Secure=true`
