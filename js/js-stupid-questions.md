@@ -4,6 +4,10 @@
 
 Вопросы, которые зачем-то регулярно спрашивают на собеседованиях (часть по legacy).
 
+## Links
+
+[^j]: [js stupid questions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-stupid-questions.ipynb)
+
 ## Типы данных JavaScript
 
 (Результат оператора `typeof`)
@@ -173,13 +177,6 @@ var a = b ?? c;
 
 `33`
 
-# Give an example where do you really need semicolon
-
-https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/
-
-## Links
-
-[^j]: [js stupid questions jupiter notebook](https://github.com/d9k/d9k-jupyter/blob/main/js-stupid-questions.ipynb)
 
 ## Give an example where do you really need semicolon[](http://localhost:8888/notebooks/js-stupid-questions.ipynb#Give-an-example-where-do-you-really-need-semicolon)
 
@@ -230,4 +227,35 @@ lodash:
 ```js
 > _.sortBy([11, undefined, 1, null, -5, 6, 20, 0].sort((a, b) => a - b))
 [ -5, 0, 1, 6, 11, 20, null, undefined ]
+```
+
+## Is JS pass-by-reference language?
+
+- :speech_balloon: [Does JavaScript pass by reference? | SO](https://stackoverflow.com/questions/13104494/does-javascript-pass-by-reference)
+
+No, it passes by value primitive values and passes composite vales (objects, arrays) by `call-by-sharing` (copy of this reference passed)
+
+```js
+var o = {x: "foo"}, p = {y: 123};
+
+function f(o, p) {
+  o.x = "bar"; // Mutation
+  p = {x: 456}; // Reassignment
+  console.log("o inside of f:", o);
+  console.log("p inside of f:", p);
+}
+
+f(o, p);
+
+console.log("o outside of f:", o);
+console.log("p outside of f:", p);
+```
+
+Output:
+
+```js
+o inside of f: { "x": "bar" }
+p inside of f: { "x": 456 }
+o outside of f: { "x": "bar" }
+p outside of f: { "y": 123 }
 ```
