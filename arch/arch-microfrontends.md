@@ -16,6 +16,22 @@
 
 - Reusability - easier to separate and reuse small modules across multiple microfrontend
 
+### :robot_face: Test question - talk with DeepSeek 2025.05.17
+
+> Micro-frontends have the following advantage:
+> A. Faster Loading Time
+> B. Better Accesability
+> C. Faster Development Speed
+> D. Less Development Complexity
+
+A. Faster Loading Time: Hmm. Micro-frontends might actually have a slight overhead because they could involve loading multiple bundles or modules. Unless optimized, this could slow things down. But maybe if they are lazy-loaded or split properly, the initial load might be faster. However, I don't think loading time is the primary advantage here. The main focus is on development process improvements rather than performance.
+
+C. Faster Development Speed: This makes sense. By splitting the frontend into smaller parts, teams can work in parallel. Each team can own a specific part, develop, test, and deploy it independently. This parallelization can speed up the overall development process since there's less coordination overhead and teams aren't blocked by each other.
+
+D. Less Development Complexity: This is tricky. On one hand, breaking down a large app into smaller parts can reduce complexity in each individual micro-frontend. However, managing multiple micro-frontends introduces its own complexities, like handling shared dependencies, ensuring consistent UI/UX across parts, communication between micro-frontends, etc. So overall, development complexity might not necessarily be reduced; it's just distributed differently.
+
+So, the key advantages of micro-frontends are usually around scalability for large teams, independent deployments, and allowing teams to use different technologies if needed.
+
 ## Коммуникация микрофронтендов
 
 - :robot_face: (Разговор DeepSeek 2025.05.13) _Читал статью по микрофронтендам и там такие слова: "micro-frontend architecture relies on browser events for communication instead of APIs, they are simpler to manage and maintain". Какие события браузера используют микрофронтенды для коммуникации друг с другом?_
