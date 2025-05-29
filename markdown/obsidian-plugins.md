@@ -32,3 +32,7 @@
 ## Web
 
 - [Search on Internet](https://github.com/HEmile/obsidian-search-on-internet)
+
+## Tables
+
+- [obsidian-excel-to-markdown-table](https://github.com/ganesshkumar/obsidian-excel-to-markdown-table)
