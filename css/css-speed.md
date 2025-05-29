@@ -23,6 +23,8 @@
 
 ## Layout Thrashing
 
+- :newspaper: [Avoid large, complex layouts and layout thrashing | web.dev](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing)
+
 Избегать Layout Thrashing - отделять чтение данных геометрии от его изменения (разбивать один цикл на два отдельных цикла)
 
 ```js
@@ -59,3 +61,5 @@ window.addEventListener('scroll', () => {
 - Для реактивных фреймворков (React, Vue, Angular): Вместо ручного кеширования используйте оптимизации фреймворка (например, `useMemo` в React, `computed` во Vue).
 	- Избегайте чтения геометрических свойств в рендеринге — делайте это в `useEffect` или `mounted`.
 
+- :stethoscope: Layers DevTools panel
+	- :newspaper: [Eliminate content repaints with the new Layers panel in Chrome | LogRocket Blog](https://blog.logrocket.com/eliminate-content-repaints-with-the-new-layers-panel-in-chrome-e2c306d4d752?gi=cd6271834cea)
