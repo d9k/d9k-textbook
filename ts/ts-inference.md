@@ -56,3 +56,27 @@ type Result = Extract<Device, { type: 'Laptop' }>;
 ```
 
 - :speech_balloon: [typescript3.0 - TypeScript: generically infer union type member based on a string literal property | SO](https://stackoverflow.com/questions/54599951/typescript-generically-infer-union-type-member-based-on-a-string-literal-proper/73932296#73932296)
+
+## `infer` keyword
+
+`infer` - можем подставить в шаблоный тип/функцию в любом месте после `extends` новый тип-параметр шаблона, который предваряет слово `infer`:
+
+```ts
+type ArrayItem<T> = T extends (infer U)[] ? U : never;
+
+type ReturnType<T> = T extends (...args: any) => infer R ? R : never;
+
+type Parameters<T> = T extends (...args: infer P) => any ? P : never;
+
+type PropType<T, K extends keyof T> = T extends { [key in K]: infer V } ? V : never;
+
+type User = { name: string; age: number };
+type Name = PropType<User, 'name'>; // string
+
+type UnwrapPromise<T> = T extends Promise<infer U> ? U : T;
+
+type DeepUnwrap<T> = T extends Promise<infer U> ? DeepUnwrap<U> : T;
+
+type Nested = Promise<Promise<number>>;
+type Unwrapped = DeepUnwrap<Nested>; // number
+```
