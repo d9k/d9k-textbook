@@ -70,3 +70,16 @@ JSON-pure API справляется с большинством проблем,
 - Механизм передачи и содержимое ответа полностью независимы. Все ошибки, предупреждения и данные передаются в теле ответа, в формате JSON
 - Гораздо проще дебажить, ведь все данные находятся в одном месте в легко-читаемом формате JSON
 - Легко перенести на любой канал связи, например, HTTP/S, WebSockets, XMPP, telnet, SFTP, SCP, or SSH
+
+
+## REST idempotent methods
+
+- :speech_balloon: [http - Is REST DELETE really idempotent? | SO](https://stackoverflow.com/questions/4088350/is-rest-delete-really-idempotent)
+
+Idempotent: GET, PUT, DELETE, HEAD, OPTIONS and TRACE.
+
+POST, PATCH are not
+
+Идемпоте́нтность («равносильность» от лат. idem «тот же самый» + potens «способный») — свойство объекта или операции при повторном применении операции к объекту давать тот же результат, что и при первом.
+
+Idempotence refers only to the state of the system after the request has completed 1st, 2nd, n-th time.
