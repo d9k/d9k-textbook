@@ -4,7 +4,7 @@
 
 [TypeScript: Documentation - TypeScript 4.9](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html)
 
-`satisfies` - проверка в коде без преобразования типа. Может пригодиться для сохранения типа union-полей конкретного объекта как экземпляра типа:
+`satisfies` - проверка в коде без преобразования типа. Может пригодиться для сохранения типа union-полей конкретного объекта, но с проверкой на принадлежность типу объектов:
 
 ```ts
 type Colors = "red" | "green" | "blue";
@@ -29,6 +29,6 @@ const palette = {
     // typo correctly detected:
     // bleu: [0, 0, 255]
 } satisfies Record<Colors, string | RGB>;
-// Just works; type was not narrowed
+// Just works; type was not widened.
 const greenNormalized = palette.green.toUpperCase();
 ```
