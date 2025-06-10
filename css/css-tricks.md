@@ -64,7 +64,7 @@ http://css.maxdesign.com.au/listutorial/horizontal_master.htm
 
 ## Скрыть у numeric field кнопки
 
-```
+```css
 input[type='number'] {
 	-moz-appearance:textfield;
 }
@@ -74,7 +74,6 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
-```
 ```
 
 http://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box
