@@ -63,3 +63,20 @@ window.addEventListener('scroll', () => {
 
 - :stethoscope: Layers DevTools panel
 	- :newspaper: [Eliminate content repaints with the new Layers panel in Chrome | LogRocket Blog](https://blog.logrocket.com/eliminate-content-repaints-with-the-new-layers-panel-in-chrome-e2c306d4d752?gi=cd6271834cea)
+
+## What is the difference between reflow and repaint
+
+- _Repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include
+	- outline
+	- visibility
+	- background color
+
+- _Reflow_ involves changes that affect the layout of the whole page or a portion of the page. Reflow can be triggered by
+	- resizing the browser window
+	- changing the font
+	- content changing (such as user typing text)
+	- using JavaScript methods involving computed styles
+	- adding or removing elements from the DOM
+	- changing an element's classes
+
+Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
