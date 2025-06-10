@@ -1,8 +1,12 @@
 # Architecture: GraphQL
 
-## Definition
+## About
 
 [GraphQL](https://graphql.org/), the query language created by Facebook, overcomes several of the data retrieval issues common to the more traditional REST APIs.
+
+Используйте GraphQL, когда хотите вернуть контроль потребителю API над тем, какие поля он хочет запрашивать.
+
+## Over- and under-fetching
 
 In ***over-fetching***, an endpoint responds with _more data than the client needs_, which can add to bandwidth usage.
 In ***under-fetching***, no endpoint offers sufficient data, so the _client must query multiple endpoints_ to get what it needs.
