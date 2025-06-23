@@ -6,4 +6,6 @@ Semantic HTML tags clearly describe their meaning to the browser, developer and 
 
 The `<input>` tag is used for creating input fields. It's semantic because it defines a specific type of data entry, like text, password, checkbox, etc. So it tells both the browser and the developer what it's used for.
 
+## Non-semantic tags
+
 The `<div>` tag is a generic container used for grouping content and applying styles. It doesn't have any semantic meaning, making it a non-semantic tag.

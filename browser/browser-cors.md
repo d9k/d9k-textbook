@@ -20,7 +20,7 @@ https://github.com/sudheerj/javascript-interview-questions#what-is-same-origin-p
 
 - :beginner: [CORS и preflight request: как работает, заголовки, кэш](https://sky.pro/wiki/javascript/cors-i-preflight-request-kak-rabotaet-zagolovki-kesh/)
 
-OPTIONS request, using two or three HTTP request headers: Access-Control-Request-Method, Origin, and optionally Access-Control-Request-Headers
+OPTIONS request, using HTTP request headers Access-Control-Request-Method, Origin, and optionally Access-Control-Request-Headers
 
 💡 Простыми словами, preflight запрос – это как если бы вы перед покупкой в магазине звонили туда и спрашивали, можно ли купить товар определенным способом и взять с собой свою сумку. Если магазин говорит "да", вы идете на покупки. Если "нет" – вы не тратите свое время.
 

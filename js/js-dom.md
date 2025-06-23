@@ -8,7 +8,7 @@
 
 ## Добавление элемента
 
-```
+```js
 var btn = document.createElement("button");
 myDiv.appendChild(btn);
 ```
@@ -17,7 +17,7 @@ http://www.w3schools.com/jsref/met_document_createelement.asp
 
 ## Известен ли тэг
 
-```
+```js
 function isElementSupported(tag){
   var element = document.createElement(tag);
   return Object.prototype.toString.call(element) !== '[object HTMLUnknownElement]' ;
