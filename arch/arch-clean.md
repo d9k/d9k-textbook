@@ -1,5 +1,8 @@
 # Architecture: clean
 
+- https://www.geeksforgeeks.org/design-patterns-architecture/#hexagonal-architecture-ports-and-adapters
+	- 11 arch pattern with visual diagrams
+
 ## Predecessors
 
 ### Screaming Architecture / Uncle Bob
@@ -30,6 +33,42 @@ Directory structure must ***represent project***, not framework. When you look a
 		- Domain Model - is only coupled to itself
 	- All code can depend on layers more central (below), but code cannot depend on layers further out from the core (above). All coupling is toward the center (below). Onion architecture is biased toward OOP and relies heavily on Dependency Inversion principle.
 	- Infrastructure: historically, the industry has modified data access techniques at least every 3 years; Therefore, we can count on needing to modify data access 3 years from now for any healthy, long-lived systems that’s mission-critical to the business. If coupling prevents easily upgrading parts of the system We often don’t keep systems up-to-date.
+
+## Ready for changes with Hexagonal Architecture | Netflix TechBlog, 2020
+
+https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749
+
+![Hexagonal architecture|400](https://raw.githubusercontent.com/d9k/d9k-textbook-assets/main/arch/arch-clean/arch-hexagonal.png)
+
+   http / queue / gRPC API / REST API
+-> transport layer / data sources
+-> interactors / repositories
+-> entities
+
+The need to swap data sources came earlier than we expected — we suddenly hit a read constraint with the monolith and needed to switch a certain read for one entity to a newer microservice exposed over a GraphQL aggregation layer. Both the microservice and the monolith were kept in sync and had the same data, reading from one service or the other produced the same results.
+
+We managed to transfer reads from a JSON API to a GraphQL data source within 2 hours.
+
+The main reason we were able to pull it off so fast was due to the Hexagonal architecture. We didn’t let any persistence specifics leak into our business logic.
+
+## Hexagonal Architecture – What Is It? Why Use It?
+
+https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/
+
+
+![Hexagonal architecture|500](https://raw.githubusercontent.com/d9k/d9k-textbook-assets/main/arch/arch-clean/arch-hexagonal-with-control-flow.png)
+
+## 5. Hexagonal Architecture (Ports and Adapters) | Software Architectural Patterns in System Design - GeeksforGeeks
+
+- https://www.geeksforgeeks.org/design-patterns-architecture/
+
+The Ports and Adapters pattern, another name for Hexagonal Architecture, is a software design methodology that seeks to provide loosely linked application components. Isolating an application's essential logic (the "inside") from external systems or interfaces (the "outside") is the idea. This is accomplished by drawing distinct lines between the main logic of the application and the external systems—like databases, web services, user interfaces, or messaging systems—that communicate with it.
+
+## Hexagonal architecture (software) - Wikipedia
+
+- https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
+
+
 
 ## About the Clean Architecture
 
