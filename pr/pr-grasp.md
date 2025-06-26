@@ -2,7 +2,7 @@
 
 - :label: Separation of Concerns
 
-General responsibility assignment software patterns — общие шаблоны распределения ответственностей;
+General responsibility assignment software patterns — общие шаблоны распределения ответственностей для ПО;
 
 Шаблоны GRASP являются скорее не паттернами проектирования (как GangOfFour'ские), а фундаментальными принципами распределения ответственности между классами.
 
@@ -16,12 +16,12 @@ General responsibility assignment software patterns — общие шаблон
 - [Шаблоны GRASP: Controller (контроллер) / Хабр](https://habr.com/ru/companies/otus/articles/507600/)
 - [Шаблоны GRASP: Polymorphism, Pure Fabrication, Indirection, Protected Variations / Хабр](https://habr.com/ru/companies/otus/articles/521476/)
 
-## low coupling high cohesion, в чём разница?
+## Low coupling high cohesion, в чём разница?
 
 - ![coupling vs cohesion|120](https://upload.wikimedia.org/wikipedia/commons/0/09/CouplingVsCohesion.svg)
 - [Зацепление (программирование) — Википедия](https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D1%86%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5))
 
-### loose coupling - низкая связность (должно быть)
+### Loose coupling - низкая связность (должно быть)
 
 Зацепление - степень взаимозависимости между программными модулями.
 
@@ -34,7 +34,7 @@ General responsibility assignment software patterns — общие шаблон
 
 [Зацепление (программирование) — Википедия](https://ru.wikipedia.org/wiki/Зацепление_%28программирование%29))
 
-### high cohesion - высокое зацепление
+### High cohesion - высокое зацепление
 
 Связность - мера взаимосвязанности элементов внутри модуля.
 

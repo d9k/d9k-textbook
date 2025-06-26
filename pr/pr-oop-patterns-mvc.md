@@ -40,13 +40,23 @@ public static void Main()
 
 ## MVVM-паттерн
 
+- :beginner: [Model-View-ViewModel — Википедия](https://ru.wikipedia.org/wiki/Model-View-ViewModel)
+
+MVVM удобно использовать вместо классического MVC и ему подобных в тех случаях, когда в платформе, на которой ведётся разработка, есть «связывание данных».
+
 - в общем, используется больше в C#, Java.
 	- Controler обрабатывает действия на frontend.
 	- паттерн для упрощённого биндинга данных
 	- Классический MVC для обновления целиком. MVVM - для AJAX-обновлений.
 
+- :beginner: [A Simple MVVM Example | Rachel Lim's Blog](https://rachel53461.wordpress.com/2011/05/08/simplemvvmexample/)
+	- search: ProductModel, ProductViewModel, Binding
 - [gh: java fx MVVM](https://github.com/sialcasa/jfx-mvvm)
 - [java zk MVVM](https://www.zkoss.org/wiki/Small_Talks/2011/November/Hello_ZK_MVVM#MVP_Implementation)
+
+### See also
+
+- :point_right: [reactive](./pr-reactive.md), "Is React reactive?"
 
 ## mvc и mvp
 
