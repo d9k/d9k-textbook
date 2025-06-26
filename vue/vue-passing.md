@@ -21,3 +21,30 @@
   <textarea v-on="$listeners" ></textarea>
 </div>
 ```
+
+## In composition API
+
+ - :beginner: [Accessing Fallthrough Attributes in JS | Vue docs](https://vuejs.org/guide/components/attrs#accessing-fallthrough-attributes-in-javascript)
+
+```js
+const attrs = useAttrs()
+```
+
+## Don't pass attributes
+
+- [Fallthrough Attributes | Vue.js](https://vuejs.org/guide/components/attrs#disabling-attribute-inheritance)
+
+Composition API:
+
+```js
+defineOptions({
+  inheritAttrs: false
+})
+```
+
+Component API:
+
+```javascript
+Vue.component('my-component', {
+  inheritAttrs: false,
+```
