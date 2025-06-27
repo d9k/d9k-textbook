@@ -6,12 +6,6 @@
 
 К объекту `Promise` можно добавлять callback'и с помощью цепочек вызовов `.then()`, `.catch()`, `.finally()`, управляя обработкой результатов и ошибок асинхронной операции. Введение `Promise` позволило избежать callback hell - вложенных на много уровней друг в друга callback'ов, со сложностями в отладке и обработке ошибок.
 
-## Promise global methods
-
-- `.all()` - returns a single Promise which fulfills when all of the input's promises fulfill, with an array of the fulfillment values. It rejects when any of the input's promises rejects, with this first rejection reason.
-
-- `.allSettled()` - returns a single Promise. This returned promise fulfills (when all of the input's promises settle) with an array of objects that describe the outcome of each promise.
-
 ## Жизненный цикл Promise
 
 :newspaper: [Promise | краткое руководство/ Песочница | Хабр](https://habr.com/ru/sandbox/162207/), 2021
