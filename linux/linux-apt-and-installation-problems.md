@@ -231,3 +231,47 @@ sudo dpkg --configure -a
 ```
 
 https://pingvinus.ru/note/dpkg-lock
+
+## Conflicting newer versions
+
+https://askubuntu.com/a/1554123/156571:
+
+0) Check some of the installed packages:
+
+```bash
+> apt-cache policy libmp3lame0
+libmp3lame0:
+  Installed: 3.100-4~22.04.sav1
+  Candidate: 3.100-4~22.04.sav1
+  Version table:
+ *** 3.100-4~22.04.sav1 100
+        100 /var/lib/dpkg/status
+     3.100-3build2 500
+        500 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages
+```
+
+1) Force redownload packages lists
+
+```bash
+sudo rm /etc/apt/sources.list.d/savoury*
+sudo mv /var/lib/apt/lists/ /var/lib/apt/lists.bk
+sudo mkdir /var/lib/apt/lists/
+sudo apt install
+```
+
+2) Force downgrade affected packages. Based on https://askubuntu.com/a/1112347/156571 answer:
+
+If you have distro based on Ubuntu 22.04 `jammy` Linux, for example:
+
+```bash
+sudo apt-get install $(apt-show-versions \
+   | grep -P 'newer than version in archive' \
+   | awk -F: '{print $1"/'jammy'"}')
+```
+
+## Fix "but is not going to be installed"
+
+```
+sudo apt-get --reinstall install python3
+sudo apt-get --reinstall install python3-gi
+```
