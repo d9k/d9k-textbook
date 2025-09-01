@@ -12,7 +12,7 @@ find . -type f | xargs fgrep '...'
 
 ## Поиск группы
 
-sed
+sed:
 
 ```sql
 CREATE TABLE `offercalc_fields` (
@@ -24,7 +24,7 @@ CREATE TABLE `offercalc_fields` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
 
-```
+```bash
 cat sed -nr 's/CREATE TABLE `(.+)`.*/\1/p'
 ```
 
@@ -86,4 +86,4 @@ Default vault path:  /path/to/vault
 
 `\K` принудительно передвигает маркер начала найденной последовательности.
 
-[regex - grep: group capturing - ClarkZinzow answer - Stack Overflow](https://stackoverflow.com/a/41194927/1760643)
+:speech_balloon: [regex - grep: group capturing - ClarkZinzow answer | SO](https://stackoverflow.com/a/41194927/1760643)
