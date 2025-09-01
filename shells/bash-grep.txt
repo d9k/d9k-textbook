@@ -1,34 +1,43 @@
-Регулярные выражения в bash
-===========================
+# Регулярные выражения в bash
 
-см. также `basn-find.md`
+См. также [basn-find.md](./bash-find.md)
 
-поиск группы
-------------
+## Grep in found by name files
+
+:speech_balloon: [regex - Using grep to search files provided by find: what is wrong with find . | xargs grep '...'? | SO](https://stackoverflow.com/questions/1204781/using-grep-to-search-files-provided-by-find-what-is-wrong-with-find-xargs-g)
+
+```bash
+find . -type f | xargs fgrep '...'
+```
+
+## Поиск группы
 
 sed
-~~~
 
-	CREATE TABLE `offercalc_fields` (
-	  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-	  `name` varchar(255) NOT NULL,
-	  `price` double NOT NULL,
-	  `offer_slug` varchar(255) NOT NULL,
-	  PRIMARY KEY (`id`)
-	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```sql
+CREATE TABLE `offercalc_fields` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `price` double NOT NULL,
+  `offer_slug` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
 
+```
 cat sed -nr 's/CREATE TABLE `(.+)`.*/\1/p'
+```
 
 `(.+)` - матчит любые символы в кавычках
-.* - матчит конец строки
+`.*` - матчит конец строки
 
-вывод: `offercalc_fields`
+Вывод: `offercalc_fields`
 
 http://www.mikeplate.com/2012/05/09/extract-regular-expression-group-match-using-grep-or-sed/
 
-bash
-~~~~
+Bash match example:
 
+```bash
 x='foo bar bletch'
 if [[ $x =~ foo[[:space:]](bar)[[:space:]]bl(.*) ]]
 then
@@ -37,26 +46,31 @@ then
     echo ${BASH_REMATCH[1]}
     echo ${BASH_REMATCH[2]}
 fi
+```
 
-поиск текста в файлах в директории рекурсивно
----------------------------------------------
+## Поиск текста в файлах в директории рекурсивно
 
-	grep -r "texthere" .
+```bash
+grep -r "texthere" .
+```
 
 http://stackoverflow.com/questions/1987926/how-do-i-grep-recursively
 
-рекурсивная замена в файлах
----------------------------
+## Рекурсивная замена в файлах
 
+```bash
 find . -type f -exec sed -i 's/foo/bar/g' {} +
+```
 
 ## grep in error output (stderr)
 
 example:
 
-`nginx -V &> >(grep auth)`
+```
+nginx -V &> >(grep auth)
+```
 
-## исключить расширения из поиска
+## Исключить расширения из поиска
 
 grep -nr --exclude=\*.{js,css} keyword
 
