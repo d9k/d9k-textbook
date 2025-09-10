@@ -25,6 +25,8 @@ https://chromewebstore.google.com/
 ## Browsing
 
 * Font changer with Google Web Fonts - lacks functionality
+- [A+ FontSize Changer](https://chromewebstore.google.com/detail/a+-fontsize-changer/ckihgechpahhpompcinglebkgcdgpkil)
+	- _ability to increase font separately from zoom level_
 * Set Character Encoding
 * Smooth scroll
 * Stop Animations
@@ -47,6 +49,7 @@ https://chromewebstore.google.com/
 	* :fallen_leaf: break tab groups
 - Tab position customizer
 - Auto Tab Discard
+- [Thready - Vertical Tabs](https://chromewebstore.google.com/detail/thready-vertical-tabs/aihcofnnndflfjbmlekiegncnahgmaik)
 
 ## Document flow
 
