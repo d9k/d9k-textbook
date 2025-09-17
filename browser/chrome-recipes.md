@@ -19,3 +19,7 @@ ctrl+shift+c
 chrome://flags/
 
 `omnibox bookmark paths: Disabled`
+
+## Scrollable tabs
+
+chrome://flags/#scrollable-tabstrip
