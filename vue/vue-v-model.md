@@ -47,7 +47,17 @@ const lastName = defineModel('lastName')
 `defineModel` is a convenience macro. The compiler expands it to the following:
 
 A prop named `modelValue`, which the local ref's value is synced with;
-An event named `update:modelValue`, which is emitted when the local ref's value is mutated.
+An event named `update:modelValue`, which is emitted when the local ref's value is mutated. So
+
+```vue
+<input v-model="model" />
+```
+
+is
+
+```vue
+<input :value="props.modelValue" @input="emit('update:modelValue', $event.target.value)" />
+```
 
 ## Component v-model
 
@@ -66,7 +76,11 @@ An event named `update:modelValue`, which is emitted when the local ref's value 
 
 ```vue
 <CustomInput v-model="searchText" />
-<!-- Same as: -->
+```
+
+Same as:
+
+```vue
 <CustomInput
   :model-value="searchText"
   @update:model-value="newValue => searchText = newValue"
@@ -84,20 +98,16 @@ Custom component must implement value handling like this:
 
 ### Custom component with custom property name
 
-```ts
-  <input
-    type="text"
-    :value="title"
-    @input="$emit('update:title', $event.target.value)"
-  />
+```vue
+<MyComponent v-model:title="title"
 ```
 
 Custom component with custom property name must implement value handling like this:
 
-```ts
-  <input
+```vue
+<input
     type="text"
     :value="title"
     @input="$emit('update:title', $event.target.value)"
-  />
+/>
 ```
