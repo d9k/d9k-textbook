@@ -134,7 +134,11 @@ http://www.ubuntuupdates.org/package_metas/alphabetical
 
 ## Зависимости пакета
 
+- :speech_balloon: [dependencies - apt/aptitude - How can I display a package dependency tree for a collection of packages, taken as a whole? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/643979/apt-aptitude-how-can-i-display-a-package-dependency-tree-for-a-collection-of-p)
+
 `apt-cache depends python`
+
+`debtree python`
 
 ## Зависимые пакеты
 
@@ -142,7 +146,18 @@ http://www.ubuntuupdates.org/package_metas/alphabetical
 
 ## Информация о пакете
 
-`apt-cache show <package_name>`
+```
+apt-cache show <package_name>
+apt-cache policy <package_name>
+```
+
+## Из какого PPA пакет?
+
+- [apt - How can I know the source ppa of an installed package? - Ask Ubuntu](https://askubuntu.com/questions/164114/how-can-i-know-the-source-ppa-of-an-installed-package)
+```
+apt-cache policy <package-name>
+```
+
 
 ## Не обновлять пакет
 
