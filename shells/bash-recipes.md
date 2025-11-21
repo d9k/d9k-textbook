@@ -108,6 +108,12 @@ http://stackoverflow.com/a/4645159/1760643
 
 http://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bas
 
+## Объединение stderr и stdout
+
+`2>&1`
+
+`&> log.txt`
+
 ## Вывод в STDERR
 
 	alias echoerr='>&2 echo'
