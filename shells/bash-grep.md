@@ -87,3 +87,16 @@ Default vault path:  /path/to/vault
 `\K` принудительно передвигает маркер начала найденной последовательности.
 
 :speech_balloon: [regex - grep: group capturing - ClarkZinzow answer | SO](https://stackoverflow.com/a/41194927/1760643)
+
+## Grep raw text / exact string
+
+```bash
+grep --fixed-strings --line-regexp $SEARCH_STRING
+```
+
+## Grep alternate pattern
+
+```bash
+grep -E "$PATTERN_A|$PATTERN_B"
+```
+
