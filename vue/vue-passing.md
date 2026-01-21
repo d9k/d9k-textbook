@@ -10,6 +10,8 @@
 
 `v-bind="{...$attrs, ...$props}"`
 
+`inheritAttrs: false` disables style and class inheritance in Vue 3 (in Vue 2 dont't).
+
 ## Passing some properties
 
 `<component-a v-bind="{ title: title, show: show, other: other }"></component-a>`
