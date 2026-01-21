@@ -4,7 +4,7 @@
 
 `--single-transaction`: консистентное состояние
 
-```
+```sh
 mysqldump -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -h${DB_HOST} \
 		--single-transaction \
 		--hex-blob \
@@ -14,7 +14,7 @@ mysqldump -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -h${DB_HOST} \
 
 ## Пример с репликацией
 
-```
+```sh
 mysqldump -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -h${DB_HOST} \
 		--single-transaction \
 		--master-data=2 \
