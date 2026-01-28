@@ -6,9 +6,21 @@
 
 https://habr.com/ru/post/452522/
 
-## текущие опции
+## Текущие опции
 
-```
+```bash
 set -o
 shopt
+```
+
+- :speech_balloon: [shell - What is the maximum size of a Linux environment variable value? | SO](https://stackoverflow.com/questions/1078031/what-is-the-maximum-size-of-a-linux-environment-variable-value)
+
+## What is the maximum size of a Linux environment variable value? | SO
+
+https://stackoverflow.com/questions/1078031/what-is-the-maximum-size-of-a-linux-environment-variable-value
+
+```bash
+getconf -a | grep ARG_MAX
+
+true | xargs --show-limits
 ```

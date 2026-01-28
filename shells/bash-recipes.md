@@ -1,5 +1,24 @@
-Рецепты bash
-============
+# Рецепты bash
+
+## Выход из bash-скрипта внутри функции
+
+- :speech_balloon: [How to effectively abort the execution of a Bash script from a function | SO](https://stackoverflow.com/questions/9893667/how-to-effectively-abort-the-execution-of-a-bash-script-from-a-function)
+
+```bash
+#!/bin/bash
+trap "exit 1" TERM
+export TOP_PID=$$
+
+function func()
+{
+   echo "Goodbye"
+   kill -s TERM $TOP_PID
+}
+
+echo "Function call will abort"
+echo $(func)
+echo "This will never be printed"
+```
 
 ## Прочитать строку предложив её часть для изменения
 
