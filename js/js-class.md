@@ -31,3 +31,10 @@ Bike.prototype.getDetails = function () {
   return this.model + " bike has" + this.color + " color";
 };
 ```
+
+## What is `EventEmitter.call(this)`?
+
+- :speech_balloon: [javascript - What is Event Emitter Call? | SO](https://stackoverflow.com/questions/30684966/what-is-event-emitter-call#comment82516397_30684966)
+
+Means extends NodeJS [EventEmitter](https://nodejs.org/docs/latest/api/events.html).
+Package for browsre: [eventemitter3](https://github.com/primus/eventemitter3)
