@@ -152,3 +152,25 @@ $ sudo dhclient eth0
 sudo apt-get install nethogs
 sudo nethogs wlan0
 ```
+
+## Proxy
+
+В Firefox с включенным HAPP на Linux не открывались сайты из LAN. Оказывается, используется настройка `Use system proxy settings` по-умолчанию. Если переставить в `No proxy`, всё работает.
+В HAPP автоматическое выставление системных настроек отключается в `Settings -> Advanced Settings -> Set system proxy`.
+
+### Откуда Firefox узнаёт о настройках Proxy?
+
+https://askubuntu.com/questions/171975/where-are-the-proxy-settings-saved:
+
+`$HTTP_PROXY` выставляется только в gnome-terminal. В tty ctrl+alt-f1 и в xfce4-terminal переменной нет
+
+[ubuntu - Firefox: use system proxy settings, but where are these? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/102244/firefox-use-system-proxy-settings-but-where-are-these)
+
+[ubuntu - Firefox: use system proxy settings, but where are these? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/102244/firefox-use-system-proxy-settings-but-where-are-these), 2013
+:speech_balloon: [xfce - How do I set system-wide proxy servers in Xubuntu, Lubuntu or Ubuntu Studio? | Ask Ubuntu](https://askubuntu.com/questions/150210/how-do-i-set-system-wide-proxy-servers-in-xubuntu-lubuntu-or-ubuntu-studio), 2017
+
+Пишут, что и Firefox в эти `gsettings` смотрит:
+
+:zap: `gsettings list-recursively `
+
+Интересно, что при отключении Set system proxy настройки gsettings не сбрасываются. Лишь :zap: `gsettings get org.gnome.system.proxy mode` становится из `'manual'` `'none'`
