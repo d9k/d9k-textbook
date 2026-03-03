@@ -10,6 +10,25 @@
 - [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
+## Git
+
+- Git History Graph (LinJUn.git-graph-pro)
+
+## Visual
+[ScaleManager | Phaser Help](https://docs.phaser.io/api-documentation/class/scale-scalemanager)
+- [Atom Material Icons](https://marketplace.visualstudio.com/items?itemName=AtomMaterial.a-file-icon-vscode)
+- Palenight Italic Material Theme
+- Slime theme
+
+## TypeScript
+
+- Typescript Code Sorter
+- TypeScript Explorer
+- Могут вызывать проблемы:
+	- [Jump To Alias File - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=wanfu.jump-to-alias-file)
+	- [Goto definition alias - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=antfu.goto-alias)
+
+
 ## How to see extension logs
 
 Example for `Run on Save` extension:
