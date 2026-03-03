@@ -1,5 +1,4 @@
 # Architecture: on patterns
 
-## Why
+[pr-oop-patterns](../pr/pr-oop-patterns.md)
 
-Patterns are useful because it gives software professionals a common vocabulary with which to communicate.

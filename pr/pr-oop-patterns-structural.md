@@ -36,6 +36,16 @@
 
 `new CompressionDecorator(new EncryptionDecorator(new FileDataSource(path)))`
 
+https://refactoring.guru/design-patterns/decorator
+
+Храним wrappee - ссылку на то, что оборачиваем.
+
+В каждом методе вызываем wrappee.
+
+Получается, декоратор заменяет массив.
+
+Сохранение в прямом порядке: архивация, запись; загрузка - в обратном: чтение, разархивирование.
+
 ## Facade
 
 Обеспечиваем паттерн GRASP low coupling - низкое зацепление между программными модулями.

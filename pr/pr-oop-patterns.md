@@ -3,6 +3,10 @@
 - [Шпаргалка по шаблонам проектирования / Хабр](https://habr.com/ru/articles/210288/)
 - [Поведенческие паттерны проектирования](https://refactoring.guru/ru/design-patterns/behavioral-patterns)
 
+## Why
+
+Patterns are useful because it gives software professionals a common vocabulary with which to communicate.
+
 ## Отношения между классами
 
 - Агрегация - «часть» может существовать отдельно от «целого». Незакрашенный ромб указывается со стороны «целого».
@@ -15,3 +19,4 @@
 - [Поведенческие](./pr-oop-patterns-behavioral.md)
 - [Порождающие](./pr-oop-patterns-creational.md)
 - [Структурные](./pr-oop-patterns-structural.md)
+
