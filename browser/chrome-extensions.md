@@ -75,3 +75,8 @@ https://chromewebstore.google.com/
 ## Popup sites
 
 - [Multilanguage Translator](https://chromewebstore.google.com/detail/multilanguage-translator/ielooaepfhfcnmihgnabkldnpddnnldl)
+
+## Focus
+
+- Tunable Image Block
+- View background image
