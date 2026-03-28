@@ -21,6 +21,16 @@
 - [apps – AppImages](https://appimage.github.io/apps/)
 - [Appimagehub.com](https://www.appimagehub.com/)
 
+### AppImage: delete
+
+- [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) by [TheAssassin](https://github.com/TheAssassin)
+	- _Helper application for Linux distributions serving as a kind of "entry point" for running and integrating AppImages_
+
+```bash
+ail-cli unintegrate ~/Applications/$APP_NAME.AppImage
+rm ~/Applications/$APP_NAME.AppImage
+```
+
 ## Flatpak
 
 - Flatpak был создан Александром Ларссоном, главным инженером-программистом Red Hat, имеет полностью открытый код.
