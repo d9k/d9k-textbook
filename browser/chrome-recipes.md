@@ -23,3 +23,7 @@ chrome://flags/
 ## Scrollable tabs
 
 chrome://flags/#scrollable-tabstrip
+
+## Incognito mode screenshot (Android)
+
+chrome://flags, `Incognito Screenshot`. Restart required.
