@@ -49,3 +49,4 @@ The `_n` function is a translation function that picks the first string if the $
 	- Generate MO file.
 - [How to Internationalize Your Plugin | Plugin Handbook | Developer.WordPress.org](https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/)
 - [More Internationalization Fun » Otto on WordPress](https://ottopress.com/2012/more-internationalization-fun/)
+- [Debug MO Translations – WordPress plugin | WordPress.org](https://wordpress.org/plugins/debug-mo-translations/)
