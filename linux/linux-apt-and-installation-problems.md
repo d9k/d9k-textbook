@@ -14,6 +14,17 @@ http://keyserver.ubuntu.com:11371/
 - download `*.asc`
 - `cat ... | sudo apt-key add -`
 
+### Key stored in leagacy trusted.gpg keyring
+
+- :speech_balloon: [apt - Key is stored in legacy trusted.gpg keyring after Ubuntu 22.04 update | Ask Ubuntu](https://askubuntu.com/questions/1403556/key-is-stored-in-legacy-trusted-gpg-keyring-after-ubuntu-22-04-update)
+
+- :zap: `cat key.asc | sudo gpg --dearmour -o /usr/share/keyrings/new-keyring.gpg`
+
+in  `/etc/apt/sources.list.d/new-ppa.list`:
+
+```
+deb [signed-by=/usr/share/keyrings/new.gpg] https://.... focal main"
+```
 
 ## Обновить пакеты
 
@@ -21,7 +32,9 @@ sudo apt-get upgrade
 
 ## Обновить только некоторые пакеты
 
+```bash
 sudo apt-get --only-upgrade install [packages names]
+```
 
 ## Искать пакет
 
